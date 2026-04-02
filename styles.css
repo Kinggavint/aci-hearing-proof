@@ -1310,6 +1310,163 @@ ul, ol { list-style: none; }
   background: var(--gold-light);
 }
 
+/* === BRAND CARDS (Hearing Aids page) === */
+.brands-we-carry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--space-md);
+}
+.brand-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-md);
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.brand-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 4px 16px rgba(27, 42, 74, 0.12);
+  transform: translateY(-2px);
+  color: var(--navy);
+}
+.brand-card__accent {
+  display: block;
+  width: 4px;
+  min-height: 36px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.brand-card__name {
+  flex: 1;
+  line-height: 1.3;
+}
+.brand-card__arrow {
+  opacity: 0.4;
+  transition: opacity 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+.brand-card:hover .brand-card__arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+@media (max-width: 600px) {
+  .brands-we-carry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === REVIEWS PAGE ENHANCEMENTS === */
+.reviews-section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--border);
+}
+.reviews-section-header__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.reviews-section-header__icon--google {
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+}
+.reviews-section-header__icon--facebook {
+  background: #1877F2;
+}
+.reviews-section-header__title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin: 0;
+}
+.reviews-section-header__sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 2px 0 0;
+}
+.review-card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+.review-card__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.review-card__author-info {
+  flex: 1;
+}
+.review-card__name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--navy);
+  line-height: 1.2;
+}
+.review-card__date {
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+.review-buttons {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+}
+@media (max-width: 600px) {
+  .review-buttons {
+    flex-direction: column;
+  }
+  .review-buttons .btn {
+    text-align: center;
+  }
+}
+
+/* === OFFICE PHOTO (Contact page) === */
+.office-photo-section {
+  margin-top: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+.office-photo-section img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+}
+.office-photo-section__caption {
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
 /* === PRINT STYLES === */
 @media print {
   .header, .footer, .mobile-cta, .cta-banner { display: none; }
