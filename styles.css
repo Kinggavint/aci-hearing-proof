@@ -1467,6 +1467,32 @@ ul, ol { list-style: none; }
   text-align: center;
 }
 
+/* === PHOTO PAIR GRID (2-col on desktop, stacks on mobile) === */
+.photo-pair-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.photo-text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .photo-pair-grid,
+  .photo-text-grid {
+    grid-template-columns: 1fr;
+  }
+  .cochlear-feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .cochlear-feature-grid img {
+    width: 100% !important;
+  }
+}
+
 /* === PRINT STYLES === */
 @media print {
   .header, .footer, .mobile-cta, .cta-banner { display: none; }
