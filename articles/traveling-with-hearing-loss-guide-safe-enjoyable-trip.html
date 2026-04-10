@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip! | ACI Hearing Center — Lafayette, LA</title>
+  <meta name="description" content="Traveling with hearing loss can require a few extra steps. But with the right preparation, your vacation can be as relaxing (or adventurous) as you want!">
+  <meta property="og:title" content="Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip!">
+  <meta property="og:description" content="Traveling with hearing loss can require a few extra steps. But with the right preparation, your vacation can be as relaxing (or adventurous) as you want!">
+  <meta property="og:image" content="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/traveling_with_hearing_loss_your_guide-to_a_safe_enjoyable_trip_gettyimages-1470141335.jpg">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+
+/* ── Blog System — ACI Hearing Center ─────────────────────────────── */
+:root {
+  --navy:   #1B365D;
+  --gold:   #C59D5F;
+  --cream:  #FAF8F5;
+  --cream-d:#F0EDE7;
+  --text:   #333;
+  --muted:  #6B7280;
+  --radius: 10px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.09);
+  --font-head: 'Lora', 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Search / Filter Bar ─────────────────────────────────────────────── */
+.blog-search-bar {
+  background: var(--navy);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.blog-search-bar .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.blog-search-input-wrap {
+  position: relative;
+  flex: 1 1 260px;
+  min-width: 200px;
+}
+.blog-search-input-wrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.blog-search-input {
+  width: 100%;
+  padding: 10px 16px 10px 44px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  background: #fff;
+  color: var(--text);
+  outline: none;
+  box-sizing: border-box;
+}
+.blog-search-input:focus {
+  box-shadow: 0 0 0 3px rgba(197,157,95,0.5);
+}
+.category-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.category-pill {
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all 0.2s;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.category-pill:hover {
+  background: rgba(255,255,255,0.22);
+}
+.category-pill.active {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+
+/* ── Blog Page Sections ──────────────────────────────────────────────── */
+.blog-section {
+  padding: 64px 0;
+}
+.blog-section--alt {
+  background: var(--cream-d);
+}
+.blog-section-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin: 0 0 8px;
+}
+.blog-section-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 40px;
+  line-height: 1.25;
+}
+
+/* ── No-results message ──────────────────────────────────────────────── */
+.blog-no-results {
+  display: none;
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 17px;
+  grid-column: 1 / -1;
+}
+.blog-no-results.visible {
+  display: block;
+}
+
+/* ── Featured Grid (2×2) ─────────────────────────────────────────────── */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 768px) {
+  .featured-grid { grid-template-columns: 1fr; }
+}
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.14);
+}
+.featured-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: var(--cream-d);
+}
+.featured-card__body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.featured-card__badge {
+  display: inline-block;
+  padding: 3px 12px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+.featured-card__title {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.featured-card__excerpt {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 16px;
+  line-height: 1.6;
+  flex: 1;
+}
+.featured-card__link {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: auto;
+}
+
+/* ── Article Grid (3-col) ────────────────────────────────────────────── */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 960px) {
+  .article-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .article-grid { grid-template-columns: 1fr; }
+}
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+.article-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: var(--cream-d);
+}
+.article-card__body {
+  padding: 18px 18px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.article-card__badge {
+  display: inline-block;
+  padding: 2px 10px;
+  background: rgba(197,157,95,0.15);
+  color: var(--gold);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  border: 1px solid rgba(197,157,95,0.35);
+}
+.article-card__title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+.article-card__excerpt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 14px;
+  line-height: 1.55;
+  flex: 1;
+}
+.article-card__link {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: auto;
+}
+
+/* ── Article count ─────────────────────────────────────────────────── */
+#article-count {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ── Individual Article Page ─────────────────────────────────────────── */
+.article-page-wrapper {
+  background: var(--cream);
+  min-height: 60vh;
+  padding: 48px 0 80px;
+}
+.article-page-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.article-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  margin-bottom: 18px;
+  transition: gap 0.2s;
+}
+.article-back-link:hover { gap: 10px; }
+.article-breadcrumb {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.article-breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.article-breadcrumb a:hover { color: var(--navy); text-decoration: underline; }
+.article-breadcrumb span { color: var(--muted); }
+.article-hero-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 32px;
+  display: block;
+  box-shadow: var(--shadow);
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.article-meta__badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.article-meta__date {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--muted);
+}
+.article-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0 0 32px;
+}
+.article-body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text);
+  max-width: 760px;
+}
+.article-body h2 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 2em 0 0.6em;
+  line-height: 1.3;
+}
+.article-body h3 {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 1.6em 0 0.5em;
+}
+.article-body h4 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 1.4em 0 0.4em;
+}
+.article-body p {
+  margin: 0 0 1.2em;
+}
+.article-body ul, .article-body ol {
+  margin: 0 0 1.2em 1.5em;
+}
+.article-body li {
+  margin-bottom: 0.4em;
+}
+.article-body strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+.article-body a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+.article-body a:hover {
+  color: var(--navy);
+}
+.article-body img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+.article-divider {
+  border: none;
+  border-top: 2px solid var(--cream-d);
+  margin: 48px 0;
+}
+.article-cta-box {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+.article-cta-box h3 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #fff;
+}
+.article-cta-box p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+.article-cta-box .btn-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.article-cta-box .btn-cta:hover {
+  background: #b8883e;
+  transform: translateY(-2px);
+}
+
+/* ── Blog Hero (learn-more page) ─────────────────────────────────────── */
+.blog-hero {
+  background: var(--navy);
+  padding: 72px 0 60px;
+  text-align: center;
+}
+.blog-hero__label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin: 0 0 12px;
+}
+.blog-hero__title {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+.blog-hero__subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: rgba(255,255,255,0.78);
+  margin: 0;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="header__top">
+      <div class="container header__top-inner">
+        <div class="header__top-info">
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <a href="https://maps.google.com/?q=103+Saint+Thomas+Street+Lafayette+LA+70506" target="_blank" rel="noopener noreferrer">103 Saint Thomas Street, Lafayette, LA 70506</a>
+          </span>
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:aci@acihearing.com">aci@acihearing.com</a>
+          </span>
+        </div>
+        <span>Mon–Thu 8am–4:30pm | Fri 8am–3pm</span>
+      </div>
+    </div>
+    <div class="header__main">
+      <div class="container header__main-inner">
+        <a href="../index.html" class="header__logo" aria-label="ACI Hearing Center Home">
+          <img src="../assets/logo.png" alt="ACI Hearing Center logo" width="180" height="50">
+        </a>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <div class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </div>
+          <div class="nav__item">
+            <a href="../about.html" class="nav__link" aria-haspopup="true">About <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav__dropdown">
+              <a href="../about.html">Our Story</a>
+              <a href="../team.html">Meet Our Team</a>
+            </div>
+          </div>
+          <div class="nav__item">
+            <a href="../services.html" class="nav__link" aria-haspopup="true">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav__dropdown">
+              <a href="../hearing-tests.html">Hearing Tests</a>
+              <a href="../hearing-aids.html">Hearing Aids</a>
+              <a href="../cochlear-implants.html">Cochlear Implants</a>
+              <a href="../tinnitus.html">Tinnitus Management</a>
+              <a href="../balance-testing.html">Balance Testing</a>
+              <a href="../hearing-repair.html">Hearing Repair</a>
+              <a href="../hearing-protection.html">Hearing Protection</a>
+              <a href="../services.html">All Services</a>
+            </div>
+          </div>
+          <div class="nav__item">
+            <a href="../reviews.html" class="nav__link">Reviews</a>
+          </div>
+          <div class="nav__item">
+            <a href="../learn-more.html" class="nav__link">Learn More</a>
+          </div>
+          <div class="nav__item">
+            <a href="../contact.html" class="nav__link">Contact</a>
+          </div>
+        </nav>
+
+        <div class="header__cta">
+          <a href="tel:3372239448" class="header__phone header__phone--desktop" aria-label="Call 337-223-9448">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            337-223-9448
+          </a>
+          <a href="tel:3372239448" class="btn btn--primary btn--sm">Call or Text Us</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-page-wrapper">
+      <div class="article-page-inner">
+
+        <a href="../learn-more.html" class="article-back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="15 18 9 12 15 6"/></svg>
+          Back to Articles
+        </a>
+
+        <nav class="article-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>&rsaquo;</span>
+          <a href="../learn-more.html">Learn More</a>
+          <span>&rsaquo;</span>
+          <a href="../learn-more.html">Hearing Aids</a>
+          <span>&rsaquo;</span>
+          <span aria-current="page">Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip!</span>
+        </nav>
+
+      <img class="article-hero-image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/traveling_with_hearing_loss_your_guide-to_a_safe_enjoyable_trip_gettyimages-1470141335.jpg" alt="Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip!" loading="lazy">
+
+        <div class="article-meta">
+          <span class="article-meta__badge">Hearing Aids</span>
+          <span class="article-meta__date">August 16, 2023</span>
+        </div>
+
+        <h1 class="article-title">Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip!</h1>
+
+        <div class="article-body">
+          <p>There are two types of vacations, right? There’s the kind where you cram every single recreation you can into every waking moment. This kind will leave you more tired than when you left but all of the fun will be recalled for years to come.</p>
+<p>The other kind is all about unwinding. You may not even do much of anything on this type of vacation. Perhaps you drink a bit of wine. Maybe you spend a day (or two, or three) at the beach. Or maybe you&#8217;re getting spoiled at some resort for your entire vacation. These types of vacations will leave you quite rested and recharged.</p>
+<p>Everyone has their own idea of the perfect vacation. Whichever method you choose, however, neglected hearing loss can put your vacation in jeopardy.</p>
+<h2>Your vacation can be ruined by hearing loss</h2>
+<p>There are a few distinct ways that hearing loss can make a vacation more challenging, especially if you don’t know you have hearing loss. Look, hearing loss can sneak up on you like nobody’s business, many people have no clue they have it. On all their devices, the volume just keeps going higher and higher.</p>
+<p>But the impact that hearing loss can have on a vacation can be minimized with some proven methods, and that&#8217;s the good news. Scheduling a hearing exam is obviously the first step. The more ready you are before you go, the easier it will be to diminish any power hearing loss might have over your fun, rest, and relaxation.</p>
+<h2>How can hearing loss effect your vacation</h2>
+<p>So how can your next vacation be adversely impacted by hearing loss? There are actually a few ways as it turns out. Individually, they might not seem like that big of a deal. But when they begin to compound it can become a real problem. Here are some common examples:</p>
+<ul>
+  <li><strong>Essential notices come in but you frequently miss them</strong>: Maybe you miss your flight because you failed to hear the boarding call. This can throw your entire vacation timing into chaos.</li>
+</ul>
+<ul>
+  <li><strong>You can miss important moments with family and friends</strong>: Perhaps your friend just told a great joke that everybody loved, except you couldn’t make out the punchline. Significant and enriching conversations can be missed when you have untreated hearing loss.</li>
+</ul>
+<ul>
+  <li><strong>The vibrant life of a new place can be missed</strong>: When what you’re hearing is muted, your experience may be muted also. After all, your favorite vacation place is alive with unique sounds, like bustling street sounds or singing birds.</li>
+</ul>
+<ul>
+  <li><strong>Getting beyond language barriers can be overwhelming</strong>: Managing a language barrier is already hard enough. But neglected hearing loss can make it even harder to decipher voices (especially in a noisy situation).</li>
+</ul>
+<p>Not surprisingly, if you’re wearing your hearing aids, some of these negative impacts can be mitigated and decreased. So, taking care of your hearing requirements is the best way to keep your vacation on track.</p>
+<h2>If you have hearing loss, how can you get ready for your vacation?</h2>
+<p>That doesn&#8217;t mean that you can&#8217;t go on a trip if you have hearing loss. That’s not at all the case! But with a bit of additional planning and preparation, your vacation can still be fun and relatively stress-free. Of course, that’s rather common travel advice regardless of how strong your hearing is.</p>
+<p>Here are several things you can do to ensure hearing loss doesn’t negatively effect your next vacation:</p>
+<ul>
+  <li><strong>Clean your hearing aids</strong>: Before you leave on your travels, be certain that you clean your hearing aids. This can help avoid problems from happening while you’re on your vacation. It’s also a good idea to make certain your recommended maintenance is current!</li>
+</ul>
+<ul>
+  <li><strong>Pack extra batteries</strong>: There’s nothing worse than your hearing aid dying the first day because your batteries went dead. Don&#8217;t forget to bring some spare batteries. So are you allowed to take spare batteries on a plane? Well, possibly, check with your airline. Some types of batteries need to be stored in your carry-on.</li>
+</ul>
+<ul>
+  <li><strong>Pre-planning is a smart idea</strong>: When you need to figure things out as you go, that&#8217;s when hearing loss can introduce some challenges, so don&#8217;t be overly spontaneous and prepare as much as possible. </li>
+</ul>
+<h2>Tips for traveling with hearing aids</h2>
+<p>Once all the planning and preparation is done, it’s time to hit the road! Or possibly it&#8217;s the airways. Many individuals have questions about flying with hearing aids, and there are definitely some good things to understand before you head to the airport.</p>
+<ul>
+  <li><strong>Do I have some rights I need to be aware of?</strong> It’s not a bad idea! Generally, it’s good to become familiar with your rights before you travel. If you&#8217;re dealing with hearing loss, you’ll have lots of rights under the Americans with Disabilities Act. But essentially, it boils down to this: information must be available to you. Speak with an airport official about a solution if you think you are missing some info and they should be able to help.</li>
+</ul>
+<ul>
+  <li><strong>If I wear my hearing aids more than usual, is that ok?</strong> Most hearing specialists will suggest that you use your hearing aids all day, every day. So you should be using your hearing aids whenever you aren&#8217;t in a really loud setting, swimming, or showering.</li>
+</ul>
+<ul>
+  <li><strong>When I&#8217;m in the airport, how well will I be able to hear?</strong> How well you can hear in an airport will depend on which airport it is and what time of day. But most modern airports will have a telecoil device installed throughout many areas. This device is specifically made to help people with hearing aids hear their environment better.</li>
+</ul>
+<ul>
+  <li><strong>How useful is my smartphone?</strong> This will not be shocking, but your smartphone is very helpful! You can utilize your smartphone to find directions to your destination, translate foreign languages, and if you have the right type of hearing aid, you can use your smartphone to adjust your settings to your new environment. You may be able to take some strain off your ears if you&#8217;re able to use your phone like this.</li>
+</ul>
+<ul>
+  <li><strong>Do I need to take out my hearing aids when I go through TSA security?</strong> You can keep your hearing aids in when you go through the security screening process. Having said that, telling the TSA agents you&#8217;re wearing hearing aids is always a good idea. Don&#8217;t ever let your hearing aids go through an X-ray machine or conveyor belt. Conveyor-belt style X-ray machines can generate a static charge that can damage your hearing aids.</li>
+</ul>
+<strong>Is it ok to fly with hearing aids in?</strong> When they tell you it&#8217;s time to turn off your electronic devices, you won&#8217;t be required to turn your hearing aids off. But it&#8217;s a good plan to enable flight mode if your hearing aid relies heavily on Bluetooth connectivity or wifi. Some of the in-flight announcements could be hard to hear so make sure you let the flight attendants know about your hearing loss.
+<h2>Vacations are one of life&#8217;s many adventures</h2>
+<p>Vacations are hard to predict with or without hearing loss. At times, the train can go off the rails. So be prepared for the unexpected and try to have a positive attitude.</p>
+<p>That way, when something unexpected occurs (and it will), it’ll seem like it’s all part of the plan!</p>
+<p>Of course, the other side to that is that preparation can go a long way. When something goes wrong, with the correct preparations, you can keep it from getting out of control.</p>
+<p>For individuals who have hearing loss, this preparation frequently starts by getting your hearing assessed and making sure you have the equipment and care you require. And whether you&#8217;re on vacation number one (sightseeing in the city), or vacation number two (chilling on a tropical beach somewhere), this advice will still hold.</p>
+<p>Still have some questions or concerns? Schedule an appointment with us for a hearing exam!</p>
+<a href="/location-contact/">Call Today to Set Up an Appointment</a>
+        </div>
+
+        <hr class="article-divider">
+
+        <div class="article-cta-box">
+          <h3>Ready to Take the Next Step?</h3>
+          <p>Schedule your appointment today with our team of Doctors of Audiology at ACI Hearing Center in Lafayette, Louisiana.</p>
+          <a href="../contact.html" class="btn-cta">Schedule an Appointment</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../assets/logo.png" alt="ACI Hearing Center" width="160" height="44">
+          <p>Providing expert hearing care to Lafayette and the Acadiana region since 1984. We put our heart into how you hear.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/ACIHearingandbalance/" target="_blank" rel="noopener noreferrer" aria-label="ACI Hearing Center on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="../about.html">About Us</a>
+            <a href="../team.html">Our Team</a>
+            <a href="../services.html">Services</a>
+            <a href="../reviews.html">Reviews</a>
+            <a href="../learn-more.html">Learn More</a>
+            <a href="../contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <div class="footer__links">
+            <a href="../hearing-tests.html">Hearing Tests</a>
+            <a href="../hearing-aids.html">Hearing Aids</a>
+            <a href="../cochlear-implants.html">Cochlear Implants</a>
+            <a href="../tinnitus.html">Tinnitus Management</a>
+            <a href="../balance-testing.html">Balance Testing</a>
+            <a href="../hearing-repair.html">Hearing Repair</a>
+            <a href="../hearing-protection.html">Hearing Protection</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__links">
+            <a href="tel:3372239448"><strong>337-223-9448</strong></a>
+            <a href="mailto:aci@acihearing.com">aci@acihearing.com</a>
+            <span>103 Saint Thomas Street<br>Lafayette, LA 70506</span>
+            <span style="margin-top:8px;">
+              <strong>Hours:</strong><br>
+              Mon–Thu: 8am–4:30pm<br>
+              Fri: 8am–3pm
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 ACI Hearing Center. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <div class="container mobile-cta__inner">
+      <a href="tel:3372239448" class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <a href="../contact.html" class="btn btn--navy">Schedule Visit</a>
+    </div>
+  </div>
+
+  <script src="../main.js" defer></script>
+</body>
+</html>

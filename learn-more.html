@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More About Hearing Health | ACI Hearing Center — Lafayette, LA</title>
+  <meta name="description" content="Educational articles and resources about hearing loss, hearing aids, tinnitus, and hearing tests from ACI Hearing Center in Lafayette, Louisiana.">
+  <meta property="og:title" content="Learn More | ACI Hearing Center">
+  <meta property="og:description" content="Stay informed with articles from hearing care experts at ACI Hearing Center.">
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+
+/* ── Blog System — ACI Hearing Center ─────────────────────────────── */
+:root {
+  --navy:   #1B365D;
+  --gold:   #C59D5F;
+  --cream:  #FAF8F5;
+  --cream-d:#F0EDE7;
+  --text:   #333;
+  --muted:  #6B7280;
+  --radius: 10px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.09);
+  --font-head: 'Lora', 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Search / Filter Bar ─────────────────────────────────────────────── */
+.blog-search-bar {
+  background: var(--navy);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.blog-search-bar .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.blog-search-input-wrap {
+  position: relative;
+  flex: 1 1 260px;
+  min-width: 200px;
+}
+.blog-search-input-wrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.blog-search-input {
+  width: 100%;
+  padding: 10px 16px 10px 44px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  background: #fff;
+  color: var(--text);
+  outline: none;
+  box-sizing: border-box;
+}
+.blog-search-input:focus {
+  box-shadow: 0 0 0 3px rgba(197,157,95,0.5);
+}
+.category-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.category-pill {
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all 0.2s;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.category-pill:hover {
+  background: rgba(255,255,255,0.22);
+}
+.category-pill.active {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+
+/* ── Blog Page Sections ──────────────────────────────────────────────── */
+.blog-section {
+  padding: 64px 0;
+}
+.blog-section--alt {
+  background: var(--cream-d);
+}
+.blog-section-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin: 0 0 8px;
+}
+.blog-section-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 40px;
+  line-height: 1.25;
+}
+
+/* ── No-results message ──────────────────────────────────────────────── */
+.blog-no-results {
+  display: none;
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 17px;
+  grid-column: 1 / -1;
+}
+.blog-no-results.visible {
+  display: block;
+}
+
+/* ── Featured Grid (2×2) ─────────────────────────────────────────────── */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 768px) {
+  .featured-grid { grid-template-columns: 1fr; }
+}
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.14);
+}
+.featured-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: var(--cream-d);
+}
+.featured-card__body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.featured-card__badge {
+  display: inline-block;
+  padding: 3px 12px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+.featured-card__title {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.featured-card__excerpt {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 16px;
+  line-height: 1.6;
+  flex: 1;
+}
+.featured-card__link {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: auto;
+}
+
+/* ── Article Grid (3-col) ────────────────────────────────────────────── */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 960px) {
+  .article-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .article-grid { grid-template-columns: 1fr; }
+}
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+.article-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: var(--cream-d);
+}
+.article-card__body {
+  padding: 18px 18px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.article-card__badge {
+  display: inline-block;
+  padding: 2px 10px;
+  background: rgba(197,157,95,0.15);
+  color: var(--gold);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  border: 1px solid rgba(197,157,95,0.35);
+}
+.article-card__title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+.article-card__excerpt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 14px;
+  line-height: 1.55;
+  flex: 1;
+}
+.article-card__link {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: auto;
+}
+
+/* ── Article count ─────────────────────────────────────────────────── */
+#article-count {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ── Individual Article Page ─────────────────────────────────────────── */
+.article-page-wrapper {
+  background: var(--cream);
+  min-height: 60vh;
+  padding: 48px 0 80px;
+}
+.article-page-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.article-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  margin-bottom: 18px;
+  transition: gap 0.2s;
+}
+.article-back-link:hover { gap: 10px; }
+.article-breadcrumb {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.article-breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.article-breadcrumb a:hover { color: var(--navy); text-decoration: underline; }
+.article-breadcrumb span { color: var(--muted); }
+.article-hero-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 32px;
+  display: block;
+  box-shadow: var(--shadow);
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.article-meta__badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.article-meta__date {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--muted);
+}
+.article-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0 0 32px;
+}
+.article-body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text);
+  max-width: 760px;
+}
+.article-body h2 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 2em 0 0.6em;
+  line-height: 1.3;
+}
+.article-body h3 {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 1.6em 0 0.5em;
+}
+.article-body h4 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 1.4em 0 0.4em;
+}
+.article-body p {
+  margin: 0 0 1.2em;
+}
+.article-body ul, .article-body ol {
+  margin: 0 0 1.2em 1.5em;
+}
+.article-body li {
+  margin-bottom: 0.4em;
+}
+.article-body strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+.article-body a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+.article-body a:hover {
+  color: var(--navy);
+}
+.article-body img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+.article-divider {
+  border: none;
+  border-top: 2px solid var(--cream-d);
+  margin: 48px 0;
+}
+.article-cta-box {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+.article-cta-box h3 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #fff;
+}
+.article-cta-box p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+.article-cta-box .btn-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.article-cta-box .btn-cta:hover {
+  background: #b8883e;
+  transform: translateY(-2px);
+}
+
+/* ── Blog Hero (learn-more page) ─────────────────────────────────────── */
+.blog-hero {
+  background: var(--navy);
+  padding: 72px 0 60px;
+  text-align: center;
+}
+.blog-hero__label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin: 0 0 12px;
+}
+.blog-hero__title {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+.blog-hero__subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: rgba(255,255,255,0.78);
+  margin: 0;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="header__top">
+      <div class="container header__top-inner">
+        <div class="header__top-info">
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <a href="https://maps.google.com/?q=103+Saint+Thomas+Street+Lafayette+LA+70506" target="_blank" rel="noopener noreferrer">103 Saint Thomas Street, Lafayette, LA 70506</a>
+          </span>
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:aci@acihearing.com">aci@acihearing.com</a>
+          </span>
+        </div>
+        <span>Mon–Thu 8am–4:30pm | Fri 8am–3pm</span>
+      </div>
+    </div>
+    <div class="header__main">
+      <div class="container header__main-inner">
+        <a href="./index.html" class="header__logo" aria-label="ACI Hearing Center Home">
+          <img src="./assets/logo.png" alt="ACI Hearing Center logo" width="180" height="50">
+        </a>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <div class="nav__item">
+            <a href="./index.html" class="nav__link">Home</a>
+          </div>
+          <div class="nav__item">
+            <a href="./about.html" class="nav__link" aria-haspopup="true">About <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav__dropdown">
+              <a href="./about.html">Our Story</a>
+              <a href="./team.html">Meet Our Team</a>
+            </div>
+          </div>
+          <div class="nav__item">
+            <a href="./services.html" class="nav__link" aria-haspopup="true">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav__dropdown">
+              <a href="./hearing-tests.html">Hearing Tests</a>
+              <a href="./hearing-aids.html">Hearing Aids</a>
+              <a href="./cochlear-implants.html">Cochlear Implants</a>
+              <a href="./tinnitus.html">Tinnitus Management</a>
+              <a href="./balance-testing.html">Balance Testing</a>
+              <a href="./hearing-repair.html">Hearing Repair</a>
+              <a href="./hearing-protection.html">Hearing Protection</a>
+              <a href="./services.html">All Services</a>
+            </div>
+          </div>
+          <div class="nav__item">
+            <a href="./reviews.html" class="nav__link">Reviews</a>
+          </div>
+          <div class="nav__item">
+            <a href="./learn-more.html" class="nav__link nav__link--active">Learn More</a>
+          </div>
+          <div class="nav__item">
+            <a href="./contact.html" class="nav__link">Contact</a>
+          </div>
+        </nav>
+
+        <div class="header__cta">
+          <a href="tel:3372239448" class="header__phone header__phone--desktop" aria-label="Call 337-223-9448">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            337-223-9448
+          </a>
+          <a href="tel:3372239448" class="btn btn--primary btn--sm">Call or Text Us</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BLOG HERO -->
+    <section class="blog-hero" aria-label="Page hero">
+      <div class="container">
+        <p class="blog-hero__label">Resources &amp; Articles</p>
+        <h1 class="blog-hero__title">Learn More About Hearing Health</h1>
+        <p class="blog-hero__subtitle">Stay informed with articles from hearing care experts.</p>
+      </div>
+    </section>
+
+    <!-- SEARCH + FILTER BAR -->
+    <div class="blog-search-bar" id="blog-search-bar" role="search">
+      <div class="container">
+        <div class="blog-search-input-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" class="blog-search-input" id="blog-search" placeholder="Search articles..." aria-label="Search articles">
+        </div>
+        <div class="category-pills" role="group" aria-label="Filter by category">
+          <button class="category-pill active" data-cat="All">All</button>
+          <button class="category-pill" data-cat="Hearing Loss">Hearing Loss</button>
+          <button class="category-pill" data-cat="Hearing Aids">Hearing Aids</button>
+          <button class="category-pill" data-cat="Hearing Tests">Hearing Tests</button>
+          <button class="category-pill" data-cat="Tinnitus">Tinnitus</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED ARTICLES -->
+    <section class="blog-section" id="featured-articles" aria-label="Featured articles">
+      <div class="container">
+        <p class="blog-section-label">Editor's Picks</p>
+        <h2 class="blog-section-title">Featured Articles</h2>
+        <div class="featured-grid" id="featured-grid">
+        <a class="featured-card" href="./articles/tinnitus-the-invisible-condition-with-a-big-impact.html" data-category="Tinnitus" data-title="tinnitus: the invisible condition with a huge impact" data-excerpt="while tinnitus might be very common, it can also have a huge impact on your quality of life. luckily, there are treatment options for this invisible condition.">
+          <img class="featured-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/11/tinnitus_the_invisible_condition_with_a_big_impact_gettyimages-1317937562.jpg" alt="Tinnitus: The Invisible Condition with a Huge Impact" loading="lazy">
+          <div class="featured-card__body">
+            <span class="featured-card__badge">Tinnitus</span>
+            <h3 class="featured-card__title">Tinnitus: The Invisible Condition with a Huge Impact</h3>
+            <p class="featured-card__excerpt">While tinnitus might be very common, it can also have a huge impact on your quality of life. Luckily, there are treatment options for this invisible condition.</p>
+            <span class="featured-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="featured-card" href="./articles/hearing-aids-relieve-tinnitus-symptoms.html" data-category="Tinnitus" data-title="can tinnitus symptoms be relieved by using hearing aids?" data-excerpt="tinnitus relief may be closer than you think. learn how hearing aids can help reduce symptoms.">
+          <img class="featured-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/can_hearing_aids_relieve_tinnitus_symptoms_gettyimages-1807508696.jpg" alt="Can Tinnitus Symptoms be Relieved by Using Hearing Aids?" loading="lazy">
+          <div class="featured-card__body">
+            <span class="featured-card__badge">Tinnitus</span>
+            <h3 class="featured-card__title">Can Tinnitus Symptoms be Relieved by Using Hearing Aids?</h3>
+            <p class="featured-card__excerpt">Tinnitus relief may be closer than you think. Learn how hearing aids can help reduce symptoms.</p>
+            <span class="featured-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="featured-card" href="./articles/8-signs-hearing-failing.html" data-category="Hearing Loss" data-title="8 discrete indications your hearing is faltering" data-excerpt="hearing loss can be sneaky. if you are experiencing any of these 8 hearing loss signs, schedule a hearing test today!">
+          <img class="featured-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/8_subtle_signs_your_hearing_is_failing_gettyimages-909239414.jpg" alt="8 Discrete Indications Your Hearing is Faltering" loading="lazy">
+          <div class="featured-card__body">
+            <span class="featured-card__badge">Hearing Loss</span>
+            <h3 class="featured-card__title">8 Discrete Indications Your Hearing is Faltering</h3>
+            <p class="featured-card__excerpt">Hearing loss can be sneaky. If you are experiencing any of these 8 hearing loss signs, schedule a hearing test today!</p>
+            <span class="featured-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="featured-card" href="./articles/can-hearing-loss-lead-to-memory-problems.html" data-category="Hearing Loss" data-title="can hearing loss cause to memory problems?" data-excerpt="discover how social withdrawal, brain strain, and lack of sound input due to hearing loss can lead to memory problems.">
+          <img class="featured-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/04/shutterstock_2383658359.jpg" alt="Can Hearing Loss Cause to Memory Problems?" loading="lazy">
+          <div class="featured-card__body">
+            <span class="featured-card__badge">Hearing Loss</span>
+            <h3 class="featured-card__title">Can Hearing Loss Cause to Memory Problems?</h3>
+            <p class="featured-card__excerpt">Discover how social withdrawal, brain strain, and lack of sound input due to hearing loss can lead to memory problems.</p>
+            <span class="featured-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL ARTICLES -->
+    <section class="blog-section blog-section--alt" id="all-articles" aria-label="All articles">
+      <div class="container">
+        <h2 class="blog-section-title">All Articles <span id="article-count">(149 articles)</span></h2>
+        <div class="article-grid" id="article-grid">
+        <a class="article-card" href="./articles/is-tinnitus-always-part-of-aging.html" data-category="Tinnitus" data-title="ear buzzing and the elderly: distinguishing age-related changes from other factors" data-excerpt="discover if tinnitus is an unavoidable part of aging. learn the causes of ear ringing in seniors and explore effective management…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/06/shutterstock_2177670419.jpg" alt="Ear Buzzing and the Elderly: Distinguishing Age-Related Changes from Other Factors" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Ear Buzzing and the Elderly: Distinguishing Age-Related Changes from Other Factors</span>
+            <p class="article-card__excerpt">Discover if tinnitus is an unavoidable part of aging. Learn the causes of ear ringing in seniors and explore effective management…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-prevent-tinnitus-from-worsening-while-flying.html" data-category="Tinnitus" data-title="how to prevent tinnitus from worsening while flying" data-excerpt="flying with tinnitus? our tips for managing ear discomfort during flights can help you travel more comfortably.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_2435663991.jpg" alt="How to Prevent Tinnitus from Worsening While Flying" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">How to Prevent Tinnitus from Worsening While Flying</span>
+            <p class="article-card__excerpt">Flying with tinnitus? Our tips for managing ear discomfort during flights can help you travel more comfortably.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-aids-relieve-tinnitus-symptoms.html" data-category="Tinnitus" data-title="can tinnitus symptoms be relieved by using hearing aids?" data-excerpt="tinnitus relief may be closer than you think. learn how hearing aids can help reduce symptoms.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/can_hearing_aids_relieve_tinnitus_symptoms_gettyimages-1807508696.jpg" alt="Can Tinnitus Symptoms be Relieved by Using Hearing Aids?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Can Tinnitus Symptoms be Relieved by Using Hearing Aids?</span>
+            <p class="article-card__excerpt">Tinnitus relief may be closer than you think. Learn how hearing aids can help reduce symptoms.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/tinnitus-more-than-just-a-ringing-in-the-ears.html" data-category="Tinnitus" data-title="ringing in the ears isn't the only facet of tinnitus" data-excerpt="tinnitus usually presents as a ringing in the ears. for most, tinnitus is temporary. for others, it can be a lifelong condition…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/08/tinnitus_more_than_just_a_ringing_in_the_ears_gettyimages-1465585529.jpg" alt="Ringing in the Ears Isn&#x27;t the Only Facet of Tinnitus" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Ringing in the Ears Isn't the Only Facet of Tinnitus</span>
+            <p class="article-card__excerpt">Tinnitus usually presents as a ringing in the ears. For most, tinnitus is temporary. For others, it can be a lifelong condition…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/tinnitus-stemming-from-environment.html" data-category="Tinnitus" data-title="is your tinnitus being caused by your environment?" data-excerpt="tinnitus symptoms can often be caused by environmental factors, such as loud noises. improving your environment can help you…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/05/is_your_tinnitus_stemming_from_your_environment_gettyimages-1325286146.jpg" alt="Is Your Tinnitus Being Caused by Your Environment?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Is Your Tinnitus Being Caused by Your Environment?</span>
+            <p class="article-card__excerpt">Tinnitus symptoms can often be caused by environmental factors, such as loud noises. Improving your environment can help you…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/tinnitus-the-invisible-condition-with-a-big-impact.html" data-category="Tinnitus" data-title="tinnitus: the invisible condition with a huge impact" data-excerpt="while tinnitus might be very common, it can also have a huge impact on your quality of life. luckily, there are treatment options…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/11/tinnitus_the_invisible_condition_with_a_big_impact_gettyimages-1317937562.jpg" alt="Tinnitus: The Invisible Condition with a Huge Impact" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Tinnitus: The Invisible Condition with a Huge Impact</span>
+            <p class="article-card__excerpt">While tinnitus might be very common, it can also have a huge impact on your quality of life. Luckily, there are treatment options…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/why-is-the-buzzing-in-my-ears-worse-at-night.html" data-category="Tinnitus" data-title="at night, the buzzing in my ears seems worse" data-excerpt="tinnitus symptoms can be worse at night, but why? and, what can you do about it?">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/08/why_is_the_buzzing_in_my_ears_worse_at_night_gettyimages-970067212.jpg" alt="At Night, the Buzzing in my Ears Seems Worse" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">At Night, the Buzzing in my Ears Seems Worse</span>
+            <p class="article-card__excerpt">Tinnitus symptoms can be worse at night, but why? And, what can you do about it?</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/concussions-tinnitus-what-connection.html" data-category="Tinnitus" data-title="concussions & tinnitus: what's the connection?" data-excerpt="concussions can cause a wide variety of symptoms, including that particular ringing in your ears known as tinnitus. thankfully,…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/concussions_tinnitus_whats_the_connection_gettyimages-1372342803.jpg" alt="Concussions &amp; Tinnitus: What&#x27;s the Connection?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Concussions & Tinnitus: What's the Connection?</span>
+            <p class="article-card__excerpt">Concussions can cause a wide variety of symptoms, including that particular ringing in your ears known as tinnitus. Thankfully,…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/late-night-bar-trips-tinnitus.html" data-category="Tinnitus" data-title="your tinnitus could be getting worse as a result of those late night trips to the bar" data-excerpt="alcohol has a surprisingly strong impact on your inner ear, which means there’s a very strong link between drinking alcohol and…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/03/those_late_night_bar_trips_could_be_contributing_to_your_tinnitus_gettyimages-515437190.jpg" alt="Your Tinnitus Could be Getting Worse As a Result of Those Late Night Trips to the Bar" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Tinnitus</span>
+            <span class="article-card__title">Your Tinnitus Could be Getting Worse As a Result of Those Late Night Trips to the Bar</span>
+            <p class="article-card__excerpt">Alcohol has a surprisingly strong impact on your inner ear, which means there’s a very strong link between drinking alcohol and…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-vs-earwax.html" data-category="Hearing Loss" data-title="is it earwax blockage or long-term auditory damage?" data-excerpt="muffled hearing? it might be earwax buildup, not permanent loss. learn the key differences in symptoms, onset, and why a…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2017/12/ear-wax.jpg" alt="Is It Earwax Blockage or Long-term Auditory Damage?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Is It Earwax Blockage or Long-term Auditory Damage?</span>
+            <p class="article-card__excerpt">Muffled hearing? It might be earwax buildup, not permanent loss. Learn the key differences in symptoms, onset, and why a…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/holiday-travel-tips-for-people-with-hearing-aids.html" data-category="Hearing Loss" data-title="essential holiday trip methods for individuals with hearing loss" data-excerpt="traveling this season? discover essential holiday travel tips for people with hearing loss to ensure a smooth, stress-free…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/12/Holiday-Fun.jpg" alt="Essential Holiday Trip Methods for Individuals with Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Essential Holiday Trip Methods for Individuals with Hearing Loss</span>
+            <p class="article-card__excerpt">Traveling this season? Discover essential holiday travel tips for people with hearing loss to ensure a smooth, stress-free…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/keep-your-ears-safe-in-cold-weather-winter-hearing-protection-tips-2.html" data-category="Hearing Loss" data-title="cold weather ear care: essential advice for winter protection" data-excerpt="prevent winter ear pain and irritation. learn how to protect your hearing from cold air, moisture, and congestion with these…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/12/Keep-Your-Ears-Safe-in-Cold-Weather.jpg" alt="Cold Weather Ear Care: Essential Advice for Winter Protection" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Cold Weather Ear Care: Essential Advice for Winter Protection</span>
+            <p class="article-card__excerpt">Prevent winter ear pain and irritation. Learn how to protect your hearing from cold air, moisture, and congestion with these…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/keep-your-ears-safe-in-cold-weather-winter-hearing-protection-tips.html" data-category="Hearing Loss" data-title="keep your ears healthy in cold weather: winter hearing protection tips" data-excerpt="prevent winter ear pain and irritation. learn how to protect your hearing from cold air, moisture, and congestion with these…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/12/Keep-Your-Ears-Safe-in-Cold-Weather.jpg" alt="Keep Your Ears Healthy in Cold Weather: Winter Hearing Protection Tips" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Keep Your Ears Healthy in Cold Weather: Winter Hearing Protection Tips</span>
+            <p class="article-card__excerpt">Prevent winter ear pain and irritation. Learn how to protect your hearing from cold air, moisture, and congestion with these…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-choose-the-right-level-of-hearing-protection.html" data-category="Hearing Loss" data-title="a guide to selecting your recommended hearing protection needs" data-excerpt="protecting your hearing starts with understanding the right level of protection! learn how to choose the best hearing protection.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/01/shutterstock_77814565.jpg" alt="A Guide to Selecting Your Recommended Hearing Protection Needs" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">A Guide to Selecting Your Recommended Hearing Protection Needs</span>
+            <p class="article-card__excerpt">Protecting your hearing starts with understanding the right level of protection! Learn how to choose the best hearing protection.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/should-you-bring-up-hearing-loss-at-thanksgiving.html" data-category="Hearing Loss" data-title="is thanksgiving the right time to discuss hearing loss?" data-excerpt="thanksgiving can be the perfect time to discuss hearing loss with loved ones. learn how to start the conversation in a warm,…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/11/shutterstock_1522365854.jpg" alt="Is Thanksgiving the Right Time to Discuss Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Is Thanksgiving the Right Time to Discuss Hearing Loss?</span>
+            <p class="article-card__excerpt">Thanksgiving can be the perfect time to discuss hearing loss with loved ones. Learn how to start the conversation in a warm,…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/understanding-hidden-hearing-loss.html" data-category="Hearing Loss" data-title="hearing loss can sometimes be difficult to detect: find out why" data-excerpt="struggling to hear in noisy places despite a normal hearing test? learn about hidden hearing loss and why it often goes…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/06/shutterstock_476736802.jpg" alt="Hearing Loss Can Sometimes be Difficult to Detect: Find Out Why" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Loss Can Sometimes be Difficult to Detect: Find Out Why</span>
+            <p class="article-card__excerpt">Struggling to hear in noisy places despite a normal hearing test? Learn about hidden hearing loss and why it often goes…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/8-tips-for-national-protect-your-hearing-month.html" data-category="Hearing Loss" data-title="8 tips for national protect your hearing month" data-excerpt="from lawnmowers to headphones, it's important to know how to protect your hearing. learn simple ways to safeguard your ears.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2024/09/shutterstock_2506244151-scaled.jpg" alt="8 Tips for National Protect Your Hearing Month" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">8 Tips for National Protect Your Hearing Month</span>
+            <p class="article-card__excerpt">From lawnmowers to headphones, it's important to know how to protect your hearing. Learn simple ways to safeguard your ears.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/why-is-it-harder-to-hear-womens-and-childrens-voices.html" data-category="Hearing Loss" data-title="why is it harder to hear women's and children's voices?" data-excerpt="find out why higher-pitched voices can be more difficult to hear and explore treatment options for high-frequency hearing loss.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_1504136819.jpg" alt="Why Is It Harder to Hear Women&#x27;s and Children&#x27;s Voices?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Why Is It Harder to Hear Women's and Children's Voices?</span>
+            <p class="article-card__excerpt">Find out why higher-pitched voices can be more difficult to hear and explore treatment options for high-frequency hearing loss.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/enjoy-the-sounds-of-autumn-how-to-protect-your-hearing-this-fall.html" data-category="Hearing Loss" data-title="delight in the sounds of fall: how to protect your hearing this fall" data-excerpt="hearing loss can greatly impact your ability to enjoy your favorite season. discover how to protect your hearing all season long…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2021/09/shutterstock_2138266945.jpg" alt="Delight in the Sounds of Fall: How to Protect Your Hearing This Fall" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Delight in the Sounds of Fall: How to Protect Your Hearing This Fall</span>
+            <p class="article-card__excerpt">Hearing loss can greatly impact your ability to enjoy your favorite season. Discover how to protect your hearing all season long…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/can-hearing-loss-lead-to-memory-problems.html" data-category="Hearing Loss" data-title="can hearing loss cause to memory problems?" data-excerpt="discover how social withdrawal, brain strain, and lack of sound input due to hearing loss can lead to memory problems.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/04/shutterstock_2383658359.jpg" alt="Can Hearing Loss Cause to Memory Problems?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Can Hearing Loss Cause to Memory Problems?</span>
+            <p class="article-card__excerpt">Discover how social withdrawal, brain strain, and lack of sound input due to hearing loss can lead to memory problems.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/6-reasons-to-have-regular-hearing-tests.html" data-category="Hearing Loss" data-title="6 reasons to get your hearing assessed regularly" data-excerpt="most hearing loss is subtle at first, and you may not even notice a change. explore these six reasons why it's good to have your…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/08/hearing-testing-shutterstock_1374534260.jpg" alt="6 Reasons to Get Your Hearing Assessed Regularly" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">6 Reasons to Get Your Hearing Assessed Regularly</span>
+            <p class="article-card__excerpt">Most hearing loss is subtle at first, and you may not even notice a change. Explore these six reasons why it's good to have your…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-aids-vs-cochlear-implants-for-infants.html" data-category="Hearing Loss" data-title="how hearing aids and cochlear implants assist infants with hearing loss" data-excerpt="we take a look at how these two devices work and how to know which one is right for your child.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/08/infant-cochlear-shutterstock_1218500800.jpg" alt="How Hearing Aids and Cochlear Implants Assist Infants With Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How Hearing Aids and Cochlear Implants Assist Infants With Hearing Loss</span>
+            <p class="article-card__excerpt">We take a look at how these two devices work and how to know which one is right for your child.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/earwax-purpose-and-when-to-remove-it.html" data-category="Hearing Loss" data-title="is earwax bad? understanding its purpose-- and when to remove it" data-excerpt="is earwax bad? its purpose and when to remove it">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/08/earwax-shutterstock_1999004438.jpg" alt="Is Earwax Bad? Understanding its Purpose-- and When to Remove it" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Is Earwax Bad? Understanding its Purpose-- and When to Remove it</span>
+            <p class="article-card__excerpt">Is Earwax Bad? Its Purpose and When to Remove It</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-auditory-processing-disorder-differs-from-hearing-loss.html" data-category="Hearing Loss" data-title="recognizing the distinctions between an auditory processing disorder and hearing loss" data-excerpt="learn more about these two conditions and what the differences are for testing and diagnosis.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/08/auditory-processing-shutterstock_2523004757.jpg" alt="Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss</span>
+            <p class="article-card__excerpt">Learn more about these two conditions and what the differences are for testing and diagnosis.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/who-is-a-good-candidate-for-cochlear-implants.html" data-category="Hearing Loss" data-title="when is a cochlear implant the best choice for hearing loss?" data-excerpt="learn who benefits most from these small, surgically implanted devices designed for those who still struggle to understand…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/07/shutterstock_271108037-cochlear.jpg" alt="When is a Cochlear Implant the Best Choice for Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">When is a Cochlear Implant the Best Choice for Hearing Loss?</span>
+            <p class="article-card__excerpt">Learn who benefits most from these small, surgically implanted devices designed for those who still struggle to understand…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-hear-better-at-summer-bbqs-and-family-events.html" data-category="Hearing Loss" data-title="boosting your hearing during summer cookouts and family gatherings" data-excerpt="struggling to hear at summer gatherings? learn effective tips to manage hearing loss at summer bbqs and outdoor events.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/06/shutterstock_2180401937.jpg" alt="Boosting Your Hearing During Summer Cookouts and Family Gatherings" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Boosting Your Hearing During Summer Cookouts and Family Gatherings</span>
+            <p class="article-card__excerpt">Struggling to hear at summer gatherings? Learn effective tips to manage hearing loss at summer BBQs and outdoor events.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-high-blood-pressure-can-damage-your-hearing.html" data-category="Hearing Loss" data-title="the hidden link between hypertension and hearing loss" data-excerpt="find out how hypertension can lead to irreversible hearing loss and what steps you can take to lower your risk.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_2176804859.jpg" alt="The Hidden Link Between Hypertension and Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Hidden Link Between Hypertension and Hearing Loss</span>
+            <p class="article-card__excerpt">Find out how hypertension can lead to irreversible hearing loss and what steps you can take to lower your risk.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/the-connection-between-hearing-loss-and-reduced-lifespan.html" data-category="Hearing Loss" data-title="connecting hearing loss to a shorter life expectancy" data-excerpt="untreated hearing loss doesn’t just impact your hearing; it’s linked to depression, cognitive decline, and even a shorter life.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_2534278181.jpg" alt="Connecting Hearing loss to a Shorter Life Expectancy" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Connecting Hearing loss to a Shorter Life Expectancy</span>
+            <p class="article-card__excerpt">Untreated hearing loss doesn’t just impact your hearing; it’s linked to depression, cognitive decline, and even a shorter life.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-lifestyle-choices-impact-your-hearing-health.html" data-category="Hearing Loss" data-title="how lifestyle choices effect your hearing health" data-excerpt="discover how lifestyle choices like balanced nutrition, exercise, and ear protection can help maintain your hearing.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/04/shutterstock_2176705209.jpg" alt="How Lifestyle Choices Effect Your Hearing Health" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How Lifestyle Choices Effect Your Hearing Health</span>
+            <p class="article-card__excerpt">Discover how lifestyle choices like balanced nutrition, exercise, and ear protection can help maintain your hearing.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-driving-with-the-windows-open-affects-your-hearing-health.html" data-category="Hearing Loss" data-title="how driving with the windows open impacts your hearing health" data-excerpt="driving with the windows down can be dangerous for your hearing health. get the facts and explore ways to minimize your risk here.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2022/04/shutterstock_2333290493.jpg" alt="How Driving With the Windows Open Impacts Your Hearing Health" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How Driving With the Windows Open Impacts Your Hearing Health</span>
+            <p class="article-card__excerpt">Driving with the windows down can be dangerous for your hearing health. Get the facts and explore ways to minimize your risk here.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/am-i-at-risk-for-hearing-loss.html" data-category="Hearing Loss" data-title="am i at risk for hearing loss?" data-excerpt="should you pay more attention to your hearing health? discover if you may be at risk and how to keep yourself protected.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2022/04/shutterstock_1777224314.jpg" alt="Am I at Risk for Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Am I at Risk for Hearing Loss?</span>
+            <p class="article-card__excerpt">Should you pay more attention to your hearing health? Discover if you may be at risk and how to keep yourself protected.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-addressing-hearing-loss-can-combat-isolation.html" data-category="Hearing Loss" data-title="how managing hearing loss can combat isolation" data-excerpt="untreated hearing loss can lead to isolation and loneliness, impacting well-being and relationships. learn how effective…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2024/09/shutterstock_2198113833.jpg" alt="How Managing Hearing Loss Can Combat Isolation" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How Managing Hearing Loss Can Combat Isolation</span>
+            <p class="article-card__excerpt">Untreated hearing loss can lead to isolation and loneliness, impacting well-being and relationships. Learn how effective…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hidden-costs-of-untreated-hearing-loss-in-the-workplace.html" data-category="Hearing Loss" data-title="unseen costs of untreated hearing loss in the workplace" data-excerpt="untreated hearing loss may be impacting your earnings. learn about the hidden costs in the workplace and how to protect your…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2021/04/shutterstock_2158139473.jpg" alt="Unseen Costs of Untreated Hearing Loss in the Workplace" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Unseen Costs of Untreated Hearing Loss in the Workplace</span>
+            <p class="article-card__excerpt">Untreated hearing loss may be impacting your earnings. Learn about the hidden costs in the workplace and how to protect your…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/whats-safe-volume-level-for-music-and-headphones.html" data-category="Hearing Loss" data-title="what's a safe volume level for music and headphones?" data-excerpt="love listening to music? discover the safe volume levels to protect your hearing and enjoy your favorite tunes for years to come.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2023/02/shutterstock_731691103.jpg" alt="What&#x27;s a Safe Volume Level for Music and Headphones?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">What's a Safe Volume Level for Music and Headphones?</span>
+            <p class="article-card__excerpt">Love listening to music? Discover the safe volume levels to protect your hearing and enjoy your favorite tunes for years to come.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/the-impact-of-hearing-loss-on-first-responders.html" data-category="Hearing Loss" data-title="the impact of hearing loss on first responders" data-excerpt="learn the risks of noise exposure, impact of hearing loss, and how emts, police officers, and firefighters can protect their…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/02/shutterstock_132200300.jpg" alt="The Impact of Hearing Loss on First Responders" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Impact of Hearing Loss on First Responders</span>
+            <p class="article-card__excerpt">Learn the risks of noise exposure, impact of hearing loss, and how EMTs, police officers, and firefighters can protect their…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-prevent-hearing-loss-from-headphones.html" data-category="Hearing Loss" data-title="tips for preventing hearing damage caused by headphones" data-excerpt="learn about the risks of prolonged exposure to loud sounds and get practical tips to protect your ears and prevent hearing loss.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2024/09/shutterstock_2456364985.jpg" alt="Tips for Preventing Hearing Damage Caused by Headphones" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Tips for Preventing Hearing Damage Caused by Headphones</span>
+            <p class="article-card__excerpt">Learn about the risks of prolonged exposure to loud sounds and get practical tips to protect your ears and prevent hearing loss.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-untreated-hearing-loss-affects-mobility.html" data-category="Hearing Loss" data-title="the hidden link between unaddressed hearing troubles and decreased mobility" data-excerpt="addressing hearing loss is key to maintaining movement. discover how untreated hearing loss impacts mobility, balance, and…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/02/shutterstock_2485812673.jpg" alt="The Hidden Link Between Unaddressed Hearing Troubles and Decreased Mobility" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Hidden Link Between Unaddressed Hearing Troubles and Decreased Mobility</span>
+            <p class="article-card__excerpt">Addressing hearing loss is key to maintaining movement. Discover how untreated hearing loss impacts mobility, balance, and…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/is-hearing-loss-reversable.html" data-category="Hearing Loss" data-title="can hearing loss be reversed?" data-excerpt="is your hearing loss temporary or permanent? find answers and hope for a quieter future.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2025/01/is_hearing_loss_is_it_reversible_gettyimages-1807241515.jpg" alt="Can Hearing Loss Be Reversed?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Can Hearing Loss Be Reversed?</span>
+            <p class="article-card__excerpt">Is your hearing loss temporary or permanent? Find answers and hope for a quieter future.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/are-men-and-women-affected-differently-by-hearing-loss.html" data-category="Hearing Loss" data-title="do males and females experience hearing loss in different ways?" data-excerpt="explore how men and women differ when it comes to hearing loss and simple steps you can take to prevent it!">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/12/shutterstock_2178763259.jpg" alt="Do Males and Females Experience Hearing Loss in Different Ways?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Do Males and Females Experience Hearing Loss in Different Ways?</span>
+            <p class="article-card__excerpt">Explore how men and women differ when it comes to hearing loss and simple steps you can take to prevent it!</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/airpods-as-hearing-aids-what-to-know-before-relying-on-them.html" data-category="Hearing Loss" data-title="airpods as a substitute for hearing aids - crucial information to consider" data-excerpt="thinking about using airpods as hearing aids? check out our article to learn the pros and cons before making them your go-to…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/12/shutterstock_2518817111.jpg" alt="AirPods as a Substitute for Hearing Aids - Crucial Information to Consider" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">AirPods as a Substitute for Hearing Aids - Crucial Information to Consider</span>
+            <p class="article-card__excerpt">Thinking about using AirPods as hearing aids? Check out our article to learn the pros and cons before making them your go-to…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/understanding-the-link-between-heart-health-and-hearing.html" data-category="Hearing Loss" data-title="recognizing the link between heart health and wellness and hearing" data-excerpt="protecting your heart can also preserve your hearing. explore our comprehensive guide on how to keep both your heart and hearing…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/10/shutterstock_1498583417.jpg" alt="Recognizing the Link Between Heart Health And Wellness and Hearing" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Recognizing the Link Between Heart Health And Wellness and Hearing</span>
+            <p class="article-card__excerpt">Protecting your heart can also preserve your hearing. Explore our comprehensive guide on how to keep both your heart and hearing…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/top-3-reasons-your-hearing-protection-might-not-be-working.html" data-category="Hearing Loss" data-title="if your hearing protection isn't working, here are three possible reasons why" data-excerpt="mistakes like using the wrong type of earplugs or skipping maintenance can put your ears at risk. learn how to avoid these common…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/12/shutterstock_1917249992.jpg" alt="If Your Hearing Protection Isn&#x27;t Working, Here Are Three Possible Reasons Why" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">If Your Hearing Protection Isn't Working, Here Are Three Possible Reasons Why</span>
+            <p class="article-card__excerpt">Mistakes like using the wrong type of earplugs or skipping maintenance can put your ears at risk. Learn how to avoid these common…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-stay-connected-during-the-holidays-with-hearing-loss.html" data-category="Hearing Loss" data-title="how to remain connected during the holidays" data-excerpt="struggling with hearing loss? learn how to stay fully present and enjoy every festive moment with these helpful tips.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/12/shutterstock_341516441.jpg" alt="How to Remain Connected During the Holidays" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How to Remain Connected During the Holidays</span>
+            <p class="article-card__excerpt">Struggling with hearing loss? Learn how to stay fully present and enjoy every festive moment with these helpful tips.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-address-hearing-loss-with-loved-ones-this-thanksgiving.html" data-category="Hearing Loss" data-title="how to discuss hearing loss with loved ones this thanksgiving" data-excerpt="talking about hearing loss with family during thanksgiving may feel daunting, but it could be a life-changing conversation.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/11/shutterstock_2063521901.jpg" alt="How to Discuss Hearing Loss With Loved Ones This Thanksgiving" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How to Discuss Hearing Loss With Loved Ones This Thanksgiving</span>
+            <p class="article-card__excerpt">Talking about hearing loss with family during Thanksgiving may feel daunting, but it could be a life-changing conversation.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/can-hearing-loss-make-you-feel-tired.html" data-category="Hearing Loss" data-title="can exhaustion be the outcome of hearing loss" data-excerpt="hearing loss can have many easy-to-miss symptoms, including feelings of exhaustion and fatigue. treating your hearing loss can…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/11/can_hearing_loss_make_you_feel_tired_gettyimages-1678772652.jpg" alt="Can Exhaustion be the Outcome of Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Can Exhaustion be the Outcome of Hearing Loss</span>
+            <p class="article-card__excerpt">Hearing loss can have many easy-to-miss symptoms, including feelings of exhaustion and fatigue. Treating your hearing loss can…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-anxiety-impacts-hearing-loss-and-ways-to-overcome-it.html" data-category="Hearing Loss" data-title="the impact of stress on hearing loss and how to deal with it" data-excerpt="hearing loss can be daunting, but there are ways to manage it effectively. discover how to confront your fears and find support.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/10/shutterstock_2036393342.jpg" alt="The Impact of Stress on Hearing Loss and How to Deal With It" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Impact of Stress on Hearing Loss and How to Deal With It</span>
+            <p class="article-card__excerpt">Hearing loss can be daunting, but there are ways to manage it effectively. Discover how to confront your fears and find support.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/what-does-hearing-loss-sound-like.html" data-category="Hearing Loss" data-title="what does hearing loss sound like?" data-excerpt="hearing loss can manifest in ways you might not expect. explore the sounds of hearing loss and how to address them.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/09/shutterstock_2151788569.jpg" alt="What Does Hearing Loss Sound Like?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">What Does Hearing Loss Sound Like?</span>
+            <p class="article-card__excerpt">Hearing loss can manifest in ways you might not expect. Explore the sounds of hearing loss and how to address them.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/breaking-the-silence-on-hearing-loss-in-music-careers.html" data-category="Hearing Loss" data-title="hearing loss in musicians - breaking the silence" data-excerpt="here's why hearing loss shouldn't be seen as just "part of the job" and learn about the advancements in hearing protection.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/09/shutterstock_2266512963.jpg" alt="Hearing Loss in Musicians - Breaking the Silence" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Loss in Musicians - Breaking the Silence</span>
+            <p class="article-card__excerpt">Here's why hearing loss shouldn't be seen as just "part of the job" and learn about the advancements in hearing protection.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/safe-practices-for-using-earplugs-at-night.html" data-category="Hearing Loss" data-title="safe ways to use earplugs while you sleep" data-excerpt="earplugs are a great option, but they need to be used properly to avoid issues like infections. learn how to use earplugs safely…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/08/shutterstock_2205029063.jpg" alt="Safe Ways to Use Earplugs While You Sleep" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Safe Ways to Use Earplugs While You Sleep</span>
+            <p class="article-card__excerpt">Earplugs are a great option, but they need to be used properly to avoid issues like infections. Learn how to use earplugs safely…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/recognizing-and-addressing-hearing-loss-in-aging-parents.html" data-category="Hearing Loss" data-title="recognizing and treating hearing loss in aging parents" data-excerpt="if your loved one struggles to hear in conversations or avoids social situations, it might be time to seek help.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/08/shutterstock_2143009265.jpg" alt="Recognizing and Treating Hearing Loss in Aging Parents" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Recognizing and Treating Hearing Loss in Aging Parents</span>
+            <p class="article-card__excerpt">If your loved one struggles to hear in conversations or avoids social situations, it might be time to seek help.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/protecting-your-hearing-a-preventable-challenge.html" data-category="Hearing Loss" data-title="hearing loss is largely preventable" data-excerpt="with a few simple steps, you can protect your hearing and reduce your risk of developing hearing loss. explore tips that make a…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/08/shutterstock_2139205069.jpg" alt="Hearing Loss is Largely Preventable" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Loss is Largely Preventable</span>
+            <p class="article-card__excerpt">With a few simple steps, you can protect your hearing and reduce your risk of developing hearing loss. Explore tips that make a…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-and-the-zinc-link.html" data-category="Hearing Loss" data-title="the link between hearing damage and zinc intake" data-excerpt="new research suggests a strong link between free floating zinc and noise-induced hearing loss, a window into the cause of…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/08/hearing_loss_and_the_zinc_link_gettyimages-1289940519.jpg" alt="The Link Between Hearing Damage and Zinc Intake" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Link Between Hearing Damage and Zinc Intake</span>
+            <p class="article-card__excerpt">New research suggests a strong link between free floating zinc and noise-induced hearing loss, a window into the cause of…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/relief-and-prevention-tips-for-itchy-ears.html" data-category="Hearing Loss" data-title="relief and prevention tips for itchy ears" data-excerpt="discover how to safely relieve ear itch, how to prevent it, and when to see a professional with our guide.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/07/shutterstock_1250839483.jpg" alt="Relief and Prevention Tips for Itchy Ears" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Relief and Prevention Tips for Itchy Ears</span>
+            <p class="article-card__excerpt">Discover how to safely relieve ear itch, how to prevent it, and when to see a professional with our guide.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/understanding-the-link-between-nutrition-and-hearing-health.html" data-category="Hearing Loss" data-title="hearing health and nutrition - what's the link?" data-excerpt="the negative effect poor nutrition has on mental and physical health is well known, but did you know it could also impact hearing…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/06/shutterstock_1492306919.jpg" alt="Hearing Health and Nutrition - What&#x27;s the Link?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Health and Nutrition - What's the Link?</span>
+            <p class="article-card__excerpt">The negative effect poor nutrition has on mental and physical health is well known, but did you know it could also impact hearing…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/prevent-noise-induced-hearing-loss.html" data-category="Hearing Loss" data-title="tactics to avoid noise-related hearing loss" data-excerpt="noise-induced hearing loss cannot be cured–though it can be managed. in many cases, prevention is the best strategy to protect…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/06/strategies_to_prevent_noise-induced_hearing_loss_gettymages-922363424.jpg" alt="Tactics to Avoid Noise-Related Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Tactics to Avoid Noise-Related Hearing Loss</span>
+            <p class="article-card__excerpt">Noise-induced hearing loss cannot be cured–though it can be managed. In many cases, prevention is the best strategy to protect…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-make-summer-social-events-easier-with-hearing-loss.html" data-category="Hearing Loss" data-title="even with hearing loss, you can still enjoy summer social gatherings" data-excerpt="is hearing loss making summer social events less enjoyable? don't suffer in silence! get back to summer fun with our guide.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2022/03/shutterstock_2277712017.jpg" alt="Even With Hearing Loss, You Can Still Enjoy Summer Social Gatherings" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Even With Hearing Loss, You Can Still Enjoy Summer Social Gatherings</span>
+            <p class="article-card__excerpt">Is hearing loss making summer social events less enjoyable? Don't suffer in silence! Get back to summer fun with our guide.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hypertension-and-hearing-loss.html" data-category="Hearing Loss" data-title="hypertension and hearing loss" data-excerpt="hypertension can lead to a wide range of health risks, including hearing loss. in some cases, treating your high blood pressure…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/05/hypertension_and_hearing_loss_gettyimages-1491274818.jpg" alt="Hypertension and Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hypertension and Hearing Loss</span>
+            <p class="article-card__excerpt">Hypertension can lead to a wide range of health risks, including hearing loss. In some cases, treating your high blood pressure…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-be-making-you-forgetful.html" data-category="Hearing Loss" data-title="is your forgetfulness resulting from hearing loss?" data-excerpt="hearing loss can impact many aspects of your life, including your memory. in many cases, treating your hearing loss can end up…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/05/could_hearing_loss_be_making_you_forgetful_gettyimages-1049512658.jpg" alt="Is Your Forgetfulness Resulting From Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Is Your Forgetfulness Resulting From Hearing Loss?</span>
+            <p class="article-card__excerpt">Hearing loss can impact many aspects of your life, including your memory. In many cases, treating your hearing loss can end up…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/delaying-hearing-loss-treatment-is-a-mistake.html" data-category="Hearing Loss" data-title="why putting off hearing loss treatment is a mistake" data-excerpt="if you’ve been delaying a hearing screening or hearing loss treatment, you may be putting more than just your auditory health in…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/03/shutterstock_1997527172.jpg" alt="Why Putting Off Hearing Loss Treatment is a Mistake" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Why Putting Off Hearing Loss Treatment is a Mistake</span>
+            <p class="article-card__excerpt">If you’ve been delaying a hearing screening or hearing loss treatment, you may be putting more than just your auditory health in…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/safeguarding-your-sense-4-practices-to-protect-your-ears.html" data-category="Hearing Loss" data-title="protect your hearing with these 4 tactics" data-excerpt="the health of our ears are essential in navigating the sensory landscape of our lives. check out our guide to keep your ears safe…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2022/04/shutterstock_2250862191.jpg" alt="Protect Your Hearing With These 4 Tactics" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Protect Your Hearing With These 4 Tactics</span>
+            <p class="article-card__excerpt">The health of our ears are essential in navigating the sensory landscape of our lives. Check out our guide to keep your ears safe…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/what-causes-earwax-accumulation.html" data-category="Hearing Loss" data-title="why does earwax accumulate?" data-excerpt="did you know earwax is an essential part of healthy hearing? discover what causes it, why it's necessary, and when it becomes a…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/02/shutterstock_1881730003.jpg" alt="Why Does Earwax Accumulate?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Why Does Earwax Accumulate?</span>
+            <p class="article-card__excerpt">Did you know earwax is an essential part of healthy hearing? Discover what causes it, why it's necessary, and when it becomes a…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/love-hearing-loss-communication-strategies-for-couples.html" data-category="Hearing Loss" data-title="love and hearing loss: communication strategies for couples" data-excerpt="communicating with your partner when you have hearing loss can be a challenge. hearing specialists recommend a few different…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/04/love_hearing_loss_communication_strategies_for_couples_gettyimages-912450530.jpg" alt="Love and Hearing Loss: Communication Strategies for Couples" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Love and Hearing Loss: Communication Strategies for Couples</span>
+            <p class="article-card__excerpt">Communicating with your partner when you have hearing loss can be a challenge. Hearing specialists recommend a few different…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/normal-hearing-yet-struggling-to-follow-conversations.html" data-category="Hearing Loss" data-title="“normal” hearing, yet fighting to follow conversations" data-excerpt="although your hearing is "normal", it doesn’t mean you don't have hearing loss that should be addressed. discover signs you…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/03/shutterstock_2117865179.jpg" alt="“Normal” Hearing, Yet Fighting to Follow Conversations" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">“Normal” Hearing, Yet Fighting to Follow Conversations</span>
+            <p class="article-card__excerpt">Although your hearing is "normal", it doesn’t mean you don't have hearing loss that should be addressed. Discover signs you…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/medications-associated-with-hearing-loss.html" data-category="Hearing Loss" data-title="hearing loss can be triggered by these prevalent medications" data-excerpt="experiencing hearing loss after taking medication? you're not alone. these medications can affect hearing and what to do if…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/03/medications_associated_with_hearing_loss_gettyimages-1434767625.jpg" alt="Hearing Loss Can be Triggered by These Prevalent Medications" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Loss Can be Triggered by These Prevalent Medications</span>
+            <p class="article-card__excerpt">Experiencing hearing loss after taking medication? You're not alone. These medications can affect hearing and what to do if…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/does-hearing-loss-get-worse-as-you-age.html" data-category="Hearing Loss" data-title="as we get older, does our hearing loss worsen?" data-excerpt="learn about age-related hearing loss, common symptoms, and the importance of treating this common occurrence here.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/02/does_hearing_loss_get_worse_as_you_age_gettyimages-1348876709.jpg" alt="As We Get Older, Does Our Hearing Loss Worsen?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">As We Get Older, Does Our Hearing Loss Worsen?</span>
+            <p class="article-card__excerpt">Learn about age-related hearing loss, common symptoms, and the importance of treating this common occurrence here.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/does-insomnia-affect-hearing-loss-2.html" data-category="Hearing Loss" data-title="does insomnia impact hearing loss?" data-excerpt="while they may not have a cause and effect relationship, insomnia and hearing loss can be related–which means good sleep can be…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/02/does_insomnia_affect_hearing_loss_gettyimages-1496612562.jpg" alt="Does Insomnia Impact Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Does Insomnia Impact Hearing Loss?</span>
+            <p class="article-card__excerpt">While they may not have a cause and effect relationship, insomnia and hearing loss can be related–which means good sleep can be…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/does-insomnia-affect-hearing-loss.html" data-category="Hearing Loss" data-title="does insomnia impact hearing loss?" data-excerpt="while they may not have a cause and effect relationship, insomnia and hearing loss can be related–which means good sleep can be…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/02/does_insomnia_affect_hearing_loss_gettyimages-1496612562.jpg" alt="Does Insomnia Impact Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Does Insomnia Impact Hearing Loss?</span>
+            <p class="article-card__excerpt">While they may not have a cause and effect relationship, insomnia and hearing loss can be related–which means good sleep can be…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-diabetes-increases-your-risk-of-hearing-loss.html" data-category="Hearing Loss" data-title="how diabetes increases your risk of hearing loss" data-excerpt="individuals with diabetes are more likely to have hearing loss. discover more about this connection and how to be proactive here.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/12/shutterstock_2300488795.jpg" alt="How Diabetes Increases Your Risk of Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How Diabetes Increases Your Risk of Hearing Loss</span>
+            <p class="article-card__excerpt">Individuals with diabetes are more likely to have hearing loss. Discover more about this connection and how to be proactive here.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/dangers-of-earwax-candling.html" data-category="Hearing Loss" data-title="the truth about ear candling" data-excerpt="ear candling is a method some people use to remove earwax from their ears, but this method is not recommended and may even be…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/01/the_dangers_of_earwax_candling_gettyimages-1487238515.jpg" alt="The Truth About Ear Candling" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Truth About Ear Candling</span>
+            <p class="article-card__excerpt">Ear candling is a method some people use to remove earwax from their ears, but this method is not recommended and may even be…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/3-ways-hearing-aids-can-malfunction-2.html" data-category="Hearing Loss" data-title="how to drive safely when you have hearing loss" data-excerpt="don't let hearing loss stop you from getting behind the wheel.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/12/your_guide_to_confident_driving_with_hearing_loss_gettyimages-1164689284.jpg" alt="How to Drive Safely When You Have Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How to Drive Safely When You Have Hearing Loss</span>
+            <p class="article-card__excerpt">Don't let hearing loss stop you from getting behind the wheel.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/dynamics-of-selective-hearing.html" data-category="Hearing Loss" data-title="the dynamics of selective hearing" data-excerpt="annoyed with your partner's selective hearing? it could be a sign of hearing loss.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/11/delving_into_the_dynamics_of_selective_hearing_gettyimages-1346123391.jpg" alt="The Dynamics of Selective Hearing" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Dynamics of Selective Hearing</span>
+            <p class="article-card__excerpt">Annoyed with your partner's selective hearing? It could be a sign of hearing loss.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-health-problems.html" data-category="Hearing Loss" data-title="4 ways hearing loss can impact your overall health" data-excerpt="your hearing is interconnected to your overall health. take a look at these conditions that are related.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/11/4_ways_hearing_loss_could_impact_your_overall_health_gettyimages-1435656750.jpg" alt="4 Ways Hearing Loss Can Impact Your Overall Health" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">4 Ways Hearing Loss Can Impact Your Overall Health</span>
+            <p class="article-card__excerpt">Your hearing is interconnected to your overall health. Take a look at these conditions that are related.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/earbuds-damaging-your-hearing.html" data-category="Hearing Loss" data-title="can your ears be damaged by earbuds?" data-excerpt="earbuds are everywhere. people use them to listen to music, take phone calls, or watch tv. but at high volumes, earbuds could…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/10/could_earbuds_be_damaging_your_hearing_gettyimages-1402004581.jpg" alt="Can Your Ears be Damaged by Earbuds?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Can Your Ears be Damaged by Earbuds?</span>
+            <p class="article-card__excerpt">Earbuds are everywhere. People use them to listen to music, take phone calls, or watch TV. But at high volumes, earbuds could…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/sudden-hearing-loss-act-fast-to-save-your-hearing.html" data-category="Hearing Loss" data-title="sudden hearing loss: act fast to save your hearing" data-excerpt="while most hearing loss symptoms progress slowly, sudden hearing loss is just the opposite. sometimes, symptoms can appear in a…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/09/sudden_hearing_loss_act_fast_to_save_your_hearing_gettyimages-1440717075.jpg" alt="Sudden Hearing Loss: Act Fast to Save Your Hearing" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Sudden Hearing Loss: Act Fast to Save Your Hearing</span>
+            <p class="article-card__excerpt">While most hearing loss symptoms progress slowly, sudden hearing loss is just the opposite. Sometimes, symptoms can appear in a…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/improve-cognitive-function.html" data-category="Hearing Loss" data-title="increase cognitive function using these 5 enjoyable activities" data-excerpt="these five simple activities can help you improve your cognitive function and sharpen your mind–especially if your hearing loss…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/09/improve_cognitive_function_with_these_5_enjoyable_activities_gettyimages-1402900183.jpg" alt="Increase Cognitive Function Using These 5 Enjoyable Activities" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Increase Cognitive Function Using These 5 Enjoyable Activities</span>
+            <p class="article-card__excerpt">These five simple activities can help you improve your cognitive function and sharpen your mind–especially if your hearing loss…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/cant-hear-well-at-work.html" data-category="Hearing Loss" data-title="can't hear very well at work? you may be missing more than you think" data-excerpt="how is untreated hearing loss really impacting your work as a whole? let's find out.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2021/04/cant_hear_well_at_work_you_may_be_missing_more_than_you_think_gettyimages-1278815593.jpg" alt="Can&#x27;t Hear Very Well at Work? You May be Missing More Than You Think" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Can't Hear Very Well at Work? You May be Missing More Than You Think</span>
+            <p class="article-card__excerpt">How is untreated hearing loss really impacting your work as a whole? Let's find out.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/three-simple-steps-to-limit-hearing-loss.html" data-category="Hearing Loss" data-title="minimizing hearing loss - three easy steps" data-excerpt="limit hearing loss - it's crucial for your health. protect your hearing with these 3 tips.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/09/three_simple_steps_to_limit_hearing_loss_gettyimages-1333268722.jpg" alt="Minimizing Hearing Loss - Three Easy Steps" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Minimizing Hearing Loss - Three Easy Steps</span>
+            <p class="article-card__excerpt">Limit hearing loss - it's crucial for your health. Protect your hearing with these 3 tips.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-complications-during-hopitalization.html" data-category="Hearing Loss" data-title="hearing loss can cause complications during hospitalization" data-excerpt="untreated hearing loss can lead to increased hospital admission and readmission rates. but there are some things you can do to…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/hearing_loss_can_lead_to_complications_during_hospitalization_gettyimages-1394761678.jpg" alt="Hearing Loss Can Cause Complications During Hospitalization" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Loss Can Cause Complications During Hospitalization</span>
+            <p class="article-card__excerpt">Untreated hearing loss can lead to increased hospital admission and readmission rates. But there are some things you can do to…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/8-signs-hearing-failing.html" data-category="Hearing Loss" data-title="8 discrete indications your hearing is faltering" data-excerpt="hearing loss can be sneaky. if you are experiencing any of these 8 hearing loss signs, schedule a hearing test today!">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/8_subtle_signs_your_hearing_is_failing_gettyimages-909239414.jpg" alt="8 Discrete Indications Your Hearing is Faltering" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">8 Discrete Indications Your Hearing is Faltering</span>
+            <p class="article-card__excerpt">Hearing loss can be sneaky. If you are experiencing any of these 8 hearing loss signs, schedule a hearing test today!</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/ways-keep-hearing-sharp.html" data-category="Hearing Loss" data-title="keep your hearing sharp with these three easy tips" data-excerpt="by following these tips, you can keep your hearing protected and enjoy the sounds of life!">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/06/3_simple_ways_to_keep_your_hearing_sharp_gettyimages-1081796266.jpg" alt="Keep Your Hearing Sharp With These Three Easy Tips" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Keep Your Hearing Sharp With These Three Easy Tips</span>
+            <p class="article-card__excerpt">By following these tips, you can keep your hearing protected and enjoy the sounds of life!</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/diplacusis-hear-things-in-stereo.html" data-category="Hearing Loss" data-title="diplacusis: when you hear things in stereo" data-excerpt="hearing differently out of each ear? you might have diplacusis.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/diplacusis_when_you_hear_things_in_stereo_gettyimages-1281210009.jpg" alt="Diplacusis: When You Hear Things in Stereo" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Diplacusis: When You Hear Things in Stereo</span>
+            <p class="article-card__excerpt">Hearing differently out of each ear? You might have diplacusis.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/protect-your-hearing-this-summer.html" data-category="Hearing Loss" data-title="this summer you can do some things to safeguard your hearing" data-excerpt="summer is a time for fun and relaxation, but it's also important to protect your hearing.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/simple_ways_to_protect_your_hearing_this_summer_gettyimages-1297382947.jpg" alt="This Summer You Can do Some Things to Safeguard Your Hearing" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">This Summer You Can do Some Things to Safeguard Your Hearing</span>
+            <p class="article-card__excerpt">Summer is a time for fun and relaxation, but it's also important to protect your hearing.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/ear-wax-accumulation-what-you-need-to-be-aware-of.html" data-category="Hearing Loss" data-title="what you need to understand about earwax buildup" data-excerpt="earwax buildup could be a silent threat to your hearing. what are the symptoms?">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/ear_wax_buildup_what_you_need_to_know_gettyimages-1394200358.jpg" alt="What You Need to Understand About Earwax Buildup" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">What You Need to Understand About Earwax Buildup</span>
+            <p class="article-card__excerpt">Earwax buildup could be a silent threat to your hearing. What are the symptoms?</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/technology-managing-hearing-loss.html" data-category="Hearing Loss" data-title="managing hearing loss with the help of modern technology" data-excerpt="when most people think about technology and hearing loss, they think about hearing aids. but hearing aids are just the beginning…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/04/the_role_of_technology_in_managing_hearing_loss_gettyimages-1246548447.jpg" alt="Managing Hearing Loss With the Help of Modern Technology" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Managing Hearing Loss With the Help of Modern Technology</span>
+            <p class="article-card__excerpt">When most people think about technology and hearing loss, they think about hearing aids. But hearing aids are just the beginning…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/audiobooks-important-part-auditory-training.html" data-category="Hearing Loss" data-title="how audiobooks can be an important part of auditory training" data-excerpt="audiobooks can entertain you and enrich your life. they can also help you train your ears–and they’ve become an important tool…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/03/how_audiobooks_can_be_an_important_part_of_auditory_training_gettyimages-1204459993.jpg" alt="How Audiobooks Can be an Important Part of Auditory Training" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">How Audiobooks Can be an Important Part of Auditory Training</span>
+            <p class="article-card__excerpt">Audiobooks can entertain you and enrich your life. They can also help you train your ears–and they’ve become an important tool…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/what-is-auditory-neuropathy.html" data-category="Hearing Loss" data-title="auditory neuropathy, what is it? - hinderliter hearing services" data-excerpt="auditory neuropathy is a hearing disorder that occurs when signals from the ear do not successfully reach the brain. treatment…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/03/what_is_auditory_neuropathy_gettyimages-1406124833.jpg" alt="Auditory Neuropathy, What is it? - Hinderliter Hearing Services" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Auditory Neuropathy, What is it? - Hinderliter Hearing Services</span>
+            <p class="article-card__excerpt">Auditory neuropathy is a hearing disorder that occurs when signals from the ear do not successfully reach the brain. Treatment…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/the-negative-effects-of-ignoring-hearing-loss.html" data-category="Hearing Loss" data-title="the negative effects of ignoring hearing loss" data-excerpt="ignoring hearing loss can affect your cognitive skills, mental health, and even your heart health. learn more.">
+          <img class="article-card__image" src="https://helpingmehear.com/host_images/the-negative-effects-of-ignoring-hearing-loss.jpg" alt="The Negative Effects of Ignoring Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">The Negative Effects of Ignoring Hearing Loss</span>
+            <p class="article-card__excerpt">Ignoring hearing loss can affect your cognitive skills, mental health, and even your heart health. Learn more.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/will-i-get-my-hearing-back-after-an-ear-infection.html" data-category="Hearing Loss" data-title="will i get my hearing back after an ear infection?" data-excerpt="ear infections can cause hearing loss. find out more about how otitis media affects hearing and whether it’s likely to come back…">
+          <img class="article-card__image" src="https://helpingmehear.com/host_images/will-I-get-my-hearing-back-after-an-ear-infection.jpg" alt="Will I Get My Hearing Back After an Ear Infection?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Will I Get My Hearing Back After an Ear Infection?</span>
+            <p class="article-card__excerpt">Ear infections can cause hearing loss. Find out more about how otitis media affects hearing and whether it’s likely to come back…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/exploring-hearing-aid-types.html" data-category="Hearing Aids" data-title="exploring and understanding each type of hearing aid" data-excerpt="compare today’s hearing aid styles, including invisible and bluetooth models. learn which technology best fits your degree of…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/12/shutterstock_2162829003-ypes-of-hearing-aids.jpg" alt="Exploring and Understanding Each Type of Hearing Aid" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Exploring and Understanding Each Type of Hearing Aid</span>
+            <p class="article-card__excerpt">Compare today’s hearing aid styles, including invisible and Bluetooth models. Learn which technology best fits your degree of…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/overcoming-stigma-with-modern-advancements-of-todays-hearing-aids.html" data-category="Hearing Aids" data-title="how modern hearing aid devices overcome negative attitudes toward hearing loss solutions" data-excerpt="discover how today’s advanced, discreet hearing aids empower you to live confidently, stay connected, and enjoy every moment to…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/10/shutterstock_2252891283.jpg" alt="How Modern Hearing Aid Devices Overcome Negative Attitudes Toward Hearing Loss Solutions" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How Modern Hearing Aid Devices Overcome Negative Attitudes Toward Hearing Loss Solutions</span>
+            <p class="article-card__excerpt">Discover how today’s advanced, discreet hearing aids empower you to live confidently, stay connected, and enjoy every moment to…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-bluetooth-hearing-aids-can-simplify-and-enrich-your-daily-life.html" data-category="Hearing Aids" data-title="the revolutionary impact of bluetooth hearing aids" data-excerpt="bluetooth hearing aids bring clarity, control, and effortless connection to every part of your day. get the details on how they…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/10/shutterstock_2168465703.jpg" alt="The Revolutionary Impact of Bluetooth Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">The Revolutionary Impact of Bluetooth Hearing Aids</span>
+            <p class="article-card__excerpt">Bluetooth hearing aids bring clarity, control, and effortless connection to every part of your day. Get the details on how they…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/why-hearing-aids-can-cause-headaches-and-how-to-fix-it.html" data-category="Hearing Aids" data-title="headaches from new hearing aids: causes and remedies" data-excerpt="experiencing headaches from your new hearing aids? check out our guide for tips on preventing and treating hearing aid-related…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2024/10/shutterstock_1129274345.jpg" alt="Headaches from New Hearing Aids: Causes and Remedies" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Headaches from New Hearing Aids: Causes and Remedies</span>
+            <p class="article-card__excerpt">Experiencing headaches from your new hearing aids? Check out our guide for tips on preventing and treating hearing aid-related…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk.html" data-category="Hearing Aids" data-title="using hearing aids sooner could drastically lessen the likelihood of dementia" data-excerpt="studies show early hearing aid use is linked to a reduced risk of dementia. learn why treating hearing loss promptly matters.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/10/shutterstock_1715832541.jpg" alt="Using Hearing Aids Sooner Could Drastically Lessen the Likelihood of Dementia" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Using Hearing Aids Sooner Could Drastically Lessen the Likelihood of Dementia</span>
+            <p class="article-card__excerpt">Studies show early hearing aid use is linked to a reduced risk of dementia. Learn why treating hearing loss promptly matters.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/what-are-bone-conduction-hearing-devices.html" data-category="Hearing Aids" data-title="bone conduction hearing devices - what are they?" data-excerpt="learn how this different kind of technology can offer better clarity and comfort for some people with hearing loss.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/07/shutterstock_2155327947-bone-conduction.jpg" alt="Bone Conduction Hearing Devices - What Are They?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Bone Conduction Hearing Devices - What Are They?</span>
+            <p class="article-card__excerpt">Learn how this different kind of technology can offer better clarity and comfort for some people with hearing loss.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/wearing-hearing-aids-while-exercising-and-sweating.html" data-category="Hearing Aids" data-title="can i use hearing aids while exercising and perspiring?" data-excerpt="hearing aids have come a long way from bulky, one-size-fits-all devices. see how they’re smarter, sleeker, and more connected…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/07/shutterstock_2418073439-exercising-Protect-Hearing-Aids-While-Exercising.jpg" alt="Can I Use Hearing Aids While Exercising And Perspiring?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Can I Use Hearing Aids While Exercising And Perspiring?</span>
+            <p class="article-card__excerpt">Hearing aids have come a long way from bulky, one-size-fits-all devices. See how they’re smarter, sleeker, and more connected…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/whats-new-in-2025-for-hearing-aid-technology.html" data-category="Hearing Aids" data-title="advancements in hearing aids: a 2025 update?" data-excerpt="hearing aids have come a long way from bulky, one-size-fits-all devices. see how they’re smarter, sleeker, and more connected…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/07/shutterstock_795152170-hearing-aid-advancements.jpg" alt="Advancements in Hearing Aids: A 2025 Update?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Advancements in Hearing Aids: A 2025 Update?</span>
+            <p class="article-card__excerpt">Hearing aids have come a long way from bulky, one-size-fits-all devices. See how they’re smarter, sleeker, and more connected…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-protect-your-hearing-aids-this-summer.html" data-category="Hearing Aids" data-title="summer hearing aid care: tips for safe and effective use" data-excerpt="read our guide for easy maintenance tips to protect your devices from heat, moisture, and dirt while enjoying your favorite…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/06/shutterstock_272970488.jpg" alt="Summer Hearing Aid Care: Tips for Safe and Effective Use" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Summer Hearing Aid Care: Tips for Safe and Effective Use</span>
+            <p class="article-card__excerpt">Read our guide for easy maintenance tips to protect your devices from heat, moisture, and dirt while enjoying your favorite…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-adjust-comfortably-to-your-new-hearing-aids.html" data-category="Hearing Aids" data-title="how to adapt comfortably to your new hearing aids" data-excerpt="make your hearing aid transition smooth with expert guidance on fit, sound adaptation, and tips for first-time users.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_2163179953-1.jpg" alt="How to Adapt Comfortably to Your New Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How to Adapt Comfortably to Your New Hearing Aids</span>
+            <p class="article-card__excerpt">Make your hearing aid transition smooth with expert guidance on fit, sound adaptation, and tips for first-time users.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-often-should-you-get-your-hearing-aids-professionally-cleaned.html" data-category="Hearing Aids" data-title="how often should you have your hearing aids professionally cleaned?" data-excerpt="even with at-home care, professional hearing aid maintenance is essential for optimal performance. discover why and when you…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/03/shutterstock_2091141574.jpg" alt="How Often Should You Have Your Hearing Aids Professionally Cleaned?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How Often Should You Have Your Hearing Aids Professionally Cleaned?</span>
+            <p class="article-card__excerpt">Even with at-home care, professional hearing aid maintenance is essential for optimal performance. Discover why and when you…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/essential-guide-to-prolonging-the-life-of-your-hearing-aid.html" data-category="Hearing Aids" data-title="crucial overview to increasing the life of your hearing aid" data-excerpt="keeping your hearing aids in top shape ensures you never miss a moment! learn how to best care for them with our guide.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2024/08/shutterstock_2298464541.jpg" alt="Crucial Overview to Increasing the Life of Your Hearing Aid" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Crucial Overview to Increasing the Life of Your Hearing Aid</span>
+            <p class="article-card__excerpt">Keeping your hearing aids in top shape ensures you never miss a moment! Learn how to best care for them with our guide.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/understanding-hearing-aids-how-to-set-reasonable-goals.html" data-category="Hearing Aids" data-title="understanding hearing aids: how to establish realistic goals" data-excerpt="understanding how hearing aids work is key to improving quality of life. discover tips on setting realistic goals for better…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2024/10/shutterstock_2237014921.jpg" alt="Understanding Hearing Aids: How to Establish Realistic Goals" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Understanding Hearing Aids: How to Establish Realistic Goals</span>
+            <p class="article-card__excerpt">Understanding how hearing aids work is key to improving quality of life. Discover tips on setting realistic goals for better…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-protect-hearing-and-hearing-aids-in-cold-weather.html" data-category="Hearing Aids" data-title="cold weather can affect hearing aids - some protection tips" data-excerpt="ear infections, dry air, and moisture damage are common concerns this season—but with a few tips, you can protect your hearing…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/12/shutterstock_2239623679.jpg" alt="Cold Weather Can Affect Hearing Aids - Some Protection Tips" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Cold Weather Can Affect Hearing Aids - Some Protection Tips</span>
+            <p class="article-card__excerpt">Ear infections, dry air, and moisture damage are common concerns this season—but with a few tips, you can protect your hearing…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/guide-to-maintaining-and-cleaning-your-hearing-aids.html" data-category="Hearing Aids" data-title="tips for upkeep and cleaning your hearing aids" data-excerpt="learn why regular maintenance and a few simple at-home care tips can make all the difference for your hearing aids.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/10/shutterstock_2298464521.jpg" alt="Tips for Upkeep and Cleaning Your Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Tips for Upkeep and Cleaning Your Hearing Aids</span>
+            <p class="article-card__excerpt">Learn why regular maintenance and a few simple at-home care tips can make all the difference for your hearing aids.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/can-you-wear-hearing-aids-during-an-ear-infection.html" data-category="Hearing Aids" data-title="can you use hearing aids while having an ear infection?" data-excerpt="ear infections are common among children and adults, causing pain and discomfort. for hearing aid wearers, ear infections may…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/10/can_you_wear_hearing_aids_during_an_ear_nfection_gettyimages-872428342.jpg" alt="Can You Use Hearing Aids While Having an Ear Infection?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Can You Use Hearing Aids While Having an Ear Infection?</span>
+            <p class="article-card__excerpt">Ear infections are common among children and adults, causing pain and discomfort. For hearing aid wearers, ear infections may…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-listening-to-audiobooks-enhances-hearing-aid-adaptation.html" data-category="Hearing Aids" data-title="how listening to audiobooks improves hearing aid adaptation" data-excerpt="discover how these modern reads can support your hearing aid adaptation and boost your listening abilities.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/09/shutterstock_2478131795.jpg" alt="How Listening to Audiobooks Improves Hearing Aid Adaptation" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How Listening to Audiobooks Improves Hearing Aid Adaptation</span>
+            <p class="article-card__excerpt">Discover how these modern reads can support your hearing aid adaptation and boost your listening abilities.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/bond-between-pets-and-people-with-hearing-loss.html" data-category="Hearing Aids" data-title="the special bond between pets and individuals with hearing loss" data-excerpt="pets and service animals can be exceptionally helpful for people with hearing loss. they can raise awareness, perform tasks, and…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/09/the_unique_bond_between_pets_and_people_with_hearing_loss_gettyimages-871901510.jpg" alt="The Special Bond Between Pets and Individuals With Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">The Special Bond Between Pets and Individuals With Hearing Loss</span>
+            <p class="article-card__excerpt">Pets and service animals can be exceptionally helpful for people with hearing loss. They can raise awareness, perform tasks, and…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/the-hidden-costs-of-bargain-hearing-aids-why-quality-matters.html" data-category="Hearing Aids" data-title="quality counts: unseen costs of bargain hearing aids" data-excerpt="discover the risks of buying bargain hearing aids online and why professional fitting is essential for optimal sound and comfort.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/08/shutterstock_2256958011.jpg" alt="Quality Counts: Unseen Costs of Bargain Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Quality Counts: Unseen Costs of Bargain Hearing Aids</span>
+            <p class="article-card__excerpt">Discover the risks of buying bargain hearing aids online and why professional fitting is essential for optimal sound and comfort.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/what-are-the-main-benefits-of-wearing-hearing-aids.html" data-category="Hearing Aids" data-title="advantages of using hearing aids" data-excerpt="the benefits of wearing hearing aids can vary from person to person. check out our guide to discover the many reasons to wear…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2022/11/shutterstock_2105518481.jpg" alt="Advantages of Using Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Advantages of Using Hearing Aids</span>
+            <p class="article-card__excerpt">The benefits of wearing hearing aids can vary from person to person. Check out our guide to discover the many reasons to wear…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/could-hearing-loss-affect-your-lifespan.html" data-category="Hearing Aids" data-title="could hearing loss affect your longevity?" data-excerpt="does hearing loss can impact your lifespan? new research suggests a strong link between hearing aid use and decreased mortality…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/07/could_hearing_loss_affect_your_lifespan_gettyimages-1916985892.jpg" alt="Could Hearing Loss Affect Your Longevity?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Could Hearing Loss Affect Your Longevity?</span>
+            <p class="article-card__excerpt">Does hearing loss can impact your lifespan? New research suggests a strong link between hearing aid use and decreased mortality…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/why-are-motorcyclists-at-an-increased-risk-for-hearing-loss.html" data-category="Hearing Aids" data-title="why are motorcycle riders at an increased risk for hearing loss?" data-excerpt="study reveals motorcycle riders at risk of damaging their hearing. discover the surprising cause and how to protect your hearing.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/03/shutterstock_1790288135.jpg" alt="Why Are Motorcycle Riders at an Increased Risk for Hearing Loss?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Why Are Motorcycle Riders at an Increased Risk for Hearing Loss?</span>
+            <p class="article-card__excerpt">Study reveals motorcycle riders at risk of damaging their hearing. Discover the surprising cause and how to protect your hearing.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-long-can-you-expect-your-hearing-aids-to-last.html" data-category="Hearing Aids" data-title="how long can you expect your hearing aids to last?" data-excerpt="how many years you can expect your hearing aid to last could vary considerably. explore what to expect for the lifespan of your…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2022/02/shutterstock_2258166725.jpg" alt="How Long Can You Expect Your Hearing Aids to Last?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How Long Can You Expect Your Hearing Aids to Last?</span>
+            <p class="article-card__excerpt">How many years you can expect your hearing aid to last could vary considerably. Explore what to expect for the lifespan of your…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/tips-using-phone-with-hearing-aids.html" data-category="Hearing Aids" data-title="best tips for using the phone with hearing aids" data-excerpt="using a phone with your hearing aids can present some challenges. following these tips can make the experience easier and make…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/03/top_tips_for_using_a_phone_with_hearing_aids_gettyimages-1207857796.jpg" alt="Best Tips for Using the Phone with Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Best Tips for Using the Phone with Hearing Aids</span>
+            <p class="article-card__excerpt">Using a phone with your hearing aids can present some challenges. Following these tips can make the experience easier and make…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/5-hearing-aid-care-tips.html" data-category="Hearing Aids" data-title="5 hearing aid care tips" data-excerpt="taking care of your hearing aids seems easy at first–but these five hearing aid care tips can help keep your devices functioning…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/03/5_hearing_aid_care_tips_gettyimages-1472761213.jpg" alt="5 Hearing Aid Care Tips" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">5 Hearing Aid Care Tips</span>
+            <p class="article-card__excerpt">Taking care of your hearing aids seems easy at first–but these five hearing aid care tips can help keep your devices functioning…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/cold-weather-affect-hearing-aids.html" data-category="Hearing Aids" data-title="does cold weather affect hearing aid operation?" data-excerpt="while they are likely to keep working in colder temperatures, cold weather (and snow) can have an impact on your hearing aid…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/01/does_cold_weather_affect_hearing_aid_performance_gettyimages-941862300.jpg" alt="Does Cold Weather Affect Hearing Aid Operation?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Does Cold Weather Affect Hearing Aid Operation?</span>
+            <p class="article-card__excerpt">While they are likely to keep working in colder temperatures, cold weather (and snow) can have an impact on your hearing aid…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/the-truth-about-cheap-hearing-aids.html" data-category="Hearing Aids" data-title="the truth about cheap "hearing aids"" data-excerpt="when it comes to hearing aids, it's important to be careful before you buy! discover the surprising truth about cheap hearing…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2021/07/shutterstock_1203192469.jpg" alt="The Truth About Cheap &quot;Hearing Aids&quot;" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">The Truth About Cheap "Hearing Aids"</span>
+            <p class="article-card__excerpt">When it comes to hearing aids, it's important to be careful before you buy! Discover the surprising truth about cheap hearing…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/when-do-i-need-a-hearing-aid.html" data-category="Hearing Aids" data-title="how do you know when it's time to get hearing aids?" data-excerpt="it can be hard to know when you might need a hearing aid. watching for these clear signs can help make it clearer–so you can…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/01/when_do_i_need_a_hearing_aid_gettyimages-174624087.jpg" alt="How do You Know When it&#x27;s Time to Get Hearing Aids?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How do You Know When it's Time to Get Hearing Aids?</span>
+            <p class="article-card__excerpt">It can be hard to know when you might need a hearing aid. Watching for these clear signs can help make it clearer–so you can…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/3-ways-hearing-aids-can-malfunction.html" data-category="Hearing Aids" data-title="hearing aids can fail in these three ways" data-excerpt="there’s nothing more frustrating than a hearing aid malfunction during an important moment. knowing these three common causes…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/12/3_ways_hearing_aids_can_malfunction_gettyimages-1403429555.jpg" alt="Hearing Aids Can Fail in These Three Ways" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Hearing Aids Can Fail in These Three Ways</span>
+            <p class="article-card__excerpt">There’s nothing more frustrating than a hearing aid malfunction during an important moment. Knowing these three common causes…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/better-to-see-a-hearing-specialist-for-hearing-aids.html" data-category="Hearing Aids" data-title="is it better to visit a hearing specialist for hearing aids?" data-excerpt="it’s possible to purchase a hearing aid over-the-counter. but there are some distinct advantages to seeing a hearing specialist…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/12/is_it_better_to_see_a_hearing_specialist_for_hearing_aids_gettyimages-1446460024.jpg" alt="Is it Better to Visit a Hearing Specialist for Hearing Aids?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Is it Better to Visit a Hearing Specialist for Hearing Aids?</span>
+            <p class="article-card__excerpt">It’s possible to purchase a hearing aid over-the-counter. But there are some distinct advantages to seeing a hearing specialist…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/danger-of-falls-hearing-aids-can-help.html" data-category="Hearing Aids" data-title="hearing aids can reduce the danger of falling" data-excerpt="new evidence strongly that hearing loss can increase your risk of a fall–but hearing aids can cut that risk almost in half. are…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/11/the_danger_of_falls_and-_how_hearing_aids_can_help_gettyimages-1159554106.jpg" alt="Hearing Aids Can Reduce the Danger of Falling" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Hearing Aids Can Reduce the Danger of Falling</span>
+            <p class="article-card__excerpt">New evidence strongly that hearing loss can increase your risk of a fall–but hearing aids can cut that risk almost in half. Are…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-aid-users-what-really-think.html" data-category="Hearing Aids" data-title="why is it important to know what users think about their hearing aids?" data-excerpt="wondering what real hearing aid users think of their devices?">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/09/hearing_aids_what_users_really_think_and_why_you_should_care_gettyimages-1285001284.jpg" alt="Why is it Important to Know What Users Think About Their Hearing Aids?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Why is it Important to Know What Users Think About Their Hearing Aids?</span>
+            <p class="article-card__excerpt">Wondering what real hearing aid users think of their devices?</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/traveling-with-hearing-loss-guide-safe-enjoyable-trip.html" data-category="Hearing Aids" data-title="vacationing with hearing loss: your guide to a safe, enjoyable trip!" data-excerpt="traveling with hearing loss can require a few extra steps. but with the right preparation, your vacation can be as relaxing (or…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/traveling_with_hearing_loss_your_guide-to_a_safe_enjoyable_trip_gettyimages-1470141335.jpg" alt="Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip!" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Vacationing With Hearing Loss: Your Guide to a Safe, Enjoyable Trip!</span>
+            <p class="article-card__excerpt">Traveling with hearing loss can require a few extra steps. But with the right preparation, your vacation can be as relaxing (or…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/wear-glasses-hearing-aids-at-the-same-time.html" data-category="Hearing Aids" data-title="can i wear my glasses and hearing aids together?" data-excerpt="wearing your glasses and hearing aids at the same time can sometimes be a challenge–but with the right approach, you can find…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/can_i_wear_my_glasses_hearing_aids_at_the_same_time_gettyimages-869831054.jpg" alt="Can I Wear my Glasses And Hearing Aids Together?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Can I Wear my Glasses And Hearing Aids Together?</span>
+            <p class="article-card__excerpt">Wearing your glasses and hearing aids at the same time can sometimes be a challenge–but with the right approach, you can find…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-long-hearing-aids-last.html" data-category="Hearing Aids" data-title="how soon do hearing aids need to be replaced?" data-excerpt="like anything, the better you take care of your hearing aid, the longer they will last.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/07/how_long_should_my_hearing_aids_last_gettyimages-1364911388.jpg" alt="How Soon do Hearing Aids Need to be Replaced?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How Soon do Hearing Aids Need to be Replaced?</span>
+            <p class="article-card__excerpt">Like anything, the better you take care of your hearing aid, the longer they will last.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/summertime-is-hearing-aid-time.html" data-category="Hearing Aids" data-title="summertime is hearing aid time!" data-excerpt="don't let hearing loss keep you from enjoying summertime. talk to a hearing healthcare professional today to learn more about how…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/06/summertime_is_hearing_aid_time_gettyimages-530682409.jpg" alt="Summertime is Hearing Aid Time!" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Summertime is Hearing Aid Time!</span>
+            <p class="article-card__excerpt">Don't let hearing loss keep you from enjoying summertime. Talk to a hearing healthcare professional today to learn more about how…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/get-most-out-of-hearing-aids.html" data-category="Hearing Aids" data-title="how to get the most out of your hearing aids" data-excerpt="your hearing aids are a big investment. here’s how to make sure you get the most bang for your buck.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/06/how_to_get_the_most_out_of_your_hearing_aids_gettyimages-1365092598.jpg" alt="How to Get The Most Out of Your Hearing Aids" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">How to Get The Most Out of Your Hearing Aids</span>
+            <p class="article-card__excerpt">Your hearing aids are a big investment. Here’s how to make sure you get the most bang for your buck.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/over-the-counter-hearing-aids-taking-a-chance.html" data-category="Hearing Aids" data-title="over the counter hearing aids: are you taking a chance?" data-excerpt="as over-the-counter hearing aids become more common, many people wonder whether they’re an effective way to treat the symptoms of…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/over_the_counter_hearing_aids_are_you_taking_a_chance_GettyImages-984523586.jpg" alt="Over the Counter Hearing Aids: Are You Taking a Chance?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Over the Counter Hearing Aids: Are You Taking a Chance?</span>
+            <p class="article-card__excerpt">As over-the-counter hearing aids become more common, many people wonder whether they’re an effective way to treat the symptoms of…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-aid-professional-repair.html" data-category="Hearing Aids" data-title="does my hearing aid need professional repair?" data-excerpt="have you performed basic maintenance and troubleshooting but your hearing aid is still not working properly? it's likely that…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/04/does_my_hearing_aid_need_professional_repair_gettyimages-144110250.jpg" alt="Does My Hearing Aid Need Professional Repair?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Does My Hearing Aid Need Professional Repair?</span>
+            <p class="article-card__excerpt">Have you performed basic maintenance and troubleshooting but your hearing aid is still not working properly? It's likely that…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-aid-upgrade.html" data-category="Hearing Aids" data-title="isn’t it time you considered a hearing aid upgrade?" data-excerpt="hearing aid technology has come a long way and can revolutionize the way you hear sound!">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/04/isnt_it_time_you_considered_a_hearing_aid_upgrade_gettyimages-1353289359.jpg" alt="Isn’t it Time You Considered a Hearing Aid Upgrade?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">Isn’t it Time You Considered a Hearing Aid Upgrade?</span>
+            <p class="article-card__excerpt">Hearing aid technology has come a long way and can revolutionize the way you hear sound!</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/when-is-it-time-to-update-your-hearing-aids.html" data-category="Hearing Aids" data-title="when is it time to update your hearing aids?" data-excerpt="when does it make sense to get new hearing aids? here are the most common scenarios.">
+          <img class="article-card__image" src="https://helpingmehear.com/host_images/when-is-it-time-to-update-your-hearing-aid.jpg" alt="When Is It Time to Update Your Hearing Aids?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">When Is It Time to Update Your Hearing Aids?</span>
+            <p class="article-card__excerpt">When does it make sense to get new hearing aids? Here are the most common scenarios.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/6-tricks-to-make-hearing-aid-batteries-last.html" data-category="Hearing Aids" data-title="6 tricks to make hearing aid batteries last" data-excerpt="hearing aid batteries dying at the wrong moment? learn pro tips for extending the life of your batteries.">
+          <img class="article-card__image" src="https://helpingmehear.com/host_images/6-tricks-to-make-hearing-aid-batteries-last.jpg" alt="6 Tricks to Make Hearing Aid Batteries Last" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Aids</span>
+            <span class="article-card__title">6 Tricks to Make Hearing Aid Batteries Last</span>
+            <p class="article-card__excerpt">Hearing aid batteries dying at the wrong moment? Learn pro tips for extending the life of your batteries.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/why-regular-hearing-tests-are-important-after-age-50.html" data-category="Hearing Tests" data-title="why routine hearing exams are important after age 50" data-excerpt="explore why experts recommend regular hearing tests for individuals after age 50 and how early care makes a difference.">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/04/shutterstock_2009901761.jpg" alt="Why Routine Hearing Exams Are Important After Age 50" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Why Routine Hearing Exams Are Important After Age 50</span>
+            <p class="article-card__excerpt">Explore why experts recommend regular hearing tests for individuals after age 50 and how early care makes a difference.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/should-i-get-a-hearing-test.html" data-category="Hearing Tests" data-title="should i get a hearing exam?" data-excerpt="wondering if you need a hearing test? learn the signs of hearing loss, when to get screened, and why regular hearing checkups are…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2019/02/get-hearing-test-1.jpg" alt="Should I Get a Hearing Exam?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Should I Get a Hearing Exam?</span>
+            <p class="article-card__excerpt">Wondering if you need a hearing test? Learn the signs of hearing loss, when to get screened, and why regular hearing checkups are…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/cannabis-use-hearing-health.html" data-category="Hearing Tests" data-title="cannabis use and hearing health" data-excerpt="there's a complex relationship between cannabinoid use and hearing health. discover potential risks and learn how cannabis might…">
+          <img class="article-card__image" src="https://www.helpingmehear.com/wp-content/uploads/2025/01/cannabis_use_and_hearing_health_gettyimages-1050807206.jpg" alt="Cannabis Use and Hearing Health" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Cannabis Use and Hearing Health</span>
+            <p class="article-card__excerpt">There's a complex relationship between cannabinoid use and hearing health. Discover potential risks and learn how cannabis might…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/your-autumn-hearing-health-guide.html" data-category="Hearing Tests" data-title="hearing health guide for the fall season" data-excerpt="dive into our autumn hearing health guide for insights on protecting your ears and enjoying every sound of the season!">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/09/shutterstock_2142800399.jpg" alt="Hearing Health Guide For the Fall Season" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Hearing Health Guide For the Fall Season</span>
+            <p class="article-card__excerpt">Dive into our Autumn Hearing Health Guide for insights on protecting your ears and enjoying every sound of the season!</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/what-will-a-hearing-test-show.html" data-category="Hearing Tests" data-title="what will a hearing test reveal?" data-excerpt="wondering if a hearing test is worthwhile? here are just a few things hearing tests can show.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2019/03/hearing-test-shows.jpg" alt="What Will a Hearing Test Reveal?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">What Will a Hearing Test Reveal?</span>
+            <p class="article-card__excerpt">Wondering if a hearing test is worthwhile? Here are just a few things hearing tests can show.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-prepare-for-a-hearing-test.html" data-category="Hearing Tests" data-title="preparing for your hearing exam" data-excerpt="to ensure more accurate results, find out what steps you should take before your next hearing exam with our guide.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2022/05/shutterstock_1997527163.jpg" alt="Preparing For Your Hearing Exam" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Preparing For Your Hearing Exam</span>
+            <p class="article-card__excerpt">To ensure more accurate results, find out what steps you should take before your next hearing exam with our guide.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/4-reasons-to-have-your-hearing-tested-regularly.html" data-category="Hearing Tests" data-title="you should get your hearing evaluated regularly for these four reasons" data-excerpt="it’s important to get your hearing tested regularly. regular testing can help discover problems early and can have other benefits…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/04/4_reasons_to_have_your_hearing_tested_regularly_gettyimages-1390877922.jpg" alt="You Should Get Your Hearing Evaluated Regularly For These Four Reasons" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">You Should Get Your Hearing Evaluated Regularly For These Four Reasons</span>
+            <p class="article-card__excerpt">It’s important to get your hearing tested regularly. Regular testing can help discover problems early and can have other benefits…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/muffled-hearing-causes-and-solutions.html" data-category="Hearing Tests" data-title="causes of muffled hearing and some remedies" data-excerpt="the causes of muffled hearing can vary. sometimes causes are easy to treat. in other cases, muffled hearing may be an early sign…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/03/muffled_hearing_causes_and_solutions_gettyimages-1484828045.jpg" alt="Causes of Muffled Hearing and Some Remedies" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Causes of Muffled Hearing and Some Remedies</span>
+            <p class="article-card__excerpt">The causes of muffled hearing can vary. Sometimes causes are easy to treat. In other cases, muffled hearing may be an early sign…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/chemotherapy-make-you-lose-hearing.html" data-category="Hearing Tests" data-title="does chemotherapy cause you to lose your hearing?" data-excerpt="chemotherapy can lead to hearing loss in some patients. it’s important to talk to your care team about early signs of…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2024/01/does_chemotherapy_make_you_lose_hearing_gettyimages-1217056000.jpg" alt="Does Chemotherapy Cause You to Lose Your Hearing?" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Does Chemotherapy Cause You to Lose Your Hearing?</span>
+            <p class="article-card__excerpt">Chemotherapy can lead to hearing loss in some patients. It’s important to talk to your care team about early signs of…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-aids-and-ai.html" data-category="Hearing Tests" data-title="ai and hearing aids - the synergy" data-excerpt="ai has been in use in hearing aids for some years now. but new ai-driven technologies are making these ai-assisted hearing aids…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/11/the_synergy_of_hearing_aids_and_ai_gettyImages-1464561797.jpg" alt="AI and Hearing Aids - the Synergy" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">AI and Hearing Aids - the Synergy</span>
+            <p class="article-card__excerpt">AI has been in use in hearing aids for some years now. But new AI-driven technologies are making these AI-assisted hearing aids…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/are-you-grumpy-maybe-its-hearing-loss.html" data-category="Hearing Tests" data-title="maybe you're grumpy because of hearing loss" data-excerpt="if you're feeling extra negative, distracted, or irritated, hearing loss could be to blame. schedule a hearing exam today!">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/10/are_you_grumpy_maybe_its_hearing_loss_gettyImages-1357522214-1.jpg" alt="Maybe You&#x27;re Grumpy Because of Hearing Loss" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Maybe You're Grumpy Because of Hearing Loss</span>
+            <p class="article-card__excerpt">If you're feeling extra negative, distracted, or irritated, hearing loss could be to blame. Schedule a hearing exam today!</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/regular-hearing-tests-important.html" data-category="Hearing Tests" data-title="stay tuned in to the sounds of life by getting regular hearing exams" data-excerpt="when was the last time you had a hearing test?">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/10/regular_hearing_tests_are_important_stay_tuned_in_lifes_sounds_gettyimages-1426469669.jpg" alt="Stay Tuned in to the Sounds of Life by Getting Regular Hearing Exams" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Stay Tuned in to the Sounds of Life by Getting Regular Hearing Exams</span>
+            <p class="article-card__excerpt">When was the last time you had a hearing test?</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/how-to-read-your-hearing-test.html" data-category="Hearing Tests" data-title="hearing test audiograms and how to understand them" data-excerpt="find out how to read an audiogram and what the results mean for treatment.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2021/04/how_to_read_your_hearing_test_or_audiogram_gettyimages-1450405270.jpg" alt="Hearing Test Audiograms and How to Understand Them" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Hearing Test Audiograms and How to Understand Them</span>
+            <p class="article-card__excerpt">Find out how to read an audiogram and what the results mean for treatment.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-test-reduce-risk-dementia.html" data-category="Hearing Tests" data-title="your danger of developing dementia could be reduced by having regular hearing exams" data-excerpt="existing evidence suggests that regular hearing tests could be a helpful way to reduce your risk of dementia.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/08/regular_hearing_tests_could_reduce_your_risk_of_developing_dementia_gettyimages-1197104185.jpg" alt="Your Danger of Developing Dementia Could be Reduced by Having Regular Hearing Exams" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Your Danger of Developing Dementia Could be Reduced by Having Regular Hearing Exams</span>
+            <p class="article-card__excerpt">Existing evidence suggests that regular hearing tests could be a helpful way to reduce your risk of dementia.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/sound-new-beginning.html" data-category="Hearing Tests" data-title="new beginnings sound sweet!" data-excerpt="a simple hearing test could gift you with a new lease on life.">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/06/the_sound_of_a_new_beginning_getty_images-1270270780.jpg" alt="New Beginnings Sound Sweet!" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">New Beginnings Sound Sweet!</span>
+            <p class="article-card__excerpt">A simple hearing test could gift you with a new lease on life.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/signs-loved-one-needs-hearing-aids.html" data-category="Hearing Tests" data-title="she’s not faking it: 4 signs a loved one should get a hearing aid" data-excerpt="hearing loss can be a frustrating experience for both the person with hearing loss and their loved ones. if you're concerned that…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/05/shes_not_faking_it_4_signs_a_loved_one_needs_a_hearing_aid_gettyimages-1359176316.jpg" alt="She’s Not Faking It: 4 Signs a Loved One Should Get a Hearing Aid" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">She’s Not Faking It: 4 Signs a Loved One Should Get a Hearing Aid</span>
+            <p class="article-card__excerpt">Hearing loss can be a frustrating experience for both the person with hearing loss and their loved ones. If you're concerned that…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/getting-hearing-tested-improve-your-mood.html" data-category="Hearing Tests" data-title="why having your ears checked routinely can improve your mood" data-excerpt="hearing loss and depression are both common conditions, and there is a growing body of evidence that suggests that there is a…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/04/why_getting_your_hearing_tested_regularly_can_improve_your_mood_gettyimages-1382133572.jpg" alt="Why Having Your Ears Checked Routinely Can Improve Your Mood" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Tests</span>
+            <span class="article-card__title">Why Having Your Ears Checked Routinely Can Improve Your Mood</span>
+            <p class="article-card__excerpt">Hearing loss and depression are both common conditions, and there is a growing body of evidence that suggests that there is a…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-while-youre-pregnant.html" data-category="Hearing Loss" data-title="hearing loss while you're pregnant - hinderliter hearing services" data-excerpt="it’s an awesome and incredible experience, having a child. but it can also be kind of… unpleasant, at least sometimes, and at…">
+          <img class="article-card__image" src="https://hmh-ea97.kxcdn.com/wp-content/uploads/2023/12/understanding_hearing_loss_during_pregnancy_gettyimages-1424410219.jpg" alt="Hearing Loss While You&#x27;re Pregnant - Hinderliter Hearing Services" loading="lazy">
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Hearing Loss While You're Pregnant - Hinderliter Hearing Services</span>
+            <p class="article-card__excerpt">It’s an awesome and incredible experience, having a child. But it can also be kind of… unpleasant, at least sometimes, and at…</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+        <a class="article-card" href="./articles/hearing-loss-tips-articles.html" data-category="Hearing Loss" data-title="top hearing care tips and advice | hinderliter hearing services" data-excerpt="discover the latest on hearing aids, hearing loss, and more.">
+          <div class="article-card__image" style="background:var(--cream-d);"></div>
+          <div class="article-card__body">
+            <span class="article-card__badge">Hearing Loss</span>
+            <span class="article-card__title">Top Hearing Care Tips and Advice | Hinderliter Hearing Services</span>
+            <p class="article-card__excerpt">Discover the latest on hearing aids, hearing loss, and more.</p>
+            <span class="article-card__link">Read Article &rarr;</span>
+          </div>
+        </a>
+          <p class="blog-no-results" id="no-results" role="status">No articles matched your search. Try different keywords or select a different category.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="./assets/logo.png" alt="ACI Hearing Center" width="160" height="44">
+          <p>Providing expert hearing care to Lafayette and the Acadiana region since 1984. We put our heart into how you hear.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/ACIHearingandbalance/" target="_blank" rel="noopener noreferrer" aria-label="ACI Hearing Center on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="./about.html">About Us</a>
+            <a href="./team.html">Our Team</a>
+            <a href="./services.html">Services</a>
+            <a href="./reviews.html">Reviews</a>
+            <a href="./learn-more.html">Learn More</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <div class="footer__links">
+            <a href="./hearing-tests.html">Hearing Tests</a>
+            <a href="./hearing-aids.html">Hearing Aids</a>
+            <a href="./cochlear-implants.html">Cochlear Implants</a>
+            <a href="./tinnitus.html">Tinnitus Management</a>
+            <a href="./balance-testing.html">Balance Testing</a>
+            <a href="./hearing-repair.html">Hearing Repair</a>
+            <a href="./hearing-protection.html">Hearing Protection</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__links">
+            <a href="tel:3372239448"><strong>337-223-9448</strong></a>
+            <a href="mailto:aci@acihearing.com">aci@acihearing.com</a>
+            <span>103 Saint Thomas Street<br>Lafayette, LA 70506</span>
+            <span style="margin-top:8px;">
+              <strong>Hours:</strong><br>
+              Mon–Thu: 8am–4:30pm<br>
+              Fri: 8am–3pm
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 ACI Hearing Center. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <div class="container mobile-cta__inner">
+      <a href="tel:3372239448" class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <a href="./contact.html" class="btn btn--navy">Schedule Visit</a>
+    </div>
+  </div>
+
+  <script src="./main.js" defer></script>
+  <script>
+  (function() {
+    var searchInput  = document.getElementById('blog-search');
+    var pills        = document.querySelectorAll('.category-pill');
+    var allCards     = document.querySelectorAll('#article-grid .article-card');
+    var featCards    = document.querySelectorAll('#featured-grid .featured-card');
+    var countEl      = document.getElementById('article-count');
+    var noResults    = document.getElementById('no-results');
+    var activeCat    = 'All';
+
+    function filterAll() {
+      var query = searchInput.value.toLowerCase().trim();
+      var visible = 0;
+
+      allCards.forEach(function(card) {
+        var matchCat  = activeCat === 'All' || card.dataset.category === activeCat;
+        var matchQ    = !query || card.dataset.title.includes(query) || card.dataset.excerpt.includes(query);
+        var show = matchCat && matchQ;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      // Featured cards — hide section if filtered
+      var featSection = document.getElementById('featured-articles');
+      if (activeCat !== 'All' || query) {
+        featCards.forEach(function(card) {
+          var matchCat = activeCat === 'All' || card.dataset.category === activeCat;
+          var matchQ   = !query || card.dataset.title.includes(query) || card.dataset.excerpt.includes(query);
+          card.style.display = (matchCat && matchQ) ? '' : 'none';
+        });
+      } else {
+        featCards.forEach(function(c) { c.style.display = ''; });
+      }
+
+      countEl.textContent = '(' + visible + ' article' + (visible !== 1 ? 's' : '') + ')';
+      noResults.classList.toggle('visible', visible === 0);
+    }
+
+    pills.forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        pills.forEach(function(p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        activeCat = pill.dataset.cat;
+        filterAll();
+      });
+    });
+
+    searchInput.addEventListener('input', filterAll);
+  })();
+  </script>
+</body>
+</html>

@@ -258,7 +258,7 @@ ul, ol { list-style: none; }
 }
 
 .header__logo img {
-  height: 50px;
+  height: 66px;
   width: auto;
 }
 
@@ -590,6 +590,88 @@ ul, ol { list-style: none; }
     flex-direction: column;
   }
   .trust-bar__divider { display: none; }
+}
+
+/* === TINNITUS RELIEF BANNER === */
+.tinnitus-banner {
+  background: var(--navy);
+  padding: var(--space-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+.tinnitus-banner__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+.tinnitus-banner__content {
+  flex: 1;
+}
+.tinnitus-banner__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: var(--space-sm);
+}
+.tinnitus-banner__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  color: var(--white);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+.tinnitus-banner__text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+}
+.tinnitus-banner__text strong {
+  color: var(--gold-light);
+}
+.tinnitus-banner__actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+.btn--ghost {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.4);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+  display: inline-flex;
+  align-items: center;
+}
+.btn--ghost:hover {
+  border-color: var(--white);
+  background: rgba(255,255,255,0.1);
+}
+.tinnitus-banner__icon {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  animation: pulse-rings 3s ease-in-out infinite;
+}
+.tinnitus-banner__icon svg {
+  width: 100%;
+  height: 100%;
+}
+@keyframes pulse-rings {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+@media (max-width: 768px) {
+  .tinnitus-banner__icon { display: none; }
+  .tinnitus-banner__actions { flex-direction: column; }
+  .tinnitus-banner__actions .btn { text-align: center; }
 }
 
 /* === CARDS === */
