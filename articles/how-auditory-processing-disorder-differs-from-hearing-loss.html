@@ -3,515 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss | ACI Hearing Center — Lafayette, LA</title>
+  <title>Understanding the Distinctions Between an Auditory Processing Disorder and Hearing Impairment — ACI Hearing Center</title>
   <meta name="description" content="Learn more about these two conditions and what the differences are for testing and diagnosis.">
-  <meta property="og:title" content="Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss">
-  <meta property="og:description" content="Learn more about these two conditions and what the differences are for testing and diagnosis.">
-  <meta property="og:image" content="https://www.helpingmehear.com/wp-content/uploads/2025/08/auditory-processing-shutterstock_2523004757.jpg">
-  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acihearing.com/learn-more/articles/how-auditory-processing-disorder-differs-from-hearing-loss.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <style>
 
-/* ── Blog System — ACI Hearing Center ─────────────────────────────── */
-:root {
-  --navy:   #1B365D;
-  --gold:   #C59D5F;
-  --cream:  #FAF8F5;
-  --cream-d:#F0EDE7;
-  --text:   #333;
-  --muted:  #6B7280;
-  --radius: 10px;
-  --shadow: 0 4px 20px rgba(0,0,0,0.09);
-  --font-head: 'Lora', 'Playfair Display', Georgia, serif;
-  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
-}
+    /* ── ACI Blog Shared Styles ────────────────────────── */
+    :root {
+      --navy:  #1B365D;
+      --gold:  #C59D5F;
+      --gold-light: #D4B483;
+      --cream: #FAF7F2;
+      --white: #FFFFFF;
+      --gray-50:  #F8F9FA;
+      --gray-100: #F0F1F3;
+      --gray-200: #E2E4E8;
+      --gray-600: #6B7280;
+      --gray-800: #1F2937;
+      --text-main: #1F2937;
+      --radius-sm: 4px;
+      --radius:    8px;
+      --radius-lg: 12px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+      --shadow:    0 4px 16px rgba(0,0,0,.10);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.14);
+    }
 
-/* ── Search / Filter Bar ─────────────────────────────────────────────── */
-.blog-search-bar {
-  background: var(--navy);
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-}
-.blog-search-bar .container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.blog-search-input-wrap {
-  position: relative;
-  flex: 1 1 260px;
-  min-width: 200px;
-}
-.blog-search-input-wrap svg {
-  position: absolute;
-  left: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  color: var(--muted);
-  pointer-events: none;
-}
-.blog-search-input {
-  width: 100%;
-  padding: 10px 16px 10px 44px;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-family: var(--font-body);
-  background: #fff;
-  color: var(--text);
-  outline: none;
-  box-sizing: border-box;
-}
-.blog-search-input:focus {
-  box-shadow: 0 0 0 3px rgba(197,157,95,0.5);
-}
-.category-pills {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.category-pill {
-  padding: 7px 16px;
-  border-radius: 999px;
-  border: 2px solid transparent;
-  font-size: 13px;
-  font-weight: 600;
-  font-family: var(--font-body);
-  cursor: pointer;
-  transition: all 0.2s;
-  background: rgba(255,255,255,0.12);
-  color: #fff;
-}
-.category-pill:hover {
-  background: rgba(255,255,255,0.22);
-}
-.category-pill.active {
-  background: var(--gold);
-  color: #fff;
-  border-color: var(--gold);
-}
+    /* Category badge */
+    .cat-badge {
+      display: inline-block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(197,157,95,.12);
+      border: 1px solid rgba(197,157,95,.3);
+      border-radius: 3px;
+      padding: 3px 8px;
+      line-height: 1;
+    }
 
-/* ── Blog Page Sections ──────────────────────────────────────────────── */
-.blog-section {
-  padding: 64px 0;
-}
-.blog-section--alt {
-  background: var(--cream-d);
-}
-.blog-section-label {
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--gold);
-  margin: 0 0 8px;
-}
-.blog-section-title {
-  font-family: var(--font-head);
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 40px;
-  line-height: 1.25;
-}
+    /* ── Breadcrumb ────────────────────────────────────── */
+    .breadcrumb {
+      background: var(--cream);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 12px 0;
+    }
+    .breadcrumb__inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      color: var(--gray-600);
+    }
+    .breadcrumb__link {
+      color: var(--navy);
+      text-decoration: none;
+      transition: color .18s;
+    }
+    .breadcrumb__link:hover { color: var(--gold); }
+    .breadcrumb__sep { color: var(--gray-600); }
+    .breadcrumb__current { color: var(--gray-600); }
 
-/* ── No-results message ──────────────────────────────────────────────── */
-.blog-no-results {
-  display: none;
-  text-align: center;
-  padding: 48px 24px;
-  color: var(--muted);
-  font-family: var(--font-body);
-  font-size: 17px;
-  grid-column: 1 / -1;
-}
-.blog-no-results.visible {
-  display: block;
-}
+    /* ── Article header ────────────────────────────────── */
+    .article-header {
+      background: var(--navy);
+      padding: 56px 0 52px;
+      color: var(--white);
+    }
+    .article-header__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255,255,255,.7);
+      text-decoration: none;
+      margin-bottom: 24px;
+      transition: color .18s;
+    }
+    .article-header__back:hover { color: var(--gold); }
+    .article-header__meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .article-header__date {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.6);
+    }
+    .article-header__title {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.25;
+      margin: 0 0 16px;
+      max-width: 800px;
+    }
 
-/* ── Featured Grid (2×2) ─────────────────────────────────────────────── */
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-@media (max-width: 768px) {
-  .featured-grid { grid-template-columns: 1fr; }
-}
-.featured-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.25s, box-shadow 0.25s;
-}
-.featured-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 36px rgba(0,0,0,0.14);
-}
-.featured-card__image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-  background: var(--cream-d);
-}
-.featured-card__body {
-  padding: 24px 24px 28px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.featured-card__badge {
-  display: inline-block;
-  padding: 3px 12px;
-  background: var(--gold);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 12px;
-  align-self: flex-start;
-}
-.featured-card__title {
-  font-family: var(--font-head);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 10px;
-  line-height: 1.35;
-}
-.featured-card__excerpt {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--muted);
-  margin: 0 0 16px;
-  line-height: 1.6;
-  flex: 1;
-}
-.featured-card__link {
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--gold);
-  margin-top: auto;
-}
+    /* ── Article layout ────────────────────────────────── */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      padding: 56px 0 72px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+      .article-sidebar { order: -1; }
+    }
 
-/* ── Article Grid (3-col) ────────────────────────────────────────────── */
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 960px) {
-  .article-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-  .article-grid { grid-template-columns: 1fr; }
-}
-.article-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.22s, box-shadow 0.22s;
-}
-.article-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
-}
-.article-card__image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-  background: var(--cream-d);
-}
-.article-card__body {
-  padding: 18px 18px 22px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.article-card__badge {
-  display: inline-block;
-  padding: 2px 10px;
-  background: rgba(197,157,95,0.15);
-  color: var(--gold);
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 10px;
-  align-self: flex-start;
-  border: 1px solid rgba(197,157,95,0.35);
-}
-.article-card__title {
-  font-family: var(--font-head);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 8px;
-  line-height: 1.4;
-}
-.article-card__excerpt {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--muted);
-  margin: 0 0 14px;
-  line-height: 1.55;
-  flex: 1;
-}
-.article-card__link {
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--gold);
-  margin-top: auto;
-}
+    /* ── Article body content ──────────────────────────── */
+    .article-content {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16.5px;
+      line-height: 1.75;
+      color: var(--text-main);
+    }
+    .article-content h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 2em 0 .6em;
+      line-height: 1.3;
+    }
+    .article-content h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin: 1.6em 0 .5em;
+    }
+    .article-content h4 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 1.4em 0 .4em;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .article-content p {
+      margin: 0 0 1.2em;
+    }
+    .article-content ul {
+      margin: 0 0 1.2em 1.4em;
+      padding: 0;
+    }
+    .article-content ul li {
+      margin-bottom: .5em;
+      padding-left: .3em;
+    }
+    .article-content a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-decoration-color: rgba(197,157,95,.4);
+      transition: color .18s;
+    }
+    .article-content a:hover { color: var(--navy); }
+    .article-content strong { color: var(--navy); }
+    .article-content code {
+      background: var(--gray-100);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: .9em;
+    }
+    .article-content hr {
+      border: none;
+      border-top: 1px solid var(--gray-200);
+      margin: 2em 0;
+    }
+    .article-content ul li::marker { color: var(--gold); }
 
-/* ── Article count ─────────────────────────────────────────────────── */
-#article-count {
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--muted);
-}
+    /* ── Featured image ────────────────────────────────── */
+    .article-featured-img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      margin-bottom: 32px;
+      display: block;
+    }
 
-/* ── Individual Article Page ─────────────────────────────────────────── */
-.article-page-wrapper {
-  background: var(--cream);
-  min-height: 60vh;
-  padding: 48px 0 80px;
-}
-.article-page-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-.article-back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--gold);
-  text-decoration: none;
-  margin-bottom: 18px;
-  transition: gap 0.2s;
-}
-.article-back-link:hover { gap: 10px; }
-.article-breadcrumb {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.article-breadcrumb a {
-  color: var(--muted);
-  text-decoration: none;
-}
-.article-breadcrumb a:hover { color: var(--navy); text-decoration: underline; }
-.article-breadcrumb span { color: var(--muted); }
-.article-hero-image {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: var(--radius);
-  margin-bottom: 32px;
-  display: block;
-  box-shadow: var(--shadow);
-}
-.article-meta {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-.article-meta__badge {
-  display: inline-block;
-  padding: 4px 14px;
-  background: var(--gold);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-.article-meta__date {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--muted);
-}
-.article-title {
-  font-family: var(--font-head);
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.25;
-  margin: 0 0 32px;
-}
-.article-body {
-  font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text);
-  max-width: 760px;
-}
-.article-body h2 {
-  font-family: var(--font-head);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 2em 0 0.6em;
-  line-height: 1.3;
-}
-.article-body h3 {
-  font-family: var(--font-head);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 1.6em 0 0.5em;
-}
-.article-body h4 {
-  font-family: var(--font-head);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 1.4em 0 0.4em;
-}
-.article-body p {
-  margin: 0 0 1.2em;
-}
-.article-body ul, .article-body ol {
-  margin: 0 0 1.2em 1.5em;
-}
-.article-body li {
-  margin-bottom: 0.4em;
-}
-.article-body strong {
-  color: var(--navy);
-  font-weight: 700;
-}
-.article-body a {
-  color: var(--gold);
-  text-decoration: underline;
-}
-.article-body a:hover {
-  color: var(--navy);
-}
-.article-body img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 1.5em 0;
-}
-.article-divider {
-  border: none;
-  border-top: 2px solid var(--cream-d);
-  margin: 48px 0;
-}
-.article-cta-box {
-  background: var(--navy);
-  border-radius: var(--radius);
-  padding: 40px 36px;
-  text-align: center;
-  color: #fff;
-  margin-top: 0;
-}
-.article-cta-box h3 {
-  font-family: var(--font-head);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 12px;
-  color: #fff;
-}
-.article-cta-box p {
-  font-family: var(--font-body);
-  font-size: 16px;
-  color: rgba(255,255,255,0.85);
-  margin: 0 0 24px;
-  line-height: 1.6;
-}
-.article-cta-box .btn-cta {
-  display: inline-block;
-  background: var(--gold);
-  color: #fff;
-  padding: 13px 30px;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
-}
-.article-cta-box .btn-cta:hover {
-  background: #b8883e;
-  transform: translateY(-2px);
-}
+    /* ── Sidebar ───────────────────────────────────────── */
+    .article-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-cta {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .sidebar-cta__label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 8px;
+    }
+    .sidebar-cta__title {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+    .sidebar-cta__text {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      color: rgba(255,255,255,.75);
+      margin: 0 0 20px;
+      line-height: 1.6;
+    }
+    .sidebar-cta__phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+      margin-top: 12px;
+      transition: color .18s;
+    }
+    .sidebar-cta__phone:hover { color: var(--white); }
 
-/* ── Blog Hero (learn-more page) ─────────────────────────────────────── */
-.blog-hero {
-  background: var(--navy);
-  padding: 72px 0 60px;
-  text-align: center;
-}
-.blog-hero__label {
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--gold);
-  margin: 0 0 12px;
-}
-.blog-hero__title {
-  font-family: var(--font-head);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 14px;
-  line-height: 1.2;
-}
-.blog-hero__subtitle {
-  font-family: var(--font-body);
-  font-size: 18px;
-  color: rgba(255,255,255,0.78);
-  margin: 0;
-  max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .sidebar-related {
+      background: var(--cream);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+    .sidebar-related__title {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 16px;
+    }
+    .sidebar-related__link {
+      display: block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      color: var(--navy);
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-200);
+      transition: color .18s;
+      line-height: 1.4;
+    }
+    .sidebar-related__link:last-child { border-bottom: none; }
+    .sidebar-related__link:hover { color: var(--gold); }
+
+    /* ── Bottom CTA ────────────────────────────────────── */
+    .article-bottom-cta {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      color: var(--white);
+      margin-top: 48px;
+      text-align: center;
+    }
+    .article-bottom-cta__label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 8px;
+    }
+    .article-bottom-cta__title {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0 0 10px;
+    }
+    .article-bottom-cta__text {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 15px;
+      color: rgba(255,255,255,.75);
+      margin: 0 0 24px;
+    }
 
   </style>
 </head>
@@ -537,7 +336,7 @@
     <div class="header__main">
       <div class="container header__main-inner">
         <a href="../index.html" class="header__logo" aria-label="ACI Hearing Center Home">
-          <img src="../assets/logo.png" alt="ACI Hearing Center logo" width="180" height="50">
+          <img src="../assets/logo.png" alt="ACI Hearing Center logo" width="368" height="100">
         </a>
 
         <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -558,7 +357,6 @@
               <a href="../hearing-aids.html">Hearing Aids</a>
               <a href="../cochlear-implants.html">Cochlear Implants</a>
               <a href="../tinnitus.html">Tinnitus Management</a>
-              <a href="../balance-testing.html">Balance Testing</a>
               <a href="../hearing-repair.html">Hearing Repair</a>
               <a href="../hearing-protection.html">Hearing Protection</a>
               <a href="../services.html#diagnostic-testing">Diagnostic Testing</a>
@@ -570,7 +368,7 @@
             <a href="../reviews.html" class="nav__link">Reviews</a>
           </div>
           <div class="nav__item">
-            <a href="../learn-more.html" class="nav__link">Learn More</a>
+            <a href="../learn-more.html" class="nav__link nav__link--active">Learn More</a>
           </div>
           <div class="nav__item">
             <a href="../contact.html" class="nav__link">Contact</a>
@@ -593,125 +391,157 @@
   </header>
 
   <main>
-    <div class="article-page-wrapper">
-      <div class="article-page-inner">
+    
+    <div class="breadcrumb">
+      <div class="container">
+        <nav class="breadcrumb__inner" aria-label="Breadcrumb">
+          <a href="../index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../learn-more.html" class="breadcrumb__link">Learn More</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Hearing Loss</span>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Understanding the Distinctions Between an Auditory Processin…</span>
+        </nav>
+      </div>
+    </div>
 
-        <a href="../learn-more.html" class="article-back-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="15 18 9 12 15 6"/></svg>
+    <!-- ARTICLE HEADER -->
+    <section class="article-header" aria-label="Article header">
+      <div class="container">
+        <a href="../learn-more.html" class="article-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
           Back to Articles
         </a>
-
-        <nav class="article-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span>&rsaquo;</span>
-          <a href="../learn-more.html">Learn More</a>
-          <span>&rsaquo;</span>
-          <a href="../learn-more.html">Hearing Loss</a>
-          <span>&rsaquo;</span>
-          <span aria-current="page">Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss</span>
-        </nav>
-
-      <img class="article-hero-image" src="https://www.helpingmehear.com/wp-content/uploads/2025/08/auditory-processing-shutterstock_2523004757.jpg" alt="Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss" loading="lazy">
-
-        <div class="article-meta">
-          <span class="article-meta__badge">Hearing Loss</span>
-          <span class="article-meta__date">August 16, 2025</span>
+        <div class="article-header__meta">
+          <span class="cat-badge">Hearing Loss</span>
+          <span class="article-header__date">August 17, 2025</span>
         </div>
+        <h1 class="article-header__title">Understanding the Distinctions Between an Auditory Processing Disorder and Hearing Impairment</h1>
+      </div>
+    </section>
 
-        <h1 class="article-title">Recognizing the Distinctions Between an Auditory Processing Disorder and Hearing Loss</h1>
-
-        <div class="article-body">
-          <p>When a child struggles to follow instructions, mixes up words that have similar sounds, or seems distracted in loud setting, parents may question if hearing loss is the issue. However, in some instances, the problem might not be with the ears themselves, but instead with a condition called auditory processing disorder (APD), which impacts the way the brain processes sound.</p>
-<p>Although hearing loss and Auditory Processing Disorder (APD) often present with comparable signs, they are distinct conditions that necessitate unique assessments and treatments. In this article, we will discover the key differences to help you give your child the support they require.</p>
-<h2>Understanding Hearing Impairment: A Definition.</h2>
-<p>Impaired auditory function, also known as hearing loss, takes place when a person&#8217;s ability to sense sound is diminished, frequently caused by problems affecting the outer, middle, or inner ear.</p>
-<p>There are three primary types:</p>
+    <!-- ARTICLE BODY -->
+    <div class="container">
+      <div class="article-layout">
+        <!-- Main content -->
+        <article class="article-main" aria-label="Article content">
+          <img class="article-featured-img" src="https://acihearing.com/wp-content/uploads/2025/08/auditory-processing-shutterstock_2523004757.jpg" alt="Understanding the Distinctions Between an Auditory Processing Disorder and Hearing Impairment" loading="eager">
+          <div class="article-content">
+            <p>Understanding the Distinctions Between an Auditory Processing Disorder and Hearing Impairment</p>
+<p>If a child has trouble understanding directions, mixes up words with similar enunciations, or appears disoriented in loud environments, parents might presume that a hearing issue is to blame. However, in certain circumstances, the problem might not lie with the ears themselves, but rather with a condition known as auditory processing disorder (APD), which impacts the way the brain processes sound.</p>
+<p>Even though hearing loss and Auditory Processing Disorder (APD) often present with comparable signs, they are distinct conditions that require unique assessments and interventions. In this article, we will explore the fundamental distinctions to help you give your child the support they need.</p>
+<h2>Comprehending Hearing Loss: A Definition.</h2>
+<p>Hearing loss refers to a reduced ability to detect sound, often caused by issues in the outer, middle, or inner ear.</p>
+<p>Three primary classifications:</p>
 <ul>
-  <li>Conductive hearing loss: Happens as a result of obstructions or injury in the outer or middle ear, including ear infections or accumulation of earwax</li>
+<li>Conductive hearing loss: Occurs due to obstructions or damage in the outer or middle ear, including ear infections or accumulation of earwax</li>
 </ul>
 <ul>
-  <li>Sensorineural hearing loss: Involves damage to the inner ear or the auditory nerve, often due to aging, noise exposure, or genetics</li>
+<li>Sensorineural hearing loss: Involves damage to the inner ear or the auditory nerve, often caused by aging, noise exposure, or genetics</li>
 </ul>
 <ul>
-  <li>Combination hearing loss: A mix of both outer/middle ear and inner ear issues</li>
+<li>Mixed hearing loss: A mix of conductive and sensorineural types</li>
 </ul>
-<p>Physicians usually make a diagnosis via conventional hearing assessments like audiograms, otoacoustic emissions, or auditory brainstem response (ABR) testing. When a child experiences hearing loss, the issue is with their ability to perceive sound at all.</p>
+<p>Doctors normally diagnose patients by carrying out tests including audiograms, auditory brainstem response testing (ABR), and acoustic emission testing. If a child suffers from hearing loss, the issue lies in their ability to detect sound in the first place.</p>
 <h2>What Does Auditory Processing Disorder Mean?</h2>
-<p>APD, on the other hand, is not a hearing problem; it&#8217;s a brain-based issue with interpreting sounds. Children with Auditory Processing Disorder may have normal hearing, but they struggle to interpret and comprehend the sounds they hear.</p>
-<p>It&#8217;s often described as &#8220;hearing but not understanding.&#8221;</p>
-<p>Common obstacles faced in everyday situations:</p>
+<p>APD, conversely, is not a hearing problem; it's a brain-based problem with deciphering sounds. Kids with APD can hear just fine, but they have difficulty making sense of what they hear. It's commonly referred to as "perceiving sounds without grasping their meaning."</p>
+<p>Some common challenges include:</p>
 <ul>
-  <li>Trouble following multi-step verbal directions</li>
+<li>Trouble following multi-step verbal instructions</li>
 </ul>
 <ul>
-  <li>Difficulty differentiating similar sounds or words</li>
+<li>Trouble distinguishing similar sounds or words</li>
 </ul>
 <ul>
-  <li>Having difficulty concentrating in noisy settings (such as schools or busy eateries)</li>
+<li>Having difficulty focusing in loud settings (such as schools or busy eateries)</li>
 </ul>
 <ul>
-  <li>Having trouble recognizing humor, irony, or expressions that aren&#8217;t meant to be taken literally</li>
+<li>Misinterpreting jokes, sarcasm, or figurative language</li>
 </ul>
-<p>A basic hearing exam might indicate no issues because the ears are working normally. In Auditory Processing Disorder, the issue occurs not with hearing the sound itself, but rather with how the brain interprets and processes the sound after it has been sensed.</p>
-<h2>Differentiating Between Testing and Diagnosis</h2>
-<p>Audiologists employ standard auditory assessments to detect hearing impairments by evaluating an individual&#8217;s ability to perceive sound. Identifying Auditory Processing Disorder involves more extensive assessments that go beyond standard hearing evaluations.</p>
-<p>Evaluations often involve a multidisciplinary team, including:</p>
+<p>Because the ears work normally, a conventional hearing test may come back showing no issues. However, it does not mean that everything is operating correctly. In Auditory Processing Disorder, the issue occurs not with hearing the sound itself, but instead with how the brain translates and processes the sound after it has been sensed.</p>
+<h2>Distinguishing Between Testing and Diagnosis</h2>
+<p>To diagnose hearing loss, audiologists use traditional hearing exams that measure sound detection. Diagnosing APD, however, calls for specialized testing that exceeds detecting sound.</p>
+<p>Evaluations frequently involve a multidisciplinary team, including:</p>
 <ul>
-  <li>A hearing specialist to assess how the brain senses sound</li>
-</ul>
-<ul>
-  <li>A speech-language pathologist to evaluate language comprehension and communication</li>
+<li>An audiologist to assess auditory processing abilities</li>
 </ul>
 <ul>
-  <li>A psychologist to rule out attention or learning differences that may appear similar to APD</li>
+<li>A speech-language pathologist to assess language comprehension and communication</li>
 </ul>
-<h2>Approaches for Treatment and Assistance</h2>
+<ul>
+<li>A psychologist should be consulted to determine any hidden attention or learning disorders that may imitate the symptoms of Auditory Processing Disorder (APD)</li>
+</ul>
+<h2>Treatment and Support Solutions</h2>
 <p>If your child is diagnosed with hearing loss, treatment might include:</p>
 <ul>
-  <li>Hearing aids</li>
+<li>Hearing aids</li>
 </ul>
 <ul>
-  <li>Cochlear implants</li>
+<li>Cochlear implants</li>
 </ul>
 <ul>
-  <li>Assistive listening devices</li>
+<li>Assistive listening devices</li>
 </ul>
 <ul>
-  <li>Medical or surgical interventions</li>
+<li>Medical or surgical interventions</li>
 </ul>
-<p>Support for Children with APD Diagnosis Usually Includes:</p>
+<p>Or, if your child is diagnosed with APD, assistance typically involves:</p>
 <ul>
-  <li>Speech-language therapy</li>
-</ul>
-<ul>
-  <li>Classroom accommodations (e.g., seating changes, written instructions)</li>
+<li>Speech-language therapy</li>
 </ul>
 <ul>
-  <li>Environmental modifications to reduce background noise</li>
+<li>Classroom accommodations (e.g., seating changes, written directions)</li>
 </ul>
 <ul>
-  <li>Auditory processing therapy</li>
+<li>Environmental modifications to reduce background noise</li>
+</ul>
+<ul>
+<li>Auditory processing therapy</li>
 </ul>
 <h2>Some Final Thoughts About Hearing Loss vs. APD</h2>
-<p>Understanding the difference between hearing loss and auditory processing disorder is crucial for getting your child the right support. If your child appears to have difficulty with listening in spite of having a normal hearing test, continue to explore further. The real issue may only be identified by more in-depth assessments. With the right diagnosis and individualized treatment plan, children with either condition can do well in the classroom, at home, and beyond.</p>
+<p>Understanding the distinction between hearing loss and auditory processing disorder is crucial for getting your child the best support. If your child appears to have trouble with listening despite having a normal hearing test, continue to explore further. A more detailed look at how they process sound could expose what's really happening. With the correct diagnosis and tailored treatment plan, kids with either condition can do well in the classroom, at home, and beyond.</p>
 <p>Contact us to find out more</p>
 <p>Sources:.</p>
 <p>About Hearing Loss in Children|Hearing Loss in Children|CDC.</p>
-<p>Auditory processing disorder (APD)&#8211; Symptoms and causes&#8211; Mayo Clinic.</p>
+<p>Auditory processing disorder (APD) Symptoms and causes Mayo Clinic.</p>
 <p>Auditory Processing Disorder vs. Hearing Loss: Key Differences.</p>
 <p>Understanding the Differences: Auditory Processing Disorder vs. Hearing Loss|Hearing.</p>
 <p>Associates of Las Vegas.</p>
 <p>Auditory Processing Disorder (for Parents)|Nemours KidsHealth.</p>
+          </div>
+
+          <!-- Bottom CTA -->
+          <div class="article-bottom-cta">
+            <p class="article-bottom-cta__label">Take Action Today</p>
+            <h2 class="article-bottom-cta__title">Schedule Your Hearing Consultation</h2>
+            <p class="article-bottom-cta__text">Our Doctors of Audiology at ACI Hearing Center are here to help. Get a comprehensive evaluation and personalized treatment plan.</p>
+            <a href="../contact.html" class="btn btn--primary btn--lg">Book an Appointment</a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar" aria-label="Article sidebar">
+          <div class="sidebar-cta">
+            <p class="sidebar-cta__label">Expert Care</p>
+            <h3 class="sidebar-cta__title">Concerned About Your Hearing?</h3>
+            <p class="sidebar-cta__text">Don't wait. Early intervention leads to better outcomes. Our team is ready to help you hear your best.</p>
+            <a href="../contact.html" class="btn btn--primary" style="width:100%;text-align:center;display:block;">Schedule Appointment</a>
+            <a href="tel:3372239448" class="sidebar-cta__phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              337-223-9448
+            </a>
+          </div>
+          
+        <div class="sidebar-related">
+          <h3 class="sidebar-related__title">Related Articles</h3>
+                      <a href="./hearing-loss-myths.html" class="sidebar-related__link">Beyond the Misconceptions: 7 Hearing Loss Myths vs. Reality</a>
+            <a href="./seasonal-hearing-loss.html" class="sidebar-related__link">Understanding Seasonal Changes in Auditory Health</a>
+            <a href="./ototoxic-medications-and-hearing-loss.html" class="sidebar-related__link">Pharmaceuticals and Hearing Loss: What You Should Know About Ototoxicity</a>
+            <a href="./hearing-loss-and-job-performance.html" class="sidebar-related__link">How Hearing Loss Impacts Work Performance and How to Fix It</a>
+            <a href="./dont-dissmiss-early-hearing-loss.html" class="sidebar-related__link">The Danger of Dismissing Short-Term Hearing Reduction</a>
         </div>
-
-        <hr class="article-divider">
-
-        <div class="article-cta-box">
-          <h3>Ready to Take the Next Step?</h3>
-          <p>Schedule your appointment today with our team of Doctors of Audiology at ACI Hearing Center in Lafayette, Louisiana.</p>
-          <a href="../contact.html" class="btn-cta">Schedule an Appointment</a>
-        </div>
-
+        </aside>
       </div>
     </div>
   </main>
@@ -747,11 +577,8 @@
             <a href="../hearing-aids.html">Hearing Aids</a>
             <a href="../cochlear-implants.html">Cochlear Implants</a>
             <a href="../tinnitus.html">Tinnitus Management</a>
-            <a href="../balance-testing.html">Balance Testing</a>
             <a href="../hearing-repair.html">Hearing Repair</a>
             <a href="../hearing-protection.html">Hearing Protection</a>
-              <a href="../services.html#diagnostic-testing">Diagnostic Testing</a>
-              <a href="../services.html#custom-molds">Custom Molds</a>
           </div>
         </div>
         <div>
@@ -786,5 +613,21 @@
   </div>
 
   <script src="../main.js" defer></script>
+
+  <script>
+
+(function() {
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav--open', !expanded);
+    });
+  }
+})();
+
+  </script>
 </body>
 </html>

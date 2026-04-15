@@ -3,515 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connecting Hearing loss to a Shorter Life Expectancy | ACI Hearing Center — Lafayette, LA</title>
+  <title>The Correlation Between Hearing Loss and Reduced Lifespan — ACI Hearing Center</title>
   <meta name="description" content="Untreated hearing loss doesn’t just impact your hearing; it’s linked to depression, cognitive decline, and even a shorter life.">
-  <meta property="og:title" content="Connecting Hearing loss to a Shorter Life Expectancy">
-  <meta property="og:description" content="Untreated hearing loss doesn’t just impact your hearing; it’s linked to depression, cognitive decline, and even a shorter life.">
-  <meta property="og:image" content="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_2534278181.jpg">
-  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acihearing.com/learn-more/articles/the-connection-between-hearing-loss-and-reduced-lifespan.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <style>
 
-/* ── Blog System — ACI Hearing Center ─────────────────────────────── */
-:root {
-  --navy:   #1B365D;
-  --gold:   #C59D5F;
-  --cream:  #FAF8F5;
-  --cream-d:#F0EDE7;
-  --text:   #333;
-  --muted:  #6B7280;
-  --radius: 10px;
-  --shadow: 0 4px 20px rgba(0,0,0,0.09);
-  --font-head: 'Lora', 'Playfair Display', Georgia, serif;
-  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
-}
+    /* ── ACI Blog Shared Styles ────────────────────────── */
+    :root {
+      --navy:  #1B365D;
+      --gold:  #C59D5F;
+      --gold-light: #D4B483;
+      --cream: #FAF7F2;
+      --white: #FFFFFF;
+      --gray-50:  #F8F9FA;
+      --gray-100: #F0F1F3;
+      --gray-200: #E2E4E8;
+      --gray-600: #6B7280;
+      --gray-800: #1F2937;
+      --text-main: #1F2937;
+      --radius-sm: 4px;
+      --radius:    8px;
+      --radius-lg: 12px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+      --shadow:    0 4px 16px rgba(0,0,0,.10);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.14);
+    }
 
-/* ── Search / Filter Bar ─────────────────────────────────────────────── */
-.blog-search-bar {
-  background: var(--navy);
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-}
-.blog-search-bar .container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.blog-search-input-wrap {
-  position: relative;
-  flex: 1 1 260px;
-  min-width: 200px;
-}
-.blog-search-input-wrap svg {
-  position: absolute;
-  left: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  color: var(--muted);
-  pointer-events: none;
-}
-.blog-search-input {
-  width: 100%;
-  padding: 10px 16px 10px 44px;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-family: var(--font-body);
-  background: #fff;
-  color: var(--text);
-  outline: none;
-  box-sizing: border-box;
-}
-.blog-search-input:focus {
-  box-shadow: 0 0 0 3px rgba(197,157,95,0.5);
-}
-.category-pills {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.category-pill {
-  padding: 7px 16px;
-  border-radius: 999px;
-  border: 2px solid transparent;
-  font-size: 13px;
-  font-weight: 600;
-  font-family: var(--font-body);
-  cursor: pointer;
-  transition: all 0.2s;
-  background: rgba(255,255,255,0.12);
-  color: #fff;
-}
-.category-pill:hover {
-  background: rgba(255,255,255,0.22);
-}
-.category-pill.active {
-  background: var(--gold);
-  color: #fff;
-  border-color: var(--gold);
-}
+    /* Category badge */
+    .cat-badge {
+      display: inline-block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(197,157,95,.12);
+      border: 1px solid rgba(197,157,95,.3);
+      border-radius: 3px;
+      padding: 3px 8px;
+      line-height: 1;
+    }
 
-/* ── Blog Page Sections ──────────────────────────────────────────────── */
-.blog-section {
-  padding: 64px 0;
-}
-.blog-section--alt {
-  background: var(--cream-d);
-}
-.blog-section-label {
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--gold);
-  margin: 0 0 8px;
-}
-.blog-section-title {
-  font-family: var(--font-head);
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 40px;
-  line-height: 1.25;
-}
+    /* ── Breadcrumb ────────────────────────────────────── */
+    .breadcrumb {
+      background: var(--cream);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 12px 0;
+    }
+    .breadcrumb__inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      color: var(--gray-600);
+    }
+    .breadcrumb__link {
+      color: var(--navy);
+      text-decoration: none;
+      transition: color .18s;
+    }
+    .breadcrumb__link:hover { color: var(--gold); }
+    .breadcrumb__sep { color: var(--gray-600); }
+    .breadcrumb__current { color: var(--gray-600); }
 
-/* ── No-results message ──────────────────────────────────────────────── */
-.blog-no-results {
-  display: none;
-  text-align: center;
-  padding: 48px 24px;
-  color: var(--muted);
-  font-family: var(--font-body);
-  font-size: 17px;
-  grid-column: 1 / -1;
-}
-.blog-no-results.visible {
-  display: block;
-}
+    /* ── Article header ────────────────────────────────── */
+    .article-header {
+      background: var(--navy);
+      padding: 56px 0 52px;
+      color: var(--white);
+    }
+    .article-header__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255,255,255,.7);
+      text-decoration: none;
+      margin-bottom: 24px;
+      transition: color .18s;
+    }
+    .article-header__back:hover { color: var(--gold); }
+    .article-header__meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .article-header__date {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.6);
+    }
+    .article-header__title {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.25;
+      margin: 0 0 16px;
+      max-width: 800px;
+    }
 
-/* ── Featured Grid (2×2) ─────────────────────────────────────────────── */
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-@media (max-width: 768px) {
-  .featured-grid { grid-template-columns: 1fr; }
-}
-.featured-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.25s, box-shadow 0.25s;
-}
-.featured-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 36px rgba(0,0,0,0.14);
-}
-.featured-card__image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-  background: var(--cream-d);
-}
-.featured-card__body {
-  padding: 24px 24px 28px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.featured-card__badge {
-  display: inline-block;
-  padding: 3px 12px;
-  background: var(--gold);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 12px;
-  align-self: flex-start;
-}
-.featured-card__title {
-  font-family: var(--font-head);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 10px;
-  line-height: 1.35;
-}
-.featured-card__excerpt {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--muted);
-  margin: 0 0 16px;
-  line-height: 1.6;
-  flex: 1;
-}
-.featured-card__link {
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--gold);
-  margin-top: auto;
-}
+    /* ── Article layout ────────────────────────────────── */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      padding: 56px 0 72px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+      .article-sidebar { order: -1; }
+    }
 
-/* ── Article Grid (3-col) ────────────────────────────────────────────── */
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 960px) {
-  .article-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-  .article-grid { grid-template-columns: 1fr; }
-}
-.article-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.22s, box-shadow 0.22s;
-}
-.article-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
-}
-.article-card__image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-  background: var(--cream-d);
-}
-.article-card__body {
-  padding: 18px 18px 22px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.article-card__badge {
-  display: inline-block;
-  padding: 2px 10px;
-  background: rgba(197,157,95,0.15);
-  color: var(--gold);
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 10px;
-  align-self: flex-start;
-  border: 1px solid rgba(197,157,95,0.35);
-}
-.article-card__title {
-  font-family: var(--font-head);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 8px;
-  line-height: 1.4;
-}
-.article-card__excerpt {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--muted);
-  margin: 0 0 14px;
-  line-height: 1.55;
-  flex: 1;
-}
-.article-card__link {
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--gold);
-  margin-top: auto;
-}
+    /* ── Article body content ──────────────────────────── */
+    .article-content {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16.5px;
+      line-height: 1.75;
+      color: var(--text-main);
+    }
+    .article-content h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 2em 0 .6em;
+      line-height: 1.3;
+    }
+    .article-content h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin: 1.6em 0 .5em;
+    }
+    .article-content h4 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 1.4em 0 .4em;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .article-content p {
+      margin: 0 0 1.2em;
+    }
+    .article-content ul {
+      margin: 0 0 1.2em 1.4em;
+      padding: 0;
+    }
+    .article-content ul li {
+      margin-bottom: .5em;
+      padding-left: .3em;
+    }
+    .article-content a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-decoration-color: rgba(197,157,95,.4);
+      transition: color .18s;
+    }
+    .article-content a:hover { color: var(--navy); }
+    .article-content strong { color: var(--navy); }
+    .article-content code {
+      background: var(--gray-100);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: .9em;
+    }
+    .article-content hr {
+      border: none;
+      border-top: 1px solid var(--gray-200);
+      margin: 2em 0;
+    }
+    .article-content ul li::marker { color: var(--gold); }
 
-/* ── Article count ─────────────────────────────────────────────────── */
-#article-count {
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--muted);
-}
+    /* ── Featured image ────────────────────────────────── */
+    .article-featured-img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      margin-bottom: 32px;
+      display: block;
+    }
 
-/* ── Individual Article Page ─────────────────────────────────────────── */
-.article-page-wrapper {
-  background: var(--cream);
-  min-height: 60vh;
-  padding: 48px 0 80px;
-}
-.article-page-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-.article-back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--gold);
-  text-decoration: none;
-  margin-bottom: 18px;
-  transition: gap 0.2s;
-}
-.article-back-link:hover { gap: 10px; }
-.article-breadcrumb {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.article-breadcrumb a {
-  color: var(--muted);
-  text-decoration: none;
-}
-.article-breadcrumb a:hover { color: var(--navy); text-decoration: underline; }
-.article-breadcrumb span { color: var(--muted); }
-.article-hero-image {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: var(--radius);
-  margin-bottom: 32px;
-  display: block;
-  box-shadow: var(--shadow);
-}
-.article-meta {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-.article-meta__badge {
-  display: inline-block;
-  padding: 4px 14px;
-  background: var(--gold);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-.article-meta__date {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--muted);
-}
-.article-title {
-  font-family: var(--font-head);
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.25;
-  margin: 0 0 32px;
-}
-.article-body {
-  font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text);
-  max-width: 760px;
-}
-.article-body h2 {
-  font-family: var(--font-head);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 2em 0 0.6em;
-  line-height: 1.3;
-}
-.article-body h3 {
-  font-family: var(--font-head);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 1.6em 0 0.5em;
-}
-.article-body h4 {
-  font-family: var(--font-head);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 1.4em 0 0.4em;
-}
-.article-body p {
-  margin: 0 0 1.2em;
-}
-.article-body ul, .article-body ol {
-  margin: 0 0 1.2em 1.5em;
-}
-.article-body li {
-  margin-bottom: 0.4em;
-}
-.article-body strong {
-  color: var(--navy);
-  font-weight: 700;
-}
-.article-body a {
-  color: var(--gold);
-  text-decoration: underline;
-}
-.article-body a:hover {
-  color: var(--navy);
-}
-.article-body img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 1.5em 0;
-}
-.article-divider {
-  border: none;
-  border-top: 2px solid var(--cream-d);
-  margin: 48px 0;
-}
-.article-cta-box {
-  background: var(--navy);
-  border-radius: var(--radius);
-  padding: 40px 36px;
-  text-align: center;
-  color: #fff;
-  margin-top: 0;
-}
-.article-cta-box h3 {
-  font-family: var(--font-head);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 12px;
-  color: #fff;
-}
-.article-cta-box p {
-  font-family: var(--font-body);
-  font-size: 16px;
-  color: rgba(255,255,255,0.85);
-  margin: 0 0 24px;
-  line-height: 1.6;
-}
-.article-cta-box .btn-cta {
-  display: inline-block;
-  background: var(--gold);
-  color: #fff;
-  padding: 13px 30px;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
-}
-.article-cta-box .btn-cta:hover {
-  background: #b8883e;
-  transform: translateY(-2px);
-}
+    /* ── Sidebar ───────────────────────────────────────── */
+    .article-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-cta {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .sidebar-cta__label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 8px;
+    }
+    .sidebar-cta__title {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+    .sidebar-cta__text {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      color: rgba(255,255,255,.75);
+      margin: 0 0 20px;
+      line-height: 1.6;
+    }
+    .sidebar-cta__phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+      margin-top: 12px;
+      transition: color .18s;
+    }
+    .sidebar-cta__phone:hover { color: var(--white); }
 
-/* ── Blog Hero (learn-more page) ─────────────────────────────────────── */
-.blog-hero {
-  background: var(--navy);
-  padding: 72px 0 60px;
-  text-align: center;
-}
-.blog-hero__label {
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--gold);
-  margin: 0 0 12px;
-}
-.blog-hero__title {
-  font-family: var(--font-head);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 14px;
-  line-height: 1.2;
-}
-.blog-hero__subtitle {
-  font-family: var(--font-body);
-  font-size: 18px;
-  color: rgba(255,255,255,0.78);
-  margin: 0;
-  max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .sidebar-related {
+      background: var(--cream);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+    .sidebar-related__title {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 16px;
+    }
+    .sidebar-related__link {
+      display: block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      color: var(--navy);
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-200);
+      transition: color .18s;
+      line-height: 1.4;
+    }
+    .sidebar-related__link:last-child { border-bottom: none; }
+    .sidebar-related__link:hover { color: var(--gold); }
+
+    /* ── Bottom CTA ────────────────────────────────────── */
+    .article-bottom-cta {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      color: var(--white);
+      margin-top: 48px;
+      text-align: center;
+    }
+    .article-bottom-cta__label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 8px;
+    }
+    .article-bottom-cta__title {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0 0 10px;
+    }
+    .article-bottom-cta__text {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 15px;
+      color: rgba(255,255,255,.75);
+      margin: 0 0 24px;
+    }
 
   </style>
 </head>
@@ -537,7 +336,7 @@
     <div class="header__main">
       <div class="container header__main-inner">
         <a href="../index.html" class="header__logo" aria-label="ACI Hearing Center Home">
-          <img src="../assets/logo.png" alt="ACI Hearing Center logo" width="180" height="50">
+          <img src="../assets/logo.png" alt="ACI Hearing Center logo" width="368" height="100">
         </a>
 
         <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -558,7 +357,6 @@
               <a href="../hearing-aids.html">Hearing Aids</a>
               <a href="../cochlear-implants.html">Cochlear Implants</a>
               <a href="../tinnitus.html">Tinnitus Management</a>
-              <a href="../balance-testing.html">Balance Testing</a>
               <a href="../hearing-repair.html">Hearing Repair</a>
               <a href="../hearing-protection.html">Hearing Protection</a>
               <a href="../services.html#diagnostic-testing">Diagnostic Testing</a>
@@ -570,7 +368,7 @@
             <a href="../reviews.html" class="nav__link">Reviews</a>
           </div>
           <div class="nav__item">
-            <a href="../learn-more.html" class="nav__link">Learn More</a>
+            <a href="../learn-more.html" class="nav__link nav__link--active">Learn More</a>
           </div>
           <div class="nav__item">
             <a href="../contact.html" class="nav__link">Contact</a>
@@ -593,94 +391,124 @@
   </header>
 
   <main>
-    <div class="article-page-wrapper">
-      <div class="article-page-inner">
+    
+    <div class="breadcrumb">
+      <div class="container">
+        <nav class="breadcrumb__inner" aria-label="Breadcrumb">
+          <a href="../index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="../learn-more.html" class="breadcrumb__link">Learn More</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">News</span>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">The Correlation Between Hearing Loss and Reduced Lifespan</span>
+        </nav>
+      </div>
+    </div>
 
-        <a href="../learn-more.html" class="article-back-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="15 18 9 12 15 6"/></svg>
+    <!-- ARTICLE HEADER -->
+    <section class="article-header" aria-label="Article header">
+      <div class="container">
+        <a href="../learn-more.html" class="article-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
           Back to Articles
         </a>
-
-        <nav class="article-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span>&rsaquo;</span>
-          <a href="../learn-more.html">Learn More</a>
-          <span>&rsaquo;</span>
-          <a href="../learn-more.html">Hearing Loss</a>
-          <span>&rsaquo;</span>
-          <span aria-current="page">Connecting Hearing loss to a Shorter Life Expectancy</span>
-        </nav>
-
-      <img class="article-hero-image" src="https://www.helpingmehear.com/wp-content/uploads/2025/05/shutterstock_2534278181.jpg" alt="Connecting Hearing loss to a Shorter Life Expectancy" loading="lazy">
-
-        <div class="article-meta">
-          <span class="article-meta__badge">Hearing Loss</span>
-          <span class="article-meta__date">May 31, 2025</span>
+        <div class="article-header__meta">
+          <span class="cat-badge">News</span>
+          <span class="article-header__date">June 1, 2025</span>
         </div>
+        <h1 class="article-header__title">The Correlation Between Hearing Loss and Reduced Lifespan</h1>
+      </div>
+    </section>
 
-        <h1 class="article-title">Connecting Hearing loss to a Shorter Life Expectancy</h1>
+    <!-- ARTICLE BODY -->
+    <div class="container">
+      <div class="article-layout">
+        <!-- Main content -->
+        <article class="article-main" aria-label="Article content">
+          <img class="article-featured-img" src="https://acihearing.com/wp-content/uploads/2025/06/shutterstock_2534278181.jpg" alt="The Correlation Between Hearing Loss and Reduced Lifespan" loading="eager">
+          <div class="article-content">
+            <p>Hearing loss is often brushed off as a normal part of aging, like needing bifocals or noticing a few gray hairs. However, recent studies suggest that its value is considerably undervalued. Research conducted by Duke-NUS Medical School uncovered a considerable connection between unaddressed hearing impairments and a reduced lifespan among older individuals.</p>
+<p>Seniors who have hearing or vision problems are already known to be at greater risk for depression, isolation, and cognitive challenges. What's surprising is that untreated hearing loss may actually reduce your lifespan. The dangers considerably escalate when hearing loss is combined with additional sensory impairments, like impaired vision.</p>
+<p>Research findings indicate that individuals who deal with dual sensory impairments, affecting both their hearing and vision, face significantly greater challenges in performing day-to-day activities such as personal care, meal preparation, and medication management, causing significant losses of autonomy and total well-being.</p>
+<h2>Why hearing loss is linked to poor general health</h2>
+<p>There is a considerable link between hearing loss and various other health conditions that surpasses coincidence.</p>
+<p>A study conducted by researchers at Johns Hopkins showed that seniors who suffer from hearing issues are at a greater risk of:</p>
+<ul>
+<li>Elevated blood pressure and heart-related conditions</li>
+</ul>
+<ul>
+<li>Greater chance of suffering a stroke</li>
+</ul>
+<ul>
+<li>Increased prevalence of smoking or hazardous lifestyle behaviors</li>
+</ul>
+<ul>
+<li>Decrease in mental performance, including dementia and Alzheimer's</li>
+</ul>
+<p>This is because hearing is impacted by blood circulation to some degree. The effective functioning of the inner ear depends on having an adequet supply of blood. If the flow of blood is restricted as a result of conditions like high blood pressure or smoking, it can negatively impact your hearing. In fact, some individuals experience a whooshing or pulsing sound in their ears, which can be a sign of vascular problems.</p>
+<p>In addition to affecting your ears, hearing loss also puts stress on your brain. When sound signals are vague, your brain must exert more energy to translate and understand spoken language. Exerting added mental energy can hamper your brain's ability to absorb and keep knowledge, potentially accelerating mental decline.</p>
+<h2>The impact of hearing loss on emotions and social interactions</h2>
+<p>Apart from its physical implications, failing to manage hearing loss can also have a profound influence on your mental health. Many individuals with hearing troubles start to disengage socially because it becomes harder and more frustrating to engage in conversations. This solitude frequently results in:</p>
+<ul>
+<li>Seclusion and diminished social interaction</li>
+</ul>
+<ul>
+<li>Increased danger of depression and anxiety</li>
+</ul>
+<ul>
+<li>A deterioration in mental and emotional health</li>
+</ul>
+<p>These consequences can compound over time, contributing to a downward spiral in both mental and physical health.</p>
+<h2>Strategy to enhance your hearing and enhance your wellbeing</h2>
+<p>The good news is that hearing impairment is treatable, and dealing with it early makes a big difference. strategies for Action:</p>
+<ul>
+<li>Schedule a hearing evaluation Even if you have minor symptoms, a test can pinpoint any issues before they worsen.</li>
+</ul>
+<ul>
+<li>Think about Contemporary options like hearing aid, they are sleek, technologically advanced, and remarkably proficient at minimizing distractions from outside sounds.</li>
+</ul>
+<ul>
+<li>Improve your nutrition Nutrients like iron, B12, and folate bolster hearing health. Consult your doctor or a nutritionist for guidance.</li>
+</ul>
+<ul>
+<li>Regulating underlying medical issues, such as heart conditions or anemia, can have a positive impact on hearing.</li>
+</ul>
+<h2>Take control of your hearing health today</h2>
+<p>Hearing loss doesn't have to control your life or shorten it. When identified and managed early, hearing loss can be treated effectively, strengthening not just your hearing but your emotional state, memory, and longevity.</p>
+<p>If you've started to notice a decline in your discussions, it's essential to take action right away. Taking the time to get a hearing test can have a profound and long-lasting effect on your total health and quality of life.</p>
+<p>Contact us today to schedule a hearing test and get on the path to better health.</p>
+          </div>
 
-        <div class="article-body">
-          <p>It is common for individuals to dismiss hearing loss as an ordinary aspect of getting older, similar to requiring bifocals or finding a couple of gray hairs. But new studies suggests it&#8217;s a lot more significant. A study from Duke-NUS Medical School found a powerful association between neglected hearing loss and reduced life expectancy in older adults.</p>
-<p>Elderly people experiencing hearing or visual difficulties are more susceptible to developing depression, feeling disconnected from others, and facing challenges with mental processing and memory. A shocking fact is that failing to address hearing loss can potentially cut years off your lifespan. The dangers substantially escalate when hearing loss is combined with additional sensory impairments, like impaired vision.</p>
-<p>Research findings indicate that people who deal with dual sensory impairments, impacting both their hearing and vision, face significantly greater challenges in performing everyday activities including personal care, meal preparation, and medication management, causing significant losses of freedom and overall well-being.</p>
-<h2>The link between hearing loss and declining general wellness</h2>
-<p>There is a significant connection between hearing loss and various other health conditions that surpasses coincidence.</p>
-<p>Researchers at Johns Hopkins discovered that older adults with hearing impairment are more likely to experience:</p>
-<ul>
-  <li>High blood pressure and cardiovascular disease</li>
-</ul>
-<ul>
-  <li>Greater chance of suffering a stroke</li>
-</ul>
-<ul>
-  <li>Increased occurrence of smoking or unhealthy lifestyle behaviors</li>
-</ul>
-<ul>
-  <li>Decrease in mental functioning, including dementia and Alzheimer&#8217;s</li>
-</ul>
-<p>This is probably due in part to how blood circulation affects hearing. The inner ear relies on a strong supply of blood to function. When blood vessels are narrowed by high blood pressure or smoking, for instance, your hearing might suffer. As a matter of fact, some people experience a whooshing or pulsing sound in their ears, which can be a sign of vascular problems.</p>
-<p>Hearing loss also taxes the brain. When your ears can&#8217;t clearly hear sounds, your brain has to work harder to interpret speech. This extra effort might reduce your ability to process and retain information, raising the risk of mental decline.</p>
-<h2>The repercussion of hearing loss on emotions and social interactions</h2>
-<p>In addition to the physical effects, neglected hearing loss can impact your emotional wellness. Many individuals with hearing troubles begin to withdraw socially because it becomes more difficult and more frustrating to participate in conversations. This solitude frequently results in:</p>
-<ul>
-  <li>Loneliness and decreased social activity</li>
-</ul>
-<ul>
-  <li>Increased risk of depression and anxiety</li>
-</ul>
-<ul>
-  <li>A decline in mental and emotional well-being</li>
-</ul>
-<p>These consequences can compound over time, contributing to a downward spiral in both cognitive and physical health.</p>
-<h2>Simple steps to improve hearing and total health</h2>
-<p>The good news is that hearing loss is treatable, and dealing with it early makes a big difference. Here&#8217;s what you can do:</p>
-<ul>
-  <li>Schedule a hearing assessment&#8211; Even if you have mild symptoms, a test can pinpoint any problems before they worsen.</li>
-</ul>
-<ul>
-  <li>Think about hearing aids&#8211; Today&#8217;s devices are unobtrusive, Bluetooth-enabled, and highly effective at filtering background noise.</li>
-</ul>
-<ul>
-  <li>Improve your nutrition&#8211; Nutrients including iron, B12, and folate support hearing health. Speak with your doctor or a nutritionist for guidance.</li>
-</ul>
-<ul>
-  <li>Managing underlying medical problems, such as heart conditions or anemia, can have a positive impact on hearing.</li>
-</ul>
-<h2>Start managing your hearing health now.</h2>
-<p>Hearing loss doesn&#8217;t have to take over your life&#8211; or shorten it. Detecting and addressing hearing loss promptly can lead to successful treatment, improving not only your ability to hear but also positively affecting your emotional well-being, cognitive function, and general lifespan.</p>
-<p>If you&#8217;ve begun to observe a decline in your discussions, it&#8217;s important to take action right away. A hearing assessment is a simple measure that could have a lasting effect on your health and well-being.</p>
-<p>Contact us now to schedule a hearing test and get on the road to better health.</p>
+          <!-- Bottom CTA -->
+          <div class="article-bottom-cta">
+            <p class="article-bottom-cta__label">Take Action Today</p>
+            <h2 class="article-bottom-cta__title">Schedule Your Hearing Consultation</h2>
+            <p class="article-bottom-cta__text">Our Doctors of Audiology at ACI Hearing Center are here to help. Get a comprehensive evaluation and personalized treatment plan.</p>
+            <a href="../contact.html" class="btn btn--primary btn--lg">Book an Appointment</a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar" aria-label="Article sidebar">
+          <div class="sidebar-cta">
+            <p class="sidebar-cta__label">Expert Care</p>
+            <h3 class="sidebar-cta__title">Concerned About Your Hearing?</h3>
+            <p class="sidebar-cta__text">Don't wait. Early intervention leads to better outcomes. Our team is ready to help you hear your best.</p>
+            <a href="../contact.html" class="btn btn--primary" style="width:100%;text-align:center;display:block;">Schedule Appointment</a>
+            <a href="tel:3372239448" class="sidebar-cta__phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              337-223-9448
+            </a>
+          </div>
+          
+        <div class="sidebar-related">
+          <h3 class="sidebar-related__title">Related Articles</h3>
+                      <a href="./sudden-hearing-loss.html" class="sidebar-related__link">Identifying Primary Triggers for Sudden Hearing Loss</a>
+            <a href="./how-to-prevent-tinnitus-from-worsening-while-flying.html" class="sidebar-related__link">Tips for Dealing With Tinnitus During Air Travel</a>
+            <a href="./what-are-bone-conduction-hearing-devices.html" class="sidebar-related__link">What Are Bone Conduction Hearing Devices?</a>
         </div>
-
-        <hr class="article-divider">
-
-        <div class="article-cta-box">
-          <h3>Ready to Take the Next Step?</h3>
-          <p>Schedule your appointment today with our team of Doctors of Audiology at ACI Hearing Center in Lafayette, Louisiana.</p>
-          <a href="../contact.html" class="btn-cta">Schedule an Appointment</a>
-        </div>
-
+        </aside>
       </div>
     </div>
   </main>
@@ -716,11 +544,8 @@
             <a href="../hearing-aids.html">Hearing Aids</a>
             <a href="../cochlear-implants.html">Cochlear Implants</a>
             <a href="../tinnitus.html">Tinnitus Management</a>
-            <a href="../balance-testing.html">Balance Testing</a>
             <a href="../hearing-repair.html">Hearing Repair</a>
             <a href="../hearing-protection.html">Hearing Protection</a>
-              <a href="../services.html#diagnostic-testing">Diagnostic Testing</a>
-              <a href="../services.html#custom-molds">Custom Molds</a>
           </div>
         </div>
         <div>
@@ -755,5 +580,21 @@
   </div>
 
   <script src="../main.js" defer></script>
+
+  <script>
+
+(function() {
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav--open', !expanded);
+    });
+  }
+})();
+
+  </script>
 </body>
 </html>
