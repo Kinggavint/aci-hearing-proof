@@ -436,6 +436,17 @@ ul, ol { list-style: none; }
   background: var(--white);
   color: var(--navy);
 }
+/* Variant for use on light backgrounds (e.g. inside .highlight-box) */
+.highlight-box .btn--secondary,
+.btn--secondary.btn--on-light {
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.highlight-box .btn--secondary:hover,
+.btn--secondary.btn--on-light:hover {
+  background: var(--navy);
+  color: var(--white);
+}
 .btn--outline {
   background: transparent;
   color: var(--navy);
