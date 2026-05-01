@@ -1712,3 +1712,33 @@ ul, ol { list-style: none; }
   .header, .footer, .mobile-cta, .cta-banner { display: none; }
   body { font-size: 12pt; color: #000; background: #fff; }
 }
+
+/* === HERO SLIDESHOW (homepage) === */
+.hero-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  overflow: hidden;
+  border-radius: 0 0 0 var(--radius-xl);
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1200ms ease-in-out, transform 7000ms ease-out;
+  display: block;
+}
+.hero-slide--active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { transition: opacity 400ms linear; transform: none !important; }
+}

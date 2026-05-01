@@ -125,6 +125,20 @@
     });
   }
 
+  // === Hero slideshow auto-cycle ===
+  var slideshow = document.querySelector('.hero-slideshow');
+  if (slideshow) {
+    var slides = slideshow.querySelectorAll('.hero-slide');
+    if (slides.length > 1) {
+      var idx = 0;
+      setInterval(function() {
+        slides[idx].classList.remove('hero-slide--active');
+        idx = (idx + 1) % slides.length;
+        slides[idx].classList.add('hero-slide--active');
+      }, 5000);
+    }
+  }
+
   // === Smooth scroll for anchor links ===
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {
