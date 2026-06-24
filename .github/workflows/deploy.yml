@@ -1,0 +1,92 @@
+name: Deploy to S3 + Invalidate CloudFront
+
+# Triggers on every push to main, plus a manual button in the GitHub Actions UI.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# We need write access only to the OIDC token (optional fallback). For now we use
+# static access keys stored in repo secrets — see README at bottom of this file.
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Sync to S3 + CloudFront invalidate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      AWS_REGION: us-east-2
+      S3_BUCKET: aci-hearing
+      CLOUDFRONT_DISTRIBUTION_ID: E1GL9UDE5Y8WGK
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync repo to S3
+        # --delete removes objects from S3 that no longer exist in the repo,
+        # which keeps the live site in sync with the source of truth.
+        # We exclude .git, .github, and any markdown/readme so only site assets ship.
+        run: |
+          aws s3 sync . s3://$S3_BUCKET/ \
+            --delete \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "*.md" \
+            --exclude "README*" \
+            --exclude ".gitignore" \
+            --exclude "LICENSE*" \
+            --cache-control "public, max-age=300"
+
+      - name: Fix content types for common web files
+        # aws s3 sync occasionally guesses wrong on HTML/CSS/JS. Force-correct.
+        run: |
+          aws s3 cp s3://$S3_BUCKET/ s3://$S3_BUCKET/ \
+            --recursive \
+            --exclude "*" \
+            --include "*.html" \
+            --metadata-directive REPLACE \
+            --content-type "text/html; charset=utf-8" \
+            --cache-control "public, max-age=300"
+          aws s3 cp s3://$S3_BUCKET/ s3://$S3_BUCKET/ \
+            --recursive \
+            --exclude "*" \
+            --include "*.css" \
+            --metadata-directive REPLACE \
+            --content-type "text/css; charset=utf-8" \
+            --cache-control "public, max-age=3600"
+          aws s3 cp s3://$S3_BUCKET/ s3://$S3_BUCKET/ \
+            --recursive \
+            --exclude "*" \
+            --include "*.js" \
+            --metadata-directive REPLACE \
+            --content-type "application/javascript; charset=utf-8" \
+            --cache-control "public, max-age=3600"
+
+      - name: Invalidate CloudFront cache
+        # Invalidate everything — this is the simplest correct behavior. ACI's site
+        # is small (65 URLs) so the cost per run is trivial (first 1000/month free).
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id $CLOUDFRONT_DISTRIBUTION_ID \
+            --paths "/*"
+
+      - name: Verify deploy
+        run: |
+          echo "Live homepage Last-Modified after deploy:"
+          curl -sI https://acihearing.com/ | grep -i "last-modified\|x-cache\|http" | head -5
+          echo "---"
+          echo "Schema JSON-LD count on live homepage:"
+          curl -s https://acihearing.com/ | grep -c "application/ld+json" || true
+          echo "Schema JSON-LD count on live /team.html:"
+          curl -s https://acihearing.com/team.html | grep -c "application/ld+json" || true
