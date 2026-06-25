@@ -33,13 +33,16 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Sync repo to S3
-        # --delete removes objects from S3 that no longer exist in the repo,
-        # which keeps the live site in sync with the source of truth.
-        # We exclude .git, .github, and any markdown/readme so only site assets ship.
+      - name: Sync repo to S3 (additive only — NEVER --delete)
+        # IMPORTANT: --delete is intentionally OMITTED because the live bucket
+        # currently has ~50 article pages under /articles/ that are NOT in this
+        # repo. Using --delete would wipe them. Until the repo is reconciled to
+        # mirror the full live site, this sync only ADDS/UPDATES files.
+        # If you ever need to delete a file from S3, do it manually with the AWS
+        # CLI and confirm scope first. See aci_hearing_knowledge_base/learnings/
+        # 2026-06-25 for context.
         run: |
           aws s3 sync . s3://$S3_BUCKET/ \
-            --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude "*.md" \

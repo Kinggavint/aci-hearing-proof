@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow CMS-style fallback URLs that return duplicate homepage content
+# (S3 falls back to index.html for unmatched paths — these create soft-404s)
+Disallow: /services/
+Disallow: /locations/
+Disallow: /location-contact/
+Disallow: /location/
+
+# Sitemap
+Sitemap: https://acihearing.com/sitemap.xml

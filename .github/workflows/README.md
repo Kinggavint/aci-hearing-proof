@@ -20,8 +20,10 @@ vault.
    The IAM principal needs these permissions on AWS account 601102828355:
 
    - `s3:ListBucket` on `arn:aws:s3:::aci-hearing`
-   - `s3:GetObject`, `s3:PutObject`, `s3:DeleteObject` on
+   - `s3:GetObject`, `s3:PutObject` on
      `arn:aws:s3:::aci-hearing/*`
+   - (DeleteObject NOT needed — the workflow runs additive-only syncs to
+     protect the ~50 article pages on S3 that are not yet in the repo)
    - `cloudfront:CreateInvalidation` on
      `arn:aws:cloudfront::601102828355:distribution/E1GL9UDE5Y8WGK`
 
@@ -45,12 +47,12 @@ vault.
 
 ## Safety rails
 
-- The `s3:DeleteObject` permission is intentional — it lets the workflow remove
-  files that have been deleted from the repo. This is normal `s3 sync --delete`
-  behavior and is what keeps the live site in sync with source-of-truth.
+- The workflow uses additive-only `aws s3 sync` (NO `--delete` flag). This
+  protects the ~50 `/articles/` pages that live on S3 but aren't yet in this
+  repo. Files in the repo will be uploaded and updated, but nothing on S3 will
+  be deleted by this workflow.
 - The agent is configured with hard-stops that block any commit that would
-  mass-overwrite more than 50 pages in a single run, so this workflow cannot
-  accidentally wipe the bucket.
+  mass-overwrite more than 50 pages in a single run.
 - All commits go through the agent's validation gates BEFORE landing on `main`,
   so by the time GitHub Actions runs, the changes have already been
   schema-validated, syntax-checked, and reviewed.
