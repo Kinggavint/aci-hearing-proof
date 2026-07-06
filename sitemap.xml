@@ -405,6 +405,12 @@
   <url>
     <loc>https://acihearing.com/pulsatile-tinnitus.html</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://acihearing.com/types-of-tinnitus.html</loc>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
