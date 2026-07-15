@@ -39,55 +39,148 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Physician",
-      "@id": "https://acihearing.com/dr-courtney-barbier.html#physician",
-      "name": "Dr. Courtney Barbier",
-      "additionalName": "Au.D.",
-      "alternateName": "Courtney Barbier, Au.D.",
-      "honorificPrefix": "Dr.",
-      "honorificSuffix": "Au.D., CCC-A",
-      "image": "https://acihearing.com/assets/team-barbier.jpg",
-      "url": "https://acihearing.com/dr-courtney-barbier.html",
-      "jobTitle": "Doctor of Audiology",
-      "medicalSpecialty": ["Otolaryngology", "Audiology"],
-      "worksFor": {
-        "@id": "https://acihearing.com/#business"
-      },
-      "affiliation": {
-        "@type": "MedicalBusiness",
-        "@id": "https://acihearing.com/#business",
-        "name": "ACI Hearing Center",
-        "url": "https://acihearing.com/",
-        "telephone": "+1-337-223-9448",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "103 Saint Thomas Street",
-          "addressLocality": "Lafayette",
-          "addressRegion": "LA",
-          "postalCode": "70506",
-          "addressCountry": "US"
-        }
-      },
-      "workLocation": {
-        "@type": "Place",
-        "name": "ACI Hearing Center",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "103 Saint Thomas Street",
-          "addressLocality": "Lafayette",
-          "addressRegion": "LA",
-          "postalCode": "70506",
-          "addressCountry": "US"
-        },
-        "telephone": "+1-337-223-9448"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Lafayette", "addressRegion": "LA", "addressCountry": "US" },
-        { "@type": "City", "name": "Broussard", "addressRegion": "LA", "addressCountry": "US" },
-        { "@type": "City", "name": "Youngsville", "addressRegion": "LA", "addressCountry": "US" },
-        { "@type": "AdministrativeArea", "name": "Lafayette Parish, Louisiana" },
-        { "@type": "AdministrativeArea", "name": "Acadiana" }
-      ]
+          "@type": "Physician",
+          "@id": "https://acihearing.com/dr-courtney-barbier.html#physician",
+          "name": "Dr. Courtney Barbier",
+          "additionalName": "Au.D.",
+          "alternateName": "Courtney Barbier, Au.D.",
+          "honorificPrefix": "Dr.",
+          "honorificSuffix": "Au.D., CCC-A",
+          "image": "https://acihearing.com/assets/team-barbier.jpg",
+          "url": "https://acihearing.com/dr-courtney-barbier.html",
+          "jobTitle": "Doctor of Audiology",
+          "medicalSpecialty": [
+                "Otolaryngology",
+                "Audiology"
+          ],
+          "worksFor": {
+                "@id": "https://acihearing.com/#business"
+          },
+          "affiliation": {
+                "@type": "MedicalBusiness",
+                "@id": "https://acihearing.com/#business",
+                "name": "ACI Hearing Center",
+                "url": "https://acihearing.com/",
+                "telephone": "+1-337-223-9448",
+                "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "103 Saint Thomas Street",
+                      "addressLocality": "Lafayette",
+                      "addressRegion": "LA",
+                      "postalCode": "70506",
+                      "addressCountry": "US"
+                }
+          },
+          "workLocation": {
+                "@type": "Place",
+                "name": "ACI Hearing Center",
+                "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "103 Saint Thomas Street",
+                      "addressLocality": "Lafayette",
+                      "addressRegion": "LA",
+                      "postalCode": "70506",
+                      "addressCountry": "US"
+                },
+                "telephone": "+1-337-223-9448"
+          },
+          "areaServed": [
+                {
+                      "@type": "City",
+                      "name": "Lafayette",
+                      "addressRegion": "LA",
+                      "addressCountry": "US"
+                },
+                {
+                      "@type": "City",
+                      "name": "Broussard",
+                      "addressRegion": "LA",
+                      "addressCountry": "US"
+                },
+                {
+                      "@type": "City",
+                      "name": "Youngsville",
+                      "addressRegion": "LA",
+                      "addressCountry": "US"
+                },
+                {
+                      "@type": "AdministrativeArea",
+                      "name": "Lafayette Parish, Louisiana"
+                },
+                {
+                      "@type": "AdministrativeArea",
+                      "name": "Acadiana"
+                }
+          ],
+          "hasCredential": [
+                {
+                      "credentialCategory": "degree",
+                      "name": "Doctor of Audiology (Au.D.)",
+                      "recognizedBy": {
+                            "@type": "EducationalOrganization",
+                            "name": "Louisiana State University Health Sciences Center in New Orleans"
+                      }
+                },
+                {
+                      "credentialCategory": "degree",
+                      "name": "Bachelor of Arts in Speech Pathology and Audiology",
+                      "recognizedBy": {
+                            "@type": "EducationalOrganization",
+                            "name": "University of Louisiana at Lafayette"
+                      }
+                },
+                {
+                      "credentialCategory": "certification",
+                      "name": "Certificate of Clinical Competence in Audiology (CCC-A)",
+                      "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "American Speech-Language-Hearing Association"
+                      }
+                },
+                {
+                      "credentialCategory": "license",
+                      "name": "Louisiana Audiology License",
+                      "recognizedBy": {
+                            "@type": "GovernmentOrganization",
+                            "name": "Louisiana Board of Examiners for Speech-Language Pathology and Audiology"
+                      }
+                }
+          ],
+          "alumniOf": [
+                {
+                      "@type": "CollegeOrUniversity",
+                      "name": "Louisiana State University Health Sciences Center in New Orleans",
+                      "url": "https://www.lsuhsc.edu/"
+                },
+                {
+                      "@type": "CollegeOrUniversity",
+                      "name": "University of Louisiana at Lafayette",
+                      "url": "https://www.louisiana.edu/"
+                }
+          ],
+          "colleague": [
+                {
+                      "@type": "Physician",
+                      "@id": "https://acihearing.com/dr-kimberly-allred.html#physician",
+                      "name": "Dr. Kimberly L. Allred",
+                      "jobTitle": "Doctor of Audiology",
+                      "url": "https://acihearing.com/dr-kimberly-allred.html"
+                },
+                {
+                      "@type": "Physician",
+                      "@id": "https://acihearing.com/dr-elizabeth-lemaire.html#physician",
+                      "name": "Dr. Elizabeth LeMaire",
+                      "jobTitle": "Doctor of Audiology",
+                      "url": "https://acihearing.com/dr-elizabeth-lemaire.html"
+                },
+                {
+                      "@type": "Physician",
+                      "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#physician",
+                      "name": "Dr. Sarah Lalande-Davies",
+                      "jobTitle": "Doctor of Audiology",
+                      "url": "https://acihearing.com/dr-sarah-lalande-davies.html"
+                }
+          ]
     }
   ]
 }
@@ -240,6 +333,42 @@
       <div class="faq-item"><h3>Is Dr. Barbier licensed in Louisiana?</h3><p>Yes. Dr. Barbier is licensed by the Louisiana Board of Examiners for Speech-Language Pathology and Audiology and holds her Certificate of Clinical Competence in Audiology (CCC-A) through the American Speech-Language-Hearing Association. She is an active member of the American Academy of Audiology and the Louisiana Academy of Audiology.</p></div>
     </section>
 
+    <section class="content-section colleagues-section" aria-labelledby="colleagues-heading">
+      <div class="content-container">
+        <h2 id="colleagues-heading">Meet our other Doctors of Audiology</h2>
+        <p class="colleagues-lede">ACI Hearing Center has four Doctors of Audiology on staff. If you would like to see one of Dr. Courtney Barbier&rsquo;s colleagues, learn more about them below.</p>
+      </div>
+      <div class="content-container colleagues-grid">
+        <a class="card card--team-mini" href="dr-kimberly-allred.html">
+          <img class="card--team-mini__photo" src="./assets/team-allred.jpg" alt="Dr. Kimberly L. Allred, Au.D." width="120" height="120" loading="lazy">
+          <div class="card--team-mini__info">
+            <h3 class="card--team-mini__name">Dr. Kimberly Allred</h3>
+            <p class="card--team-mini__title">Au.D. — Doctor of Audiology</p>
+            <p class="card--team-mini__teaser">Dr. Kimberly (Peezie) Allred owns ACI Hearing Center and has cared for Acadiana patients since 1994. She specializes in hearing aids, cochlear implants, and tinnitus care.</p>
+            <p class="card--team-mini__cta">Read Dr. Kimberly Allred&rsquo;s bio &rarr;</p>
+          </div>
+        </a>
+        <a class="card card--team-mini" href="dr-elizabeth-lemaire.html">
+          <img class="card--team-mini__photo" src="./assets/proof-changes-2026-05-04/elizabeth-lemaire.jpg" alt="Dr. Elizabeth LeMaire, Au.D." width="120" height="120" loading="lazy">
+          <div class="card--team-mini__info">
+            <h3 class="card--team-mini__name">Dr. Elizabeth LeMaire</h3>
+            <p class="card--team-mini__title">Au.D. — Doctor of Audiology</p>
+            <p class="card--team-mini__teaser">Dr. Elizabeth LeMaire is an ACI Doctor of Audiology with deep experience in cochlear implants, tinnitus care, and comprehensive diagnostic hearing evaluations.</p>
+            <p class="card--team-mini__cta">Read Dr. Elizabeth LeMaire&rsquo;s bio &rarr;</p>
+          </div>
+        </a>
+        <a class="card card--team-mini" href="dr-sarah-lalande-davies.html">
+          <img class="card--team-mini__photo" src="./assets/proof-changes-2026-05-04/dr-sarah.jpg" alt="Dr. Sarah Lalande-Davies, Au.D." width="120" height="120" loading="lazy">
+          <div class="card--team-mini__info">
+            <h3 class="card--team-mini__name">Dr. Sarah Lalande-Davies</h3>
+            <p class="card--team-mini__title">Au.D. — Doctor of Audiology</p>
+            <p class="card--team-mini__teaser">Dr. Sarah Lalande-Davies is a Baton Rouge native who joined ACI in November 2020 after completing her Au.D. and a veterans-hospital externship in New Orleans.</p>
+            <p class="card--team-mini__cta">Read Dr. Sarah Lalande-Davies&rsquo;s bio &rarr;</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <section class="cta-section" aria-labelledby="cta-heading">
       <h2 id="cta-heading">Schedule an appointment with Dr. Courtney Barbier</h2>
       <p>To request an appointment with Dr. Courtney Barbier, call ACI Hearing Center at <a href="tel:+13372239448">(337) 223-9448</a> or <a href="/contact.html">request an appointment online</a>. When you request an appointment, let us know if you would like to see Dr. Courtney Barbier specifically and we will do our best to accommodate. ACI Hearing Center is at 103 Saint Thomas Street, Lafayette, LA 70506.</p>
@@ -332,7 +461,20 @@
       .cherry-apply-fab svg{width:20px;height:20px;flex-shrink:0}
       @media (max-width:520px){.cherry-apply-fab{right:12px;bottom:12px;padding:10px 14px;font-size:14px}.cherry-apply-fab svg{width:18px;height:18px}}
       @media (prefers-reduced-motion:reduce){.cherry-apply-fab{transition:none}.cherry-apply-fab:hover,.cherry-apply-fab:focus-visible{transform:none}}
-    </style>
+    
+    .colleagues-section { background: var(--surface-alt, #f7f4ef); padding: 3rem 0; margin: 3rem 0 0; }
+    .colleagues-lede { max-width: 720px; margin: 0.5rem auto 1.5rem; color: var(--text-muted, #555); }
+    .colleagues-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .card--team-mini { display: flex; gap: 1rem; padding: 1rem; background: #fff; border: 1px solid var(--border, #e6ded2); border-radius: 12px; text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s; }
+    .card--team-mini:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .card--team-mini__photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .card--team-mini__info { flex: 1; }
+    .card--team-mini__name { margin: 0 0 0.15rem; font-size: 1.05rem; font-weight: 700; }
+    .card--team-mini__title { margin: 0 0 0.5rem; font-size: 0.85rem; color: var(--brand, #7a4b1d); font-weight: 600; }
+    .card--team-mini__teaser { margin: 0 0 0.5rem; font-size: 0.88rem; line-height: 1.4; color: var(--text-muted, #555); }
+    .card--team-mini__cta { margin: 0; font-size: 0.88rem; font-weight: 600; color: var(--brand, #7a4b1d); }
+
+  </style>
 
   <script src="./main.js" defer></script>
 
