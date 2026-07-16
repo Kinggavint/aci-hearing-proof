@@ -39,143 +39,148 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Physician",
+      "@id": "https://acihearing.com/dr-elizabeth-lemaire.html#physician",
+      "name": "Dr. Elizabeth LeMaire",
+      "additionalName": "Au.D.",
+      "alternateName": "Elizabeth LeMaire, Au.D.",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "Au.D., CCC-A",
+      "image": "https://acihearing.com/assets/proof-changes-2026-05-04/elizabeth-lemaire.jpg",
+      "url": "https://acihearing.com/dr-elizabeth-lemaire.html",
+      "jobTitle": "Doctor of Audiology",
+      "medicalSpecialty": [
+        "Otolaryngology",
+        "Audiology"
+      ],
+      "worksFor": {
+        "@id": "https://acihearing.com/#business"
+      },
+      "affiliation": {
+        "@type": "MedicalBusiness",
+        "@id": "https://acihearing.com/#business",
+        "name": "ACI Hearing Center",
+        "url": "https://acihearing.com/",
+        "telephone": "+1-337-223-9448",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "103 Saint Thomas Street",
+          "addressLocality": "Lafayette",
+          "addressRegion": "LA",
+          "postalCode": "70506",
+          "addressCountry": "US"
+        }
+      },
+      "workLocation": {
+        "@type": "Place",
+        "name": "ACI Hearing Center",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "103 Saint Thomas Street",
+          "addressLocality": "Lafayette",
+          "addressRegion": "LA",
+          "postalCode": "70506",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-337-223-9448"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Lafayette",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Broussard",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Youngsville",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lafayette Parish, Louisiana"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Acadiana"
+        }
+      ],
+      "hasCredential": [
+        {
+          "credentialCategory": "degree",
+          "name": "Doctor of Audiology (Au.D.)",
+          "recognizedBy": {
+            "@type": "EducationalOrganization",
+            "name": "Louisiana State University Health Sciences Center in New Orleans"
+          }
+        },
+        {
+          "credentialCategory": "certification",
+          "name": "Certificate of Clinical Competence in Audiology (CCC-A)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "American Speech-Language-Hearing Association"
+          }
+        },
+        {
+          "credentialCategory": "certification",
+          "name": "Fellow of the American Academy of Audiology (FAAA)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "American Academy of Audiology"
+          }
+        },
+        {
+          "credentialCategory": "license",
+          "name": "Louisiana Audiology License",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "Louisiana Board of Examiners for Speech-Language Pathology and Audiology"
+          }
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Louisiana State University Health Sciences Center in New Orleans",
+          "url": "https://www.lsuhsc.edu/"
+        }
+      ],
+      "colleague": [
+        {
           "@type": "Physician",
-          "@id": "https://acihearing.com/dr-elizabeth-lemaire.html#physician",
-          "name": "Dr. Elizabeth LeMaire",
-          "additionalName": "Au.D.",
-          "alternateName": "Elizabeth LeMaire, Au.D.",
-          "honorificPrefix": "Dr.",
-          "honorificSuffix": "Au.D., CCC-A",
-          "image": "https://acihearing.com/assets/proof-changes-2026-05-04/elizabeth-lemaire.jpg",
-          "url": "https://acihearing.com/dr-elizabeth-lemaire.html",
+          "@id": "https://acihearing.com/dr-kimberly-allred.html#physician",
+          "name": "Dr. Kimberly L. Allred",
           "jobTitle": "Doctor of Audiology",
-          "medicalSpecialty": [
-                "Otolaryngology",
-                "Audiology"
-          ],
-          "worksFor": {
-                "@id": "https://acihearing.com/#business"
-          },
-          "affiliation": {
-                "@type": "MedicalBusiness",
-                "@id": "https://acihearing.com/#business",
-                "name": "ACI Hearing Center",
-                "url": "https://acihearing.com/",
-                "telephone": "+1-337-223-9448",
-                "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "103 Saint Thomas Street",
-                      "addressLocality": "Lafayette",
-                      "addressRegion": "LA",
-                      "postalCode": "70506",
-                      "addressCountry": "US"
-                }
-          },
-          "workLocation": {
-                "@type": "Place",
-                "name": "ACI Hearing Center",
-                "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "103 Saint Thomas Street",
-                      "addressLocality": "Lafayette",
-                      "addressRegion": "LA",
-                      "postalCode": "70506",
-                      "addressCountry": "US"
-                },
-                "telephone": "+1-337-223-9448"
-          },
-          "areaServed": [
-                {
-                      "@type": "City",
-                      "name": "Lafayette",
-                      "addressRegion": "LA",
-                      "addressCountry": "US"
-                },
-                {
-                      "@type": "City",
-                      "name": "Broussard",
-                      "addressRegion": "LA",
-                      "addressCountry": "US"
-                },
-                {
-                      "@type": "City",
-                      "name": "Youngsville",
-                      "addressRegion": "LA",
-                      "addressCountry": "US"
-                },
-                {
-                      "@type": "AdministrativeArea",
-                      "name": "Lafayette Parish, Louisiana"
-                },
-                {
-                      "@type": "AdministrativeArea",
-                      "name": "Acadiana"
-                }
-          ],
-          "hasCredential": [
-                {
-                      "credentialCategory": "degree",
-                      "name": "Doctor of Audiology (Au.D.)",
-                      "recognizedBy": {
-                            "@type": "EducationalOrganization",
-                            "name": "Louisiana State University Health Sciences Center in New Orleans"
-                      }
-                },
-                {
-                      "credentialCategory": "certification",
-                      "name": "Certificate of Clinical Competence in Audiology (CCC-A)",
-                      "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "American Speech-Language-Hearing Association"
-                      }
-                },
-                {
-                      "credentialCategory": "certification",
-                      "name": "Fellow of the American Academy of Audiology (FAAA)",
-                      "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "American Academy of Audiology"
-                      }
-                },
-                {
-                      "credentialCategory": "license",
-                      "name": "Louisiana Audiology License",
-                      "recognizedBy": {
-                            "@type": "GovernmentOrganization",
-                            "name": "Louisiana Board of Examiners for Speech-Language Pathology and Audiology"
-                      }
-                }
-          ],
-          "alumniOf": [
-                {
-                      "@type": "CollegeOrUniversity",
-                      "name": "Louisiana State University Health Sciences Center in New Orleans",
-                      "url": "https://www.lsuhsc.edu/"
-                }
-          ],
-          "colleague": [
-                {
-                      "@type": "Physician",
-                      "@id": "https://acihearing.com/dr-kimberly-allred.html#physician",
-                      "name": "Dr. Kimberly L. Allred",
-                      "jobTitle": "Doctor of Audiology",
-                      "url": "https://acihearing.com/dr-kimberly-allred.html"
-                },
-                {
-                      "@type": "Physician",
-                      "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#physician",
-                      "name": "Dr. Sarah Lalande-Davies",
-                      "jobTitle": "Doctor of Audiology",
-                      "url": "https://acihearing.com/dr-sarah-lalande-davies.html"
-                },
-                {
-                      "@type": "Physician",
-                      "@id": "https://acihearing.com/dr-courtney-barbier.html#physician",
-                      "name": "Dr. Courtney Barbier",
-                      "jobTitle": "Doctor of Audiology",
-                      "url": "https://acihearing.com/dr-courtney-barbier.html"
-                }
-          ]
+          "url": "https://acihearing.com/dr-kimberly-allred.html"
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#physician",
+          "name": "Dr. Sarah Lalande-Davies",
+          "jobTitle": "Doctor of Audiology",
+          "url": "https://acihearing.com/dr-sarah-lalande-davies.html"
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://acihearing.com/dr-courtney-barbier.html#physician",
+          "name": "Dr. Courtney Barbier",
+          "jobTitle": "Doctor of Audiology",
+          "url": "https://acihearing.com/dr-courtney-barbier.html"
+        }
+      ],
+      "sameAs": [
+        "https://care.healthline.com/find-care/provider/elizabeth-lemaire-1245760545",
+        "https://www.linkedin.com/in/elizabethlemaire",
+        "https://www.healthgrades.com/audiology-directory/la-louisiana/lafayette"
+      ]
     }
   ]
 }
