@@ -151,6 +151,34 @@
       },
       "award": [
         "Acadiana's Choice 2025 Winner - Best Hearing Care Provider"
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "name": "Book a hearing test appointment",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://acihearing.com/contact.html",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Audiology appointment at ACI Hearing Center"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "name": "Call ACI Hearing Center",
+          "target": "tel:+13372239448"
+        },
+        {
+          "@type": "CommunicateAction",
+          "name": "Email ACI Hearing Center",
+          "target": "mailto:aci@acihearing.com"
+        }
       ]
     },
     {
