@@ -42,11 +42,23 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalTherapy",
+  "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#lenire",
   "name": "Lenire Bimodal Neuromodulation for Tinnitus",
   "alternateName": "Lenire Treatment",
   "url": "https://acihearing.com/lenire-tinnitus-treatment.html",
   "description": "Lenire is an FDA-cleared, at-home tinnitus treatment device that combines sound delivered through headphones with mild electrical stimulation of the tongue to reduce the loudness and impact of chronic subjective tinnitus. ACI Hearing Center is a certified Lenire provider in Lafayette, Louisiana.",
-  "therapyType": "https://schema.org/RadioTherapy",
+  "treats": {
+    "@type": "MedicalCondition",
+    "@id": "https://acihearing.com/tinnitus.html#tinnitus",
+    "name": "Tinnitus",
+    "code": {"@type": "MedicalCode", "codeValue": "H93.1", "codingSystem": "ICD-10"}
+  },
+  "medicineSystem": "https://schema.org/WesternConventional",
+  "drug": {
+    "@type": "MedicalDevice",
+    "name": "Lenire device (Neuromod Devices)",
+    "manufacturer": {"@type": "Organization", "name": "Neuromod Devices Ltd"}
+  },
   "howPerformed": "The Lenire protocol runs for 12 weeks. Patients use the device at home for 30 to 60 minutes per day. During each session, the device plays a personalized sound program through bone-conduction headphones while simultaneously delivering timed mild electrical pulses to the tip of the tongue through a mouthpiece. Provider visits occur at initial candidacy screening, device fitting, weeks 4, 8, and 12, and a 90-day outcome check.",
   "adverseOutcome": "Reported side effects in clinical trials were mild and included short-lived tongue tingling or metallic taste, headache, and dizziness. No serious device-related adverse events were reported in the pivotal trials.",
   "provider": {
