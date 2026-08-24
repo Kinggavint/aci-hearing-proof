@@ -26,6 +26,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://acihearing.com/hearing-aid-financing-lafayette.html#breadcrumb",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acihearing.com/"},
     {"@type": "ListItem", "position": 2, "name": "Hearing Aids", "item": "https://acihearing.com/hearing-aids.html"},
@@ -37,13 +38,30 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
+  "@id": "https://acihearing.com/hearing-aid-financing-lafayette.html#webpage",
   "name": "Hearing Aid Financing in Lafayette, LA",
   "url": "https://acihearing.com/hearing-aid-financing-lafayette.html",
   "description": "Payment plans, 0% APR promotional financing, FSA and HSA eligibility, and insurance verification for hearing aid treatment plans at ACI Hearing Center in Lafayette, Louisiana.",
   "inLanguage": "en-US",
-  "isPartOf": {"@type": "WebSite", "name": "ACI Hearing Center", "url": "https://acihearing.com/"},
-  "about": {"@type": "Thing", "name": "Hearing aid financing and payment plans"},
+  "isPartOf": {"@id": "https://acihearing.com/#website"},
+  "publisher": {"@id": "https://acihearing.com/#organization"},
+  "provider": {"@id": "https://acihearing.com/#organization"},
+  "about": {"@id": "https://acihearing.com/#organization"},
   "audience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+  "specialty": {"@type": "MedicalSpecialty", "name": "Audiology"},
+  "reviewedBy": {"@id": "https://acihearing.com/#dr-allred"},
+  "lastReviewed": "2026-08-24",
+  "dateModified": "2026-08-24",
+  "mainEntity": {"@id": "https://acihearing.com/hearing-aid-financing-lafayette.html#financing-options"},
+  "significantLink": [
+    "https://acihearing.com/",
+    "https://acihearing.com/hearing-aids.html",
+    "https://acihearing.com/insurance.html",
+    "https://acihearing.com/best-hearing-aids-lafayette-flagship-comparison.html",
+    "https://acihearing.com/treatment-plans-lafayette.html",
+    "https://acihearing.com/team.html",
+    "https://acihearing.com/audiologist-lafayette-la.html"
+  ],
   "primaryImageOfPage": {"@type": "ImageObject", "url": "https://acihearing.com/images/hero_desktop.png"}
 }
 </script>
@@ -51,23 +69,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
+  "@id": "https://acihearing.com/hearing-aid-financing-lafayette.html#financing-consultation",
   "name": "Hearing Aid Financing Consultation",
   "serviceType": "Financing pre-approval, insurance verification, FSA and HSA eligibility guidance for hearing aid purchases",
-  "provider": {
-    "@type": "MedicalBusiness",
-    "@id": "https://acihearing.com/#business",
-    "name": "ACI Hearing Center",
-    "url": "https://acihearing.com/",
-    "telephone": "+1-337-223-9448",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "103 Saint Thomas Street",
-      "addressLocality": "Lafayette",
-      "addressRegion": "LA",
-      "postalCode": "70506",
-      "addressCountry": "US"
-    }
-  },
+  "provider": {"@id": "https://acihearing.com/#organization"},
   "areaServed": [
     {"@type": "City", "name": "Lafayette, LA"},
     {"@type": "City", "name": "Broussard, LA"},
@@ -83,7 +88,50 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://acihearing.com/hearing-aid-financing-lafayette.html#financing-options",
+  "name": "Hearing aid financing options accepted at ACI Hearing Center",
+  "description": "Two financing partners accepted at ACI Hearing Center in Lafayette, Louisiana for hearing aid treatment plans priced between $4,500 and $7,500. Patients may qualify for 0% APR promotional financing depending on plan and credit approval.",
+  "numberOfItems": 2,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "FinancialProduct",
+        "name": "CareCredit",
+        "description": "Healthcare credit card accepted at ACI Hearing Center for hearing aid treatment plans. Promotional 0% APR available on qualifying purchases with approved credit.",
+        "provider": {
+          "@type": "Organization",
+          "name": "CareCredit",
+          "url": "https://www.carecredit.com/"
+        },
+        "category": "Healthcare financing"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "FinancialProduct",
+        "name": "PowerPay",
+        "description": "Patient financing accepted at ACI Hearing Center for hearing aid treatment plans. Multiple term lengths available with approved credit.",
+        "provider": {
+          "@type": "Organization",
+          "name": "PowerPay",
+          "url": "https://powerpay.com/"
+        },
+        "category": "Healthcare financing"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://acihearing.com/hearing-aid-financing-lafayette.html#faqpage",
   "mainEntity": [
     {
       "@type": "Question",
