@@ -16,6 +16,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://acihearing.com/insurance.html#breadcrumb",
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -42,53 +43,15 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": [
-        "MedicalBusiness",
-        "LocalBusiness"
-      ],
-      "@id": "https://acihearing.com/#business",
-      "name": "ACI Hearing Center",
-      "alternateName": "ACI Hearing & Balance Center",
-      "url": "https://acihearing.com/",
-      "telephone": "+1-337-223-9448",
-      "priceRange": "$$",
-      "paymentAccepted": [
-        "Cash",
-        "Credit Card",
-        "Insurance",
-        "CareCredit",
-        "Medicare",
-        "Medicaid",
-        "Blue Cross Blue Shield",
-        "United Healthcare",
-        "Aetna",
-        "Cigna",
-        "Humana",
-        "Tricare"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "103 Saint Thomas Street",
-        "addressLocality": "Lafayette",
-        "addressRegion": "LA",
-        "postalCode": "70506",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://acihearing.com/insurance.html#webpage",
-      "name": "Insurance and Payment Options",
-      "description": "Insurance coverage, payment plans, and financing options at ACI Hearing Center in Lafayette, LA.",
-      "about": {
-        "@id": "https://acihearing.com/#business"
-      },
-      "inLanguage": "en-US",
-      "dateModified": "2026-08-13"
-    }
-  ]
+  "@type": "WebPage",
+  "@id": "https://acihearing.com/insurance.html#webpage",
+  "name": "Insurance and Payment Options",
+  "description": "Insurance coverage, payment plans, and financing options at ACI Hearing Center in Lafayette, LA.",
+  "about": {"@id": "https://acihearing.com/#organization"},
+  "isPartOf": {"@id": "https://acihearing.com/#website"},
+  "breadcrumb": {"@id": "https://acihearing.com/insurance.html#breadcrumb"},
+  "inLanguage": "en-US",
+  "dateModified": "2026-08-25"
 }
 </script>
 
@@ -102,12 +65,53 @@
   "description": "Compare the main payment paths for hearing care in Lafayette: VA benefits, Medicare Advantage, Louisiana Medicaid, private insurance, workers compensation, HSA and FSA, and financing. ACI Hearing Center accepts most major plans and files claims for you.",
   "inLanguage": "en-US",
   "datePublished": "2026-05-15",
-  "dateModified": "2026-08-13",
-  "lastReviewed": "2026-08-13",
-  "about": {"@id": "https://acihearing.com/#business"},
+  "dateModified": "2026-08-25",
+  "lastReviewed": "2026-08-25",
+  "about": {"@id": "https://acihearing.com/#organization"},
+  "isPartOf": {"@id": "https://acihearing.com/#website"},
+  "publisher": {"@id": "https://acihearing.com/#organization"},
+  "provider": {"@id": "https://acihearing.com/#organization"},
+  "reviewedBy": {"@id": "https://acihearing.com/#dr-allred"},
+  "mainEntity": {"@id": "https://acihearing.com/insurance.html#insurers-accepted"},
+  "significantLink": [
+    "https://acihearing.com/va-hearing-aid-benefits-lafayette.html",
+    "https://acihearing.com/medicare-advantage-hearing-aid-coverage-louisiana.html",
+    "https://acihearing.com/louisiana-medicaid-hearing-aid-coverage.html",
+    "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html",
+    "https://acihearing.com/louisiana-hearing-aid-insurance-coverage-explained.html",
+    "https://acihearing.com/how-to-pay-for-hearing-aids-lafayette.html",
+    "https://acihearing.com/hearing-aid-financing-lafayette.html",
+    "https://acihearing.com/financing.html"
+  ],
+  "specialty": {"@type": "MedicalSpecialty", "name": "Audiology"},
   "audience": {"@type": "MedicalAudience", "audienceType": "Patient"},
-  "medicalAudience": ["Patient", "Caregiver"],
-  "isPartOf": {"@type": "WebSite", "name": "ACI Hearing Center", "url": "https://acihearing.com/"}
+  "medicalAudience": ["Patient", "Caregiver"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://acihearing.com/insurance.html#insurers-accepted",
+  "name": "Insurance plans accepted at ACI Hearing Center for hearing evaluations in Lafayette, LA",
+  "description": "ACI Hearing Center is in-network with the major medical insurance plans that cover diagnostic hearing evaluations for patients in Acadiana. Hearing aid benefit coverage varies by individual plan. Call (337) 223-9448 with your insurance card and we will verify your specific benefits.",
+  "itemListOrder": "https://schema.org/ItemListUnordered",
+  "numberOfItems": 11,
+  "provider": {"@id": "https://acihearing.com/#organization"},
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Blue Cross Blue Shield of Louisiana"},
+    {"@type": "ListItem", "position": 2, "name": "Medicare (Parts A and B, diagnostic testing when medically necessary)"},
+    {"@type": "ListItem", "position": 3, "name": "Medicare Advantage (Part C, hearing aid benefits vary by plan)"},
+    {"@type": "ListItem", "position": 4, "name": "Louisiana Medicaid (Healthy Louisiana managed care)"},
+    {"@type": "ListItem", "position": 5, "name": "United Healthcare"},
+    {"@type": "ListItem", "position": 6, "name": "Aetna"},
+    {"@type": "ListItem", "position": 7, "name": "Cigna"},
+    {"@type": "ListItem", "position": 8, "name": "Humana"},
+    {"@type": "ListItem", "position": 9, "name": "Tricare"},
+    {"@type": "ListItem", "position": 10, "name": "VA Community Care (Department of Veterans Affairs)"},
+    {"@type": "ListItem", "position": 11, "name": "Louisiana Workers Compensation (state and federal LHWCA)"}
+  ]
 }
 </script>
 
@@ -116,6 +120,7 @@
   "@context": "https://schema.org",
   "@type": "ItemList",
   "@id": "https://acihearing.com/insurance.html#payment-paths",
+  "provider": {"@id": "https://acihearing.com/#organization"},
   "name": "Louisiana hearing aid payment paths at ACI Hearing Center",
   "description": "The main insurance and benefit paths patients use to pay for hearing aids at ACI Hearing Center in Lafayette, Louisiana. Each path links to a dedicated guide that explains eligibility, cost, and the step by step process.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
@@ -135,6 +140,8 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://acihearing.com/insurance.html#faqpage",
+  "about": {"@id": "https://acihearing.com/#organization"},
   "mainEntity": [
     {
       "@type": "Question",
@@ -149,7 +156,7 @@
       "name": "Does Medicare cover hearing aids?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Traditional Medicare (Parts A and B) does NOT cover hearing aids or routine hearing exams. It does cover diagnostic hearing tests when ordered by a physician for a medical reason. Many Medicare Advantage (Part C) plans include hearing aid benefits \u2014 coverage varies by plan and year. We will check your specific plan."
+        "text": "Traditional Medicare (Parts A and B) does NOT cover hearing aids or routine hearing exams. It does cover diagnostic hearing tests when ordered by a physician for a medical reason. Many Medicare Advantage (Part C) plans include hearing aid benefits. Coverage varies by plan and year. We will check your specific plan."
       }
     },
     {
@@ -197,7 +204,7 @@
       "name": "How much does a hearing test cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Diagnostic hearing evaluations are typically covered by insurance when medically necessary. Self-pay rates are competitive \u2014 call (337) 223-9448 for current pricing. Most patients pay only their copay or deductible."
+        "text": "Diagnostic hearing evaluations are typically covered by insurance when medically necessary. Self-pay rates are competitive. Call (337) 223-9448 for current pricing. Most patients pay only their copay or deductible."
       }
     },
     {
