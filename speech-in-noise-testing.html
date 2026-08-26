@@ -39,39 +39,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["MedicalBusiness", "LocalBusiness"],
-      "@id": "https://acihearing.com/#organization",
-      "name": "ACI Hearing Center",
-      "url": "https://acihearing.com/",
-      "telephone": "+1-337-223-9448",
-      "email": "aci@acihearing.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "103 Saint Thomas Street",
-        "addressLocality": "Lafayette",
-        "addressRegion": "LA",
-        "postalCode": "70506",
-        "addressCountry": "US"
-      },
-      "medicalSpecialty": "Audiology",
-      "availableService": {
-        "@type": "MedicalProcedure",
-        "name": "Speech-in-Noise Testing",
-        "procedureType": "https://schema.org/DiagnosticProcedure"
-      }
+      "@id": "https://acihearing.com/#organization"
     },
     {
       "@type": "MedicalProcedure",
       "@id": "https://acihearing.com/speech-in-noise-testing.html#procedure",
       "name": "Speech-in-Noise Testing (QuickSIN, HINT)",
-      "alternateName": ["Speech in Noise Test", "SIN Testing", "QuickSIN", "HINT", "SNR Loss Test"],
+      "alternateName": [
+        "Speech in Noise Test",
+        "SIN Testing",
+        "QuickSIN",
+        "HINT",
+        "SNR Loss Test"
+      ],
       "procedureType": "https://schema.org/DiagnosticProcedure",
       "bodyLocation": "Ear",
       "howPerformed": "The patient listens to sentences presented at decreasing signal-to-noise ratios in the presence of multi-talker babble noise. QuickSIN uses 6 sentences per list at SNRs from 25 to 0 dB. Results are reported as SNR loss in decibels compared to normal-hearing listeners. Testing takes 5 to 15 minutes.",
       "preparation": "No special preparation required. Testing is typically included as part of a comprehensive audiologic evaluation or hearing aid fitting appointment.",
       "followup": "Results guide hearing aid programming decisions, especially noise-management features and directional microphone use. Testing may be repeated after hearing aid fitting to verify improvement.",
       "mainEntityOfPage": "https://acihearing.com/speech-in-noise-testing.html",
-      "provider": {"@id": "https://acihearing.com/#organization"}
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
     }
   ]
 }

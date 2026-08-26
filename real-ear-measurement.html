@@ -38,35 +38,17 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["MedicalBusiness", "LocalBusiness"],
-      "@id": "https://acihearing.com/#organization",
-      "name": "ACI Hearing Center",
-      "alternateName": "ACI Hearing & Balance Center",
-      "url": "https://acihearing.com/",
-      "telephone": "+1-337-223-9448",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "103 Saint Thomas Street",
-        "addressLocality": "Lafayette",
-        "addressRegion": "LA",
-        "postalCode": "70506",
-        "addressCountry": "US"
-      },
-      "medicalSpecialty": "Otolaryngologic",
-      "availableService": {
-        "@type": "MedicalProcedure",
-        "name": "Real Ear Measurement (Hearing Aid Verification)",
-        "url": "https://acihearing.com/real-ear-measurement.html",
-        "procedureType": "https://schema.org/NoninvasiveProcedure",
-        "bodyLocation": "Ear",
-        "howPerformed": "A soft silicone probe tube is placed in the patient's ear canal alongside the hearing aid. Calibrated speech signals are played, and a microphone measures the actual sound level at the eardrum. The measured response is compared to the patient's individual prescription target and the hearing aid is adjusted until the measured output matches the target across all frequencies."
-      }
+      "@id": "https://acihearing.com/#organization"
     },
     {
       "@type": "MedicalProcedure",
       "@id": "https://acihearing.com/real-ear-measurement.html#procedure",
       "name": "Real Ear Measurement",
-      "alternateName": ["Probe Microphone Measurement", "Speech Mapping", "REM"],
+      "alternateName": [
+        "Probe Microphone Measurement",
+        "Speech Mapping",
+        "REM"
+      ],
       "procedureType": "https://schema.org/NoninvasiveProcedure",
       "bodyLocation": "Ear",
       "url": "https://acihearing.com/real-ear-measurement.html",
