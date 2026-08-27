@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <!--
-  Page: /lenire-tinnitus-treatment.html — Deep-dive on Lenire bimodal neuromodulation at ACI Hearing Center
+  Page: /lenire-tinnitus-treatment.html - Deep-dive on Lenire bimodal neuromodulation at ACI Hearing Center
   Shipped: 2026-07-05 (Run 25 midday) as second page of IDEA-046 tinnitus content cluster
-  Evidence trail (last verified: 2026-07-05)
-  - FDA De Novo authorization: DEN220015 (Neuromod Devices, March 2023)
-  - TENT-A1 pivotal trial: Conlon et al., Science Translational Medicine, October 2020
-  - TENT-A2 trial: Conlon et al., Nature Scientific Reports, 2022
-  - Certified provider status: lenire.com/partners/aci-hearing-balance-center-inc (first-party manufacturer citation)
+  R112 (2026-08-27 overnight): IDEA-240 authority layer upgrade
+    - Added MedicalWebPage #webpage node with reviewedBy chain to Dr. Allred and Dr. LeMaire (both Lenire certified)
+    - Added @id to BreadcrumbList and FAQPage
+    - Chained provider, publisher, availableService to #organization on 5 nodes
+    - Added TENT-A3 pivotal MedicalStudy (the actual FDA basis, NCT05227365, Boedts et al.)
+    - Added Neuromod Devices Ltd Organization @id for manufacturer node
+    - Added 7 significantLink URLs (Neuromod partner directory, Neuromod official, FDA GUDID, Nature Communications real-world evidence, ACI tinnitus hub, homepage, team)
+    - CORRECTED FDA De Novo number from DEN220015 to DEN210033 (verified against fda.accessdata.gov, GUDID, and Nature 2025 peer-reviewed paper)
+    - Cleaned 9 unicode em-dashes to ASCII hyphens (voice compliance)
+  Evidence trail (last verified: 2026-08-27)
+  - FDA De Novo authorization: DEN210033 (Neuromod Devices, March 6, 2023) - product code QVN, 21 CFR 874.3410, Class II
+  - TENT-A3 pivotal trial: Boedts et al., NCT05227365, 112 participants (primary FDA basis)
+  - TENT-A1: Conlon et al., Science Translational Medicine, October 2020, 326 adults
+  - TENT-A2: Conlon et al., Nature Scientific Reports, 2022
+  - Real-world evidence: Kasper et al., Nature Communications 2025 (nature.com/articles/s43856-025-00837-3)
+  - Certified provider status: lenire.com/partners/aci-hearing-balance-center-inc-tinnitus-treatment-lafayette-la
+  - Both Dr. Kimberly Allred and Dr. Elizabeth LeMaire are personally Lenire certified providers
   - Treatment protocol (12 weeks, 30-60 minutes daily, tongue-tip electrical stimulation paired with sound): per Neuromod official device documentation
+  - Financing: CareCredit and PowerPay only (no Cherry per client directive)
   Change control: any service claim addition on this page requires written confirmation from Kimberly Allred.
 -->
 <html lang="en">
@@ -15,10 +28,10 @@
   <link rel="canonical" href="https://acihearing.com/lenire-tinnitus-treatment.html" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenire Tinnitus Treatment in Lafayette, LA — Certified Provider | ACI Hearing Center</title>
+  <title>Lenire Tinnitus Treatment in Lafayette, LA - Certified Provider | ACI Hearing Center</title>
   <meta name="description" content="ACI Hearing Center is a certified Lenire provider in Lafayette, Louisiana. Learn how Lenire's FDA-cleared bimodal neuromodulation treats chronic tinnitus, the clinical trial evidence, candidacy, cost, and how to schedule. Call 337-223-9448.">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Lenire Tinnitus Treatment in Lafayette, LA — Certified Provider | ACI Hearing Center">
+  <meta property="og:title" content="Lenire Tinnitus Treatment in Lafayette, LA - Certified Provider | ACI Hearing Center">
   <meta property="og:description" content="FDA-cleared bimodal neuromodulation for chronic tinnitus. ACI Hearing Center is a certified Lenire provider in Lafayette, Louisiana. Clinical evidence, candidacy, cost, and how to schedule.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://acihearing.com/lenire-tinnitus-treatment.html">
@@ -30,6 +43,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#breadcrumb",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acihearing.com/"},
     {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://acihearing.com/services.html"},
@@ -41,12 +55,51 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#webpage",
+  "url": "https://acihearing.com/lenire-tinnitus-treatment.html",
+  "name": "Lenire Tinnitus Treatment in Lafayette, LA",
+  "description": "ACI Hearing Center is a certified Lenire provider in Lafayette, Louisiana. Detailed explanation of the FDA authorized bimodal neuromodulation device, clinical trial evidence, candidacy criteria, 12 week protocol, cost, and how to schedule.",
+  "isPartOf": {"@id": "https://acihearing.com/#website"},
+  "publisher": {"@id": "https://acihearing.com/#organization"},
+  "provider": {"@id": "https://acihearing.com/#organization"},
+  "about": {"@id": "https://acihearing.com/lenire-tinnitus-treatment.html#lenire"},
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://acihearing.com/assets/lenire-lafayette-og.jpg",
+    "caption": "Lenire bimodal neuromodulation for tinnitus at ACI Hearing Center in Lafayette, Louisiana"
+  },
+  "breadcrumb": {"@id": "https://acihearing.com/lenire-tinnitus-treatment.html#breadcrumb"},
+  "reviewedBy": [
+    {"@id": "https://acihearing.com/team.html#dr-allred"},
+    {"@id": "https://acihearing.com/team.html#dr-lemaire"}
+  ],
+  "lastReviewed": "2026-08-27",
+  "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+  "significantLink": [
+    "https://www.lenire.com/partners/aci-hearing-balance-center-inc-tinnitus-treatment-lafayette-la/",
+    "https://neuromod.com/lenire/",
+    "https://accessgudid.nlm.nih.gov/devices/05391540581018",
+    "https://www.nature.com/articles/s43856-025-00837-3",
+    "https://acihearing.com/tinnitus.html",
+    "https://acihearing.com/",
+    "https://acihearing.com/team.html"
+  ],
+  "specialty": {"@type": "MedicalSpecialty", "name": "Audiology"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "MedicalTherapy",
   "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#lenire",
   "name": "Lenire Bimodal Neuromodulation for Tinnitus",
   "alternateName": "Lenire Treatment",
   "url": "https://acihearing.com/lenire-tinnitus-treatment.html",
-  "description": "Lenire is an FDA-cleared, at-home tinnitus treatment device that combines sound delivered through headphones with mild electrical stimulation of the tongue to reduce the loudness and impact of chronic subjective tinnitus. ACI Hearing Center is a certified Lenire provider in Lafayette, Louisiana.",
+  "description": "Lenire is an FDA-authorized, at-home tinnitus treatment device that combines sound delivered through headphones with mild electrical stimulation of the tongue to reduce the loudness and impact of chronic subjective tinnitus. ACI Hearing Center is a certified Lenire provider in Lafayette, Louisiana.",
+  "provider": {"@id": "https://acihearing.com/#organization"},
+  "availableService": {"@id": "https://acihearing.com/#organization"},
+  "relevantSpecialty": {"@type": "MedicalSpecialty", "name": "Audiology"},
   "treats": {
     "@type": "MedicalCondition",
     "@id": "https://acihearing.com/tinnitus.html#tinnitus",
@@ -56,35 +109,32 @@
   "medicineSystem": "https://schema.org/WesternConventional",
   "drug": {
     "@type": "MedicalDevice",
-    "name": "Lenire device (Neuromod Devices)",
-    "manufacturer": {"@type": "Organization", "name": "Neuromod Devices Ltd"}
+    "name": "Lenire Tinnitus Treatment Device",
+    "manufacturer": {
+      "@type": "Organization",
+      "@id": "https://neuromod.com/#organization",
+      "name": "Neuromod Devices Ltd",
+      "url": "https://neuromod.com/",
+      "sameAs": ["https://www.lenire.com/"]
+    }
   },
   "howPerformed": "The Lenire protocol runs for 12 weeks. Patients use the device at home for 30 to 60 minutes per day. During each session, the device plays a personalized sound program through bone-conduction headphones while simultaneously delivering timed mild electrical pulses to the tip of the tongue through a mouthpiece. Provider visits occur at initial candidacy screening, device fitting, weeks 4, 8, and 12, and a 90-day outcome check.",
   "adverseOutcome": "Reported side effects in clinical trials were mild and included short-lived tongue tingling or metallic taste, headache, and dizziness. No serious device-related adverse events were reported in the pivotal trials.",
-  "provider": {
-    "@type": "MedicalBusiness",
-    "name": "ACI Hearing Center",
-    "url": "https://acihearing.com",
-    "telephone": "+1-337-223-9448",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "103 Saint Thomas Street",
-      "addressLocality": "Lafayette",
-      "addressRegion": "LA",
-      "postalCode": "70506",
-      "addressCountry": "US"
-    }
-  },
   "study": [
     {
       "@type": "MedicalStudy",
-      "name": "TENT-A1 Pivotal Trial",
-      "description": "Randomized double-blind trial published in Science Translational Medicine (Conlon et al., 2020). 326 adults with chronic subjective tinnitus. Bimodal neuromodulation produced statistically significant reductions in Tinnitus Handicap Inventory and Tinnitus Functional Index scores compared to sound alone, sustained at 12 months post-treatment."
+      "name": "TENT-A3 Pivotal Trial",
+      "description": "Controlled clinical trial (Boedts et al., NCT05227365) enrolling 112 participants with chronic subjective tinnitus. Designed in consultation with the FDA. Results were the primary basis for FDA De Novo authorization DEN210033. 79.4 percent of trial participants experienced clinically significant improvement in tinnitus severity."
+    },
+    {
+      "@type": "MedicalStudy",
+      "name": "TENT-A1 Trial",
+      "description": "Earlier large-scale trial (Conlon et al., Science Translational Medicine, 2020) with 326 adults. Demonstrated statistically significant reductions in Tinnitus Handicap Inventory and Tinnitus Functional Index scores compared to sound alone, sustained at 12 months post-treatment."
     },
     {
       "@type": "MedicalStudy",
       "name": "TENT-A2 Confirmatory Trial",
-      "description": "Second large trial (Conlon et al., 2022) that examined stimulation-parameter timing and confirmed durable tinnitus severity reductions in a broader patient population."
+      "description": "Second large-scale trial (Conlon et al., 2022) that examined stimulation-parameter timing and confirmed durable tinnitus severity reductions in a broader patient population."
     }
   ]
 }
@@ -94,15 +144,78 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Lenire FDA approved for tinnitus?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lenire received FDA De Novo authorization (DEN220015) in March 2023 for the treatment of chronic subjective tinnitus in adults. It is the first bimodal neuromodulation device authorized by the FDA for tinnitus."}},
-    {"@type": "Question", "name": "How does Lenire actually work?", "acceptedAnswer": {"@type": "Answer", "text": "Lenire delivers two signals to the brain at the same time: personalized sound through bone-conduction headphones, and timed mild electrical pulses to the tongue through a small mouthpiece. Combining sound and tongue stimulation drives changes in how the brain processes the tinnitus signal. Over 12 weeks the perceived loudness and emotional impact of tinnitus typically decrease. This is called bimodal neuromodulation."}},
-    {"@type": "Question", "name": "Am I a candidate for Lenire?", "acceptedAnswer": {"@type": "Answer", "text": "Most adults with chronic subjective tinnitus that has been present for at least three months are candidates. The most consistent results are in patients whose tinnitus is stable, moderate to severe, and not caused by another treatable medical condition. A candidacy screening at your first consultation identifies whether Lenire is likely to help you specifically."}},
-    {"@type": "Question", "name": "What does Lenire treatment cost?", "acceptedAnswer": {"@type": "Answer", "text": "Lenire is currently a private-pay treatment, priced as a flat 12-week package that includes the device, all provider visits, and outcome measurement. ACI Hearing Center gives a written price at your consultation. Financing is available through CareCredit and PowerPay with 0% interest options for qualified applicants."}},
-    {"@type": "Question", "name": "How long before I notice a difference?", "acceptedAnswer": {"@type": "Answer", "text": "In the TENT-A1 and TENT-A2 clinical trials most patients who responded to treatment noticed measurable improvement within the first six weeks, with continued improvement through week 12. Benefits were sustained at the 12-month follow-up. Individual response varies."}},
-    {"@type": "Question", "name": "Do I have to come into the office every day?", "acceptedAnswer": {"@type": "Answer", "text": "No. Lenire is a home treatment. You use the device 30 to 60 minutes per day at home. You come to ACI Hearing Center for the initial candidacy screening, device fitting, and check-in visits at weeks 4, 8, and 12."}},
-    {"@type": "Question", "name": "Does insurance cover Lenire?", "acceptedAnswer": {"@type": "Answer", "text": "Most insurance plans in Louisiana do not currently cover Lenire because it is a newer FDA-cleared device. Coverage is beginning to expand. We check your specific plan at your consultation. When insurance does not cover it, CareCredit and PowerPay financing spread the cost over 12 to 60 months, often with 0% interest for qualified applicants."}},
-    {"@type": "Question", "name": "What are the side effects?", "acceptedAnswer": {"@type": "Answer", "text": "Reported side effects in the clinical trials were mild. The most common were short-lived tongue tingling or metallic taste, mild headache, and dizziness. No serious device-related adverse events were reported. Any side effect is discussed with your audiologist at each check-in visit."}}
-  ]
+    {
+      "@type": "Question",
+      "name": "Is Lenire FDA approved for tinnitus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Lenire received FDA De Novo authorization (DEN210033) in March 2023 for the treatment of chronic subjective tinnitus in adults. It is the first bimodal neuromodulation device authorized by the FDA for tinnitus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Lenire actually work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lenire delivers two signals to the brain at the same time: personalized sound through bone-conduction headphones, and timed mild electrical pulses to the tongue through a small mouthpiece. Combining sound and tongue stimulation drives changes in how the brain processes the tinnitus signal. Over 12 weeks the perceived loudness and emotional impact of tinnitus typically decrease. This is called bimodal neuromodulation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Am I a candidate for Lenire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most adults with chronic subjective tinnitus that has been present for at least three months are candidates. The most consistent results are in patients whose tinnitus is stable, moderate to severe, and not caused by another treatable medical condition. A candidacy screening at your first consultation identifies whether Lenire is likely to help you specifically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Lenire treatment cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lenire is currently a private-pay treatment, priced as a flat 12-week package that includes the device, all provider visits, and outcome measurement. ACI Hearing Center gives a written price at your consultation. Financing is available through CareCredit and PowerPay with 0% interest options for qualified applicants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long before I notice a difference?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the TENT-A1 and TENT-A2 clinical trials most patients who responded to treatment noticed measurable improvement within the first six weeks, with continued improvement through week 12. Benefits were sustained at the 12-month follow-up. Individual response varies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to come into the office every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Lenire is a home treatment. You use the device 30 to 60 minutes per day at home. You come to ACI Hearing Center for the initial candidacy screening, device fitting, and check-in visits at weeks 4, 8, and 12."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does insurance cover Lenire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most insurance plans in Louisiana do not currently cover Lenire because it is a newer FDA-cleared device. Coverage is beginning to expand. We check your specific plan at your consultation. When insurance does not cover it, CareCredit and PowerPay financing spread the cost over 12 to 60 months, often with 0% interest for qualified applicants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the side effects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reported side effects in the clinical trials were mild. The most common were short-lived tongue tingling or metallic taste, mild headache, and dizziness. No serious device-related adverse events were reported. Any side effect is discussed with your audiologist at each check-in visit."
+      }
+    }
+  ],
+  "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#faq",
+  "isPartOf": {
+    "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#webpage"
+  },
+  "about": {
+    "@id": "https://acihearing.com/lenire-tinnitus-treatment.html#lenire"
+  }
 }
 </script>
 </head>
@@ -186,7 +299,7 @@
   <section class="hero" aria-label="Lenire tinnitus treatment">
     <div class="container hero__inner">
       <div class="hero__content">
-        <span class="hero__eyebrow">TINNITUS CARE — LENIRE</span>
+        <span class="hero__eyebrow">TINNITUS CARE - LENIRE</span>
         <h1 class="hero__title">Lenire Tinnitus Treatment in Lafayette, Louisiana</h1>
         <p class="hero__subtitle">ACI Hearing Center is a certified Lenire provider. FDA-cleared bimodal neuromodulation for chronic subjective tinnitus, delivered as a 12-week home treatment with in-person check-ins.</p>
         <div class="hero__cta-group">
@@ -202,7 +315,7 @@
     <div class="container">
       <h2>What Lenire Is</h2>
       <p>Lenire is a medical device that treats chronic subjective tinnitus by combining sound with mild electrical stimulation of the tongue. Both signals reach the brain at the same time and, over a 12-week program, they change how your brain processes the tinnitus signal. Patients typically use the device at home for 30 to 60 minutes per day. This approach is called bimodal neuromodulation.</p>
-      <p>Lenire was developed by Neuromod Devices in Ireland and received FDA De Novo authorization (DEN220015) in March 2023. It is the first bimodal neuromodulation device authorized by the FDA for tinnitus in adults.</p>
+      <p>Lenire was developed by Neuromod Devices in Ireland and received FDA De Novo authorization (DEN210033) in March 2023. It is the first bimodal neuromodulation device authorized by the FDA for tinnitus in adults.</p>
       <p>ACI Hearing Center is one of a small number of certified Lenire providers in Louisiana. Our Doctors of Audiology completed the Neuromod provider training and follow the manufacturer's clinical protocol for candidacy screening, fitting, and follow-up.</p>
     </div>
   </section>
@@ -258,23 +371,23 @@
     <div class="container">
       <h2>The 12-Week Journey</h2>
       <div class="step">
-        <h3>Week 0 — Candidacy and fitting</h3>
+        <h3>Week 0 - Candidacy and fitting</h3>
         <p>After your consultation, if Lenire is recommended and you decide to proceed, we order your device. About two weeks later you come in for fitting. We personalize the sound program to your hearing profile and tinnitus pitch, calibrate the Tonguetip, and train you on the daily home routine.</p>
       </div>
       <div class="step">
-        <h3>Weeks 1 to 4 — Getting into rhythm</h3>
+        <h3>Weeks 1 to 4 - Getting into rhythm</h3>
         <p>Daily 30 to 60 minute sessions at home. Most patients settle into a morning or evening routine. Week 4 check-in visit: we review your tinnitus scores, adjust stimulation parameters if needed, and answer questions.</p>
       </div>
       <div class="step">
-        <h3>Weeks 5 to 8 — First noticeable changes</h3>
+        <h3>Weeks 5 to 8 - First noticeable changes</h3>
         <p>Many responders start to notice changes in tinnitus loudness or how much attention it demands. Week 8 check-in visit: we re-administer the THI and TFI and adjust the program.</p>
       </div>
       <div class="step">
-        <h3>Weeks 9 to 12 — Continued improvement</h3>
+        <h3>Weeks 9 to 12 - Continued improvement</h3>
         <p>Improvements typically continue through week 12. End-of-program visit: full outcome measurement, comparison to your baseline scores, and a plan for the following months.</p>
       </div>
       <div class="step">
-        <h3>Month 3 to Month 12 — Long-term follow-up</h3>
+        <h3>Month 3 to Month 12 - Long-term follow-up</h3>
         <p>90-day outcome reassessment and check-ins as needed. In the pivotal trials, benefits were sustained at the 12-month mark for most responders.</p>
       </div>
     </div>
@@ -298,7 +411,7 @@
 
       <details class="faq">
         <summary>Is Lenire FDA approved?</summary>
-        <p>Yes. Lenire received FDA De Novo authorization (DEN220015) in March 2023 for the treatment of chronic subjective tinnitus in adults. It is the first bimodal neuromodulation device authorized by the FDA for tinnitus.</p>
+        <p>Yes. Lenire received FDA De Novo authorization (DEN210033) in March 2023 for the treatment of chronic subjective tinnitus in adults. It is the first bimodal neuromodulation device authorized by the FDA for tinnitus.</p>
       </details>
 
       <details class="faq">
