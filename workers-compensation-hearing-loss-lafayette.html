@@ -30,25 +30,228 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acihearing.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://acihearing.com/services.html"},
-    {"@type": "ListItem", "position": 3, "name": "Workers Compensation Hearing Loss Evaluations in Lafayette, LA", "item": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html"}
-  ]
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acihearing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://acihearing.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Workers Compensation Hearing Loss Evaluations in Lafayette, LA",
+      "item": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html"
+    }
+  ],
+  "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#breadcrumb"
 }
 </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "name": "Workers Compensation Hearing Loss Evaluations in Lafayette, LA",
+  "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#webpage",
   "url": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html",
+  "name": "Workers Compensation Hearing Loss Evaluations in Lafayette, LA",
   "description": "Diagnostic audiograms, impairment ratings, and documentation for Louisiana workers compensation and LHWCA hearing loss claims. Provided by ACI Hearing Center in Lafayette, LA.",
   "inLanguage": "en-US",
-  "isPartOf": {"@type": "WebSite", "name": "ACI Hearing Center", "url": "https://acihearing.com/"},
-  "about": {"@type": "MedicalCondition", "name": "Noise-induced hearing loss and occupational hearing loss", "code": {"@type": "MedicalCode", "code": "H83.3", "codingSystem": "ICD-10"}},
-  "audience": {"@type": "MedicalAudience", "audienceType": "Patient"},
-  "medicalAudience": ["Patient", "Attorney"],
-  "primaryImageOfPage": {"@type": "ImageObject", "url": "https://acihearing.com/images/hero_desktop.png"}
+  "isPartOf": {
+    "@id": "https://acihearing.com/#website"
+  },
+  "publisher": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "provider": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "reviewedBy": {
+    "@id": "https://acihearing.com/#dr-allred"
+  },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://acihearing.com/images/hero_desktop.png"
+  },
+  "about": [
+    {
+      "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#occupational-hearing-loss"
+    },
+    {
+      "@id": "https://acihearing.com/nihl-oilfield-louisiana.html#nihl"
+    }
+  ],
+  "mainEntity": {
+    "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#accepted-employer-types"
+  },
+  "significantLink": [
+    "https://acihearing.com/nihl-oilfield-louisiana.html",
+    "https://acihearing.com/hearing-tests.html",
+    "https://acihearing.com/tinnitus.html",
+    "https://acihearing.com/hearing-aids.html",
+    "https://acihearing.com/team.html",
+    "https://www.legis.la.gov/legis/Law.aspx?d=79225",
+    "https://cases.justia.com/louisiana/supreme-court/2015-2013-c-2878.pdf"
+  ],
+  "audience": [
+    {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    },
+    {
+      "@type": "MedicalAudience",
+      "audienceType": "Attorney"
+    },
+    {
+      "@type": "MedicalAudience",
+      "audienceType": "OccupationalHealth"
+    }
+  ],
+  "specialty": {
+    "@type": "MedicalSpecialty",
+    "name": "Audiology"
+  },
+  "lastReviewed": "2026-08-28"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalCondition",
+  "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#occupational-hearing-loss",
+  "name": "Occupational hearing loss",
+  "alternateName": [
+    "Work-related hearing loss",
+    "Job-related hearing loss",
+    "Workplace hearing loss"
+  ],
+  "code": {
+    "@type": "MedicalCode",
+    "code": "H83.3",
+    "codingSystem": "ICD-10"
+  },
+  "cause": [
+    {
+      "@type": "MedicalCause",
+      "name": "Sustained workplace exposure to noise above 85 dBA time-weighted average"
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Ototoxic chemical exposure in industrial settings"
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Acute acoustic trauma from workplace blasts or explosions"
+    }
+  ],
+  "signOrSymptom": [
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Progressive difficulty understanding speech in noise"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Tinnitus after work shifts"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Muffled or plugged sensation in the ears"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Increased volume needs for television and phone calls"
+    }
+  ],
+  "possibleTreatment": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "Diagnostic pure-tone audiometry with air and bone conduction",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "AMA Guides impairment rating for workers-comp claim documentation",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Prescription hearing aids fitted with Real Ear Measurement",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Custom electronic hearing protection for continued workplace use",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
+    }
+  ],
+  "relevantSpecialty": {
+    "@type": "MedicalSpecialty",
+    "name": "Audiology"
+  },
+  "epidemiology": "The National Institute for Occupational Safety and Health estimates that about 22 million United States workers are exposed to hazardous noise on the job each year. Louisiana Office of Workers Compensation and the Louisiana Supreme Court (Arrant v. Graphic Packaging International) treat noise-induced hearing loss as a covered occupational disease.",
+  "associatedAnatomy": {
+    "@type": "AnatomicalStructure",
+    "name": "Inner ear hair cells (cochlea)"
+  },
+  "recognizingAuthority": {
+    "@id": "https://acihearing.com/#organization"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#accepted-employer-types",
+  "name": "Louisiana industries commonly documented for workers-compensation hearing loss claims at ACI Hearing Center",
+  "provider": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "numberOfItems": 6,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Oil and gas drilling, offshore platform work, roustabout crews"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Petrochemical, chemical plant, and refinery operations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Welding, cutting, and heavy metal fabrication"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Pipeline construction and gas compression stations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Construction, road crews, and heavy-equipment operation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Manufacturing and industrial production including saw, press, and grinder work"
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -98,7 +301,8 @@
       "name": "Acadiana, LA"
     }
   ],
-  "description": "Comprehensive audiologic evaluation for Louisiana workers compensation and LHWCA hearing loss claims. Includes pure-tone audiometry, speech testing, otoscopic exam, medical-legal report, and AMA Guides impairment rating when requested."
+  "description": "Comprehensive audiologic evaluation for Louisiana workers compensation and LHWCA hearing loss claims. Includes pure-tone audiometry, speech testing, otoscopic exam, medical-legal report, and AMA Guides impairment rating when requested.",
+  "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#wc-service"
 }
 </script>
 <script type="application/ld+json">
@@ -162,7 +366,15 @@
         "text": "For most Louisiana workers compensation claims, the employer or its insurer may designate the treating provider, though the injured worker generally has the right to a second opinion. Federal longshore and shipyard workers covered by the LHWCA have the right to choose their own audiologist under the Fifth Circuit ruling in Huntington Ingalls v. Director OWCP (2023). ACI Hearing Center is available for both first-choice evaluations and second opinions."
       }
     }
-  ]
+  ],
+  "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#faq",
+  "publisher": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "about": {
+    "@id": "https://acihearing.com/workers-compensation-hearing-loss-lafayette.html#occupational-hearing-loss"
+  },
+  "inLanguage": "en-US"
 }
 </script>
 
