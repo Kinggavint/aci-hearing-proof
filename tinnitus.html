@@ -22,6 +22,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://acihearing.com/tinnitus.html#breadcrumb",
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -33,7 +34,7 @@
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://acihearing.com/services.html"
+      "item": "https://acihearing.com/#services"
     },
     {
       "@type": "ListItem",
@@ -48,26 +49,22 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalProcedure",
+  "@id": "https://acihearing.com/tinnitus.html#trt",
   "name": "Tinnitus Treatment",
   "url": "https://acihearing.com/tinnitus.html",
-  "description": "Comprehensive tinnitus evaluation and treatment at ACI Hearing Center in Lafayette, LA. ACI is a certified Lenire provider \u2014 FDA-approved bimodal neuromodulation that combines sound delivered through earphones with mild tongue stimulation. Patients also receive sound therapy, tinnitus retraining therapy, cognitive behavioral therapy referral, and hearing aid fitting when hearing loss is present.",
-  "procedureType": "https://schema.org/NoninvasiveProcedure",
-  "howPerformed": "The clinician begins with a tinnitus-specific case history and validated questionnaires (Tinnitus Handicap Inventory, Tinnitus Functional Index), then performs a diagnostic audiologic evaluation with tinnitus pitch and loudness matching. Eligible patients are then fit with the Lenire device (a 12-week treatment protocol of 30 to 60 minutes daily), prescription hearing aids with built-in tinnitus maskers, or a customized sound therapy plan.",
-  "preparation": "No special preparation. Patients are asked to bring a list of current medications and any prior audiograms or ENT records. The first evaluation visit lasts 75 to 90 minutes.",
-  "followup": "Lenire patients return at weeks 4, 8, and 12 of the treatment protocol. All tinnitus patients receive a 30-day check-in and a 90-day outcome reassessment.",
+  "description": "Comprehensive tinnitus evaluation and treatment at ACI Hearing Center in Lafayette, LA. ACI is a certified Lenire provider offering FDA-approved bimodal neuromodulation, plus sound therapy, hearing aid amplification, tinnitus retraining therapy, and stress management guidance.",
+  "procedureType": {
+    "@type": "MedicalProcedureType",
+    "name": "Non-invasive audiologic care"
+  },
+  "howPerformed": "Full audiologic workup, tinnitus questionnaire (TFI, THI), and a personalized treatment plan built by a Doctor of Audiology.",
+  "preparation": "Bring a list of medications and note any recent changes in hearing, ear fullness, or dizziness.",
+  "followup": "Ongoing device programming, therapy visits, and outcomes tracking.",
+  "study": {
+    "@id": "https://acihearing.com/tinnitus.html#tinnitus"
+  },
   "provider": {
-    "@type": "MedicalBusiness",
-    "name": "ACI Hearing Center",
-    "url": "https://acihearing.com",
-    "telephone": "+1-337-223-9448",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "103 Saint Thomas Street",
-      "addressLocality": "Lafayette",
-      "addressRegion": "LA",
-      "postalCode": "70506",
-      "addressCountry": "US"
-    }
+    "@id": "https://acihearing.com/#organization"
   }
 }
 </script>
@@ -83,49 +80,117 @@
     "codeValue": "H93.1",
     "codingSystem": "ICD-10"
   },
-  "description": "Tinnitus is the perception of sound in the ears or head with no external source. It is most commonly described as ringing, but can also present as buzzing, hissing, clicking, or roaring. Tinnitus is a symptom, not a disease, and it affects roughly 15 to 20 percent of adults. Chronic subjective tinnitus is the most common form and is managed through a combination of hearing evaluation, sound therapy, counseling, and evidence-based devices.",
+  "description": "Tinnitus is the perception of sound (ringing, buzzing, roaring, hissing, clicking, or humming) without an external source. It affects roughly 15 to 20 percent of adults and can be triggered by hearing loss, noise exposure, ear or head injury, ototoxic medications, and vascular or neurologic conditions.",
+  "epidemiology": "The CDC estimates about 50 million adults in the United States experience tinnitus, and about 20 million have chronic bothersome tinnitus. The American Tinnitus Association reports 2 million cases are severely debilitating.",
+  "cause": [
+    {
+      "@type": "MedicalCause",
+      "name": "Noise-induced hearing loss",
+      "description": "Loud sound exposure damages cochlear hair cells and is the most common driver of persistent tinnitus."
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Age-related hearing loss (presbycusis)",
+      "description": "Progressive high-frequency hearing loss commonly presents with tinnitus."
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Ototoxic medications",
+      "description": "Aminoglycosides, high-dose salicylates, loop diuretics, and platinum chemotherapy can trigger or worsen tinnitus."
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Head or ear injury",
+      "description": "Blast trauma, motor vehicle collisions, and temporal bone fractures are known triggers."
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Vascular or muscular pulsatile causes",
+      "description": "Pulsatile tinnitus can point to vascular abnormalities and warrants medical evaluation."
+    }
+  ],
   "signOrSymptom": [
-    {"@type": "MedicalSignOrSymptom", "name": "Ringing in one or both ears"},
-    {"@type": "MedicalSignOrSymptom", "name": "Buzzing or humming with no external source"},
-    {"@type": "MedicalSignOrSymptom", "name": "Hissing or roaring in the ears"},
-    {"@type": "MedicalSignOrSymptom", "name": "Ear noise that interferes with sleep or concentration"}
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Ringing, buzzing, roaring, hissing, clicking, or humming without an external source"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Difficulty concentrating or sleeping"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Increased tinnitus loudness in quiet environments"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Tinnitus that changes with head or neck movement (somatic tinnitus)"
+    }
   ],
   "riskFactor": [
-    {"@type": "MedicalRiskFactor", "name": "Long-term noise exposure"},
-    {"@type": "MedicalRiskFactor", "name": "Age-related hearing loss"},
-    {"@type": "MedicalRiskFactor", "name": "Head or neck injury"},
-    {"@type": "MedicalRiskFactor", "name": "Certain medications"},
-    {"@type": "MedicalRiskFactor", "name": "Circulatory conditions"}
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Chronic loud-noise exposure at work or in hobbies"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Existing hearing loss"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Ototoxic medication use"
+    }
   ],
   "possibleTreatment": [
     {
       "@type": "MedicalTherapy",
-      "name": "Tinnitus Retraining Therapy",
-      "url": "https://acihearing.com/tinnitus-retraining-therapy-louisiana.html"
-    },
-    {
-      "@type": "MedicalTherapy",
       "name": "Lenire bimodal neuromodulation",
-      "url": "https://acihearing.com/lenire-tinnitus-treatment.html"
+      "description": "FDA-approved 12-week protocol combining sound and tongue-tip stimulation. ACI is a certified Lenire provider.",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
     },
     {
       "@type": "MedicalTherapy",
-      "name": "Sound therapy via hearing aids"
+      "name": "Sound therapy and masking",
+      "description": "Amplification, notched-noise sound generators, or masking apps to reduce tinnitus prominence.",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
     },
     {
       "@type": "MedicalTherapy",
-      "name": "Cognitive behavioral therapy for tinnitus"
+      "name": "Tinnitus retraining therapy (TRT)",
+      "description": "Directive counseling plus low-level broadband sound to habituate the auditory system over 12 to 24 months.",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Cognitive behavioral therapy (CBT) coordination",
+      "description": "For patients with anxiety or sleep disruption driven by tinnitus, ACI coordinates with local mental-health providers.",
+      "provider": {
+        "@id": "https://acihearing.com/#organization"
+      }
     }
   ],
-  "associatedAnatomy": {
-    "@type": "AnatomicalStructure",
-    "name": "Auditory system"
-  },
+  "associatedAnatomy": [
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Cochlea"
+    },
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Auditory nerve"
+    },
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Central auditory pathway"
+    }
+  ],
   "recognizingAuthority": {
-    "@type": "MedicalOrganization",
-    "name": "ACI Hearing Center",
-    "url": "https://acihearing.com/",
-    "telephone": "+1-337-223-9448"
+    "@id": "https://acihearing.com/#organization"
   }
 }
 </script>
@@ -495,6 +560,10 @@
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": "https://acihearing.com/tinnitus.html#faq",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://acihearing.com/#organization" },
+      "about": { "@id": "https://acihearing.com/tinnitus.html#tinnitus" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -621,53 +690,56 @@
       "@id": "https://acihearing.com/tinnitus.html#webpage",
       "url": "https://acihearing.com/tinnitus.html",
       "name": "Acadiana's Leading Tinnitus Specialists at ACI Hearing Center",
-      "description": "Complete tinnitus care in Lafayette, Louisiana: Lenire bimodal neuromodulation, tinnitus retraining therapy, sound therapy, CBT-informed counseling, and hearing aid integration, all delivered by Doctors of Audiology.",
+      "description": "Complete tinnitus care in Lafayette, Louisiana. Certified Lenire provider, sound therapy, TRT, hearing aid amplification, and coordinated CBT.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://acihearing.com/#website"
       },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Tinnitus",
-        "code": {
-          "@type": "MedicalCode",
-          "code": "H93.1",
-          "codingSystem": "ICD-10"
-        }
-      },
-      "mainContentOfPage": {
-        "@id": "https://acihearing.com/tinnitus.html#spokes"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://acihearing.com/assets/aci-og.jpg"
-      },
-      "audience": {
-        "@type": "PeopleAudience",
-        "geographicArea": {
-          "@type": "AdministrativeArea",
-          "name": "Acadiana, Louisiana"
-        }
+      "publisher": {
+        "@id": "https://acihearing.com/#organization"
       },
       "provider": {
         "@id": "https://acihearing.com/#organization"
       },
-      "lastReviewed": "2026-08-14",
-      "reviewedBy": {
-        "@type": "Person",
-        "name": "Kimberly (Peezie) Allred, Au.D.",
-        "jobTitle": "Doctor of Audiology",
-        "worksFor": {
-          "@id": "https://acihearing.com/#organization"
+      "about": [
+        {
+          "@id": "https://acihearing.com/tinnitus.html#tinnitus"
+        },
+        {
+          "@id": "https://acihearing.com/tinnitus.html#trt"
         }
+      ],
+      "mainEntity": {
+        "@id": "https://acihearing.com/tinnitus.html#spokes"
+      },
+      "mainContentOfPage": [
+        "What tinnitus is and what it sounds like",
+        "Common causes and risk factors",
+        "How ACI evaluates tinnitus",
+        "Lenire and other treatment options",
+        "When to seek urgent care for tinnitus"
+      ],
+      "primaryImageOfPage": "https://acihearing.com/images/logo.jpg",
+      "audience": [
+        {"@type": "MedicalAudience", "audienceType": "Patient"},
+        {"@type": "MedicalAudience", "audienceType": "MedicalResearcher"}
+      ],
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Audiology"
+      },
+      "lastReviewed": "2026-08-29",
+      "reviewedBy": {
+        "@id": "https://acihearing.com/#dr-allred"
       },
       "significantLink": [
         "https://acihearing.com/lenire-tinnitus-treatment.html",
-        "https://acihearing.com/types-of-tinnitus.html",
-        "https://acihearing.com/pulsatile-tinnitus.html",
-        "https://acihearing.com/tinnitus-after-noise-exposure.html",
-        "https://acihearing.com/tinnitus-consultation.html",
-        "https://acihearing.com/tinnitus-retraining-therapy-louisiana.html"
+        "https://acihearing.com/tinnitus-retraining-therapy-louisiana.html",
+        "https://acihearing.com/pulsatile-tinnitus-lafayette.html",
+        "https://acihearing.com/hearing-tests.html",
+        "https://acihearing.com/hearing-aids.html",
+        "https://www.ata.org/",
+        "https://www.nidcd.nih.gov/health/tinnitus"
       ]
     }
     </script>
