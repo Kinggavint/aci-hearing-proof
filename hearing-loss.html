@@ -25,10 +25,26 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acihearing.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://acihearing.com/services.html"},
-    {"@type": "ListItem", "position": 3, "name": "Hearing Loss", "item": "https://acihearing.com/hearing-loss.html"}
-  ]
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acihearing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://acihearing.com/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hearing Loss",
+      "item": "https://acihearing.com/hearing-loss.html"
+    }
+  ],
+  "@id": "https://acihearing.com/hearing-loss.html#breadcrumb"
 }
 </script>
 
@@ -40,17 +56,34 @@
   "name": "Hearing Loss in Lafayette, LA: Types, Signs, and Treatment",
   "url": "https://acihearing.com/hearing-loss.html",
   "description": "Comprehensive patient guide to hearing loss diagnosis and treatment at ACI Hearing Center in Lafayette, Louisiana. Covers sensorineural, conductive, and mixed hearing loss, evaluation process, treatment options, and pricing.",
-  "isPartOf": {"@id": "https://acihearing.com/#organization"},
-  "publisher": {"@id": "https://acihearing.com/#organization"},
-  "provider": {"@id": "https://acihearing.com/#organization"},
-  "about": {"@id": "https://acihearing.com/hearing-loss.html#hearing-loss"},
-  "audience": {"@type": "MedicalAudience", "audienceType": "https://schema.org/Patient"},
-  "lastReviewed": "2026-08-22",
+  "isPartOf": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "publisher": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "provider": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "about": {
+    "@id": "https://acihearing.com/hearing-loss.html#hearing-loss"
+  },
+  "audience": [
+    {
+      "@type": "Patient"
+    },
+    {
+      "@type": "MedicalAudience",
+      "audienceType": "AdultPatient"
+    },
+    {
+      "@type": "MedicalAudience",
+      "audienceType": "PediatricPatient"
+    }
+  ],
+  "lastReviewed": "2026-08-30",
   "reviewedBy": {
-    "@type": "Person",
-    "name": "Kimberly L. Allred, Au.D.",
-    "jobTitle": "Owner and Audiologist",
-    "affiliation": {"@id": "https://acihearing.com/#organization"}
+    "@id": "https://acihearing.com/#dr-allred"
   },
   "significantLink": [
     "https://acihearing.com/single-sided-deafness-lafayette.html",
@@ -59,7 +92,12 @@
     "https://acihearing.com/hunter-shooter-hearing-protection-lafayette.html",
     "https://acihearing.com/hearing-tests.html",
     "https://acihearing.com/speech-in-noise-testing.html"
-  ]
+  ],
+  "mainEntity": {
+    "@id": "https://acihearing.com/hearing-loss.html#hearing-loss"
+  },
+  "specialty": "Audiology",
+  "dateModified": "2026-08-30"
 }
 </script>
 
@@ -115,7 +153,10 @@
       "url": "https://acihearing.com/speech-in-noise-testing.html",
       "description": "QuickSIN and AzBio testing that measures how well the brain understands speech in real-world noise."
     }
-  ]
+  ],
+  "provider": {
+    "@id": "https://acihearing.com/#organization"
+  }
 }
 </script>
 
@@ -125,52 +166,201 @@
   "@type": "MedicalCondition",
   "@id": "https://acihearing.com/hearing-loss.html#hearing-loss",
   "name": "Hearing Loss",
-  "alternateName": ["Hearing impairment", "Deafness", "Presbycusis", "Age-related hearing loss", "Noise-induced hearing loss"],
+  "alternateName": [
+    "Hearing impairment",
+    "Deafness",
+    "Presbycusis",
+    "Age-related hearing loss",
+    "Noise-induced hearing loss"
+  ],
   "code": [
-    {"@type": "MedicalCode", "codeValue": "H90.5", "codingSystem": "ICD-10"},
-    {"@type": "MedicalCode", "codeValue": "H90.2", "codingSystem": "ICD-10"},
-    {"@type": "MedicalCode", "codeValue": "H91.9", "codingSystem": "ICD-10"}
+    {
+      "@type": "MedicalCode",
+      "codeValue": "H90.5",
+      "codingSystem": "ICD-10"
+    },
+    {
+      "@type": "MedicalCode",
+      "codeValue": "H90.2",
+      "codingSystem": "ICD-10"
+    },
+    {
+      "@type": "MedicalCode",
+      "codeValue": "H91.9",
+      "codingSystem": "ICD-10"
+    }
   ],
   "description": "Hearing loss is a reduction in the ability to hear sound. It affects roughly 15 percent of American adults and rises sharply with age. Hearing loss is generally divided into three types. Sensorineural hearing loss involves the inner ear or the hearing nerve and is the most common permanent form. Conductive hearing loss involves the outer or middle ear and is often treatable. Mixed hearing loss has both components. Untreated hearing loss is linked to social isolation, depression, fall risk, and faster cognitive decline. Modern hearing aids, cochlear implants, medical treatment, and surgery all restore function depending on the cause and severity.",
   "signOrSymptom": [
-    {"@type": "MedicalSignOrSymptom", "name": "Trouble understanding speech in noise"},
-    {"@type": "MedicalSignOrSymptom", "name": "Frequently asking others to repeat"},
-    {"@type": "MedicalSignOrSymptom", "name": "Turning the television or radio up louder"},
-    {"@type": "MedicalSignOrSymptom", "name": "Muffled or unclear speech"},
-    {"@type": "MedicalSignOrSymptom", "name": "Ringing in the ears (tinnitus) with hearing changes"},
-    {"@type": "MedicalSignOrSymptom", "name": "Difficulty hearing on the phone"},
-    {"@type": "MedicalSignOrSymptom", "name": "Feeling that people are mumbling"},
-    {"@type": "MedicalSignOrSymptom", "name": "Withdrawing from social situations"}
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Trouble understanding speech in noise"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Frequently asking others to repeat"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Turning the television or radio up louder"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Muffled or unclear speech"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Ringing in the ears (tinnitus) with hearing changes"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Difficulty hearing on the phone"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Feeling that people are mumbling"
+    },
+    {
+      "@type": "MedicalSignOrSymptom",
+      "name": "Withdrawing from social situations"
+    }
   ],
   "riskFactor": [
-    {"@type": "MedicalRiskFactor", "name": "Age 60 and older"},
-    {"@type": "MedicalRiskFactor", "name": "Long-term occupational noise exposure"},
-    {"@type": "MedicalRiskFactor", "name": "Recreational noise (firearms, power tools, concerts)"},
-    {"@type": "MedicalRiskFactor", "name": "Family history of hearing loss"},
-    {"@type": "MedicalRiskFactor", "name": "Ototoxic medications (some chemotherapy, high-dose aspirin, certain antibiotics)"},
-    {"@type": "MedicalRiskFactor", "name": "Diabetes and cardiovascular disease"},
-    {"@type": "MedicalRiskFactor", "name": "Head injury or barotrauma"},
-    {"@type": "MedicalRiskFactor", "name": "Chronic ear infections"}
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Age 60 and older"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Long-term occupational noise exposure"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Recreational noise (firearms, power tools, concerts)"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Family history of hearing loss"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Ototoxic medications (some chemotherapy, high-dose aspirin, certain antibiotics)"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Diabetes and cardiovascular disease"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Head injury or barotrauma"
+    },
+    {
+      "@type": "MedicalRiskFactor",
+      "name": "Chronic ear infections"
+    }
   ],
   "possibleTreatment": [
-    {"@type": "MedicalTherapy", "name": "Prescription hearing aids", "url": "https://acihearing.com/hearing-aids.html"},
-    {"@type": "MedicalTherapy", "name": "Cochlear implants", "url": "https://acihearing.com/cochlear-implants.html"},
-    {"@type": "MedicalTherapy", "name": "Bone-anchored hearing systems"},
-    {"@type": "MedicalTherapy", "name": "Medical or surgical referral for conductive causes"},
-    {"@type": "MedicalTherapy", "name": "Assistive listening devices and captioning"}
+    {
+      "@type": "MedicalTherapy",
+      "name": "Prescription hearing aids",
+      "url": "https://acihearing.com/hearing-aids.html"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Cochlear implants",
+      "url": "https://acihearing.com/cochlear-implants.html"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Bone-anchored hearing systems"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Medical or surgical referral for conductive causes"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Assistive listening devices and captioning"
+    }
   ],
   "associatedAnatomy": [
-    {"@type": "AnatomicalStructure", "name": "Cochlea"},
-    {"@type": "AnatomicalStructure", "name": "Auditory nerve"},
-    {"@type": "AnatomicalStructure", "name": "Middle ear"},
-    {"@type": "AnatomicalStructure", "name": "Outer ear canal"}
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Cochlea"
+    },
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Auditory nerve"
+    },
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Middle ear"
+    },
+    {
+      "@type": "AnatomicalStructure",
+      "name": "Outer ear canal"
+    }
   ],
   "recognizingAuthority": {
-    "@type": "MedicalOrganization",
-    "name": "ACI Hearing Center",
-    "url": "https://acihearing.com/",
-    "telephone": "+1-337-223-9448"
-  }
+    "@id": "https://acihearing.com/#organization"
+  },
+  "provider": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "cause": [
+    {
+      "@type": "MedicalCause",
+      "name": "Age-related sensory hair cell loss (presbycusis)"
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Long-term exposure to loud noise, workplace noise, and hunting"
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Chronic middle ear disease and eustachian tube dysfunction"
+    },
+    {
+      "@type": "MedicalCause",
+      "name": "Ototoxic medications including some antibiotics, chemotherapy agents, and NSAID overuse"
+    }
+  ],
+  "epidemiology": "In the United States, about 1 in 8 people age 12 and older have hearing loss in both ears based on standard hearing exams, and nearly 25 percent of adults age 65 to 74 and 50 percent of adults age 75 and older have disabling hearing loss (National Institute on Deafness and Other Communication Disorders). In Louisiana and the greater Acadiana region, oilfield workers, hunters, and older adults are the most common patient groups seen at ACI Hearing Center.",
+  "differentialDiagnosis": [
+    {
+      "@type": "DDxElement",
+      "distinguishingSign": {
+        "@type": "MedicalSignOrSymptom",
+        "name": "Ringing in the ears without measurable threshold shift may indicate tinnitus without hearing loss"
+      },
+      "diagnosis": {
+        "@type": "MedicalCondition",
+        "name": "Tinnitus"
+      }
+    },
+    {
+      "@type": "DDxElement",
+      "distinguishingSign": {
+        "@type": "MedicalSignOrSymptom",
+        "name": "Trouble understanding speech in noise with normal audiogram may indicate auditory processing disorder"
+      },
+      "diagnosis": {
+        "@type": "MedicalCondition",
+        "name": "Auditory Processing Disorder"
+      }
+    },
+    {
+      "@type": "DDxElement",
+      "distinguishingSign": {
+        "@type": "MedicalSignOrSymptom",
+        "name": "Sudden dizziness and hearing loss together may indicate Meniere disease"
+      },
+      "diagnosis": {
+        "@type": "MedicalCondition",
+        "name": "Meniere Disease"
+      }
+    }
+  ]
 }
 </script>
 
@@ -181,19 +371,73 @@
   "@type": "Service",
   "name": "Hearing Loss Evaluation and Treatment",
   "serviceType": "Audiology diagnostic and treatment",
-  "provider": {"@id": "https://acihearing.com/#organization"},
-  "areaServed": {"@type": "AdministrativeArea", "name": "Acadiana, Louisiana"},
+  "provider": {
+    "@id": "https://acihearing.com/#organization"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Acadiana, Louisiana"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Hearing loss services",
     "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Comprehensive diagnostic hearing evaluation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Speech-in-noise testing"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Real-ear measurement hearing aid fitting"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cochlear implant candidacy evaluation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tinnitus and hearing loss combined care"}}
-    ]
-  }
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Comprehensive diagnostic hearing evaluation",
+          "provider": {
+            "@id": "https://acihearing.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Speech-in-noise testing",
+          "provider": {
+            "@id": "https://acihearing.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Real-ear measurement hearing aid fitting",
+          "provider": {
+            "@id": "https://acihearing.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cochlear implant candidacy evaluation",
+          "provider": {
+            "@id": "https://acihearing.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tinnitus and hearing loss combined care",
+          "provider": {
+            "@id": "https://acihearing.com/#organization"
+          }
+        }
+      }
+    ],
+    "provider": {
+      "@id": "https://acihearing.com/#organization"
+    }
+  },
+  "@id": "https://acihearing.com/hearing-loss.html#service"
 }
 </script>
 
@@ -457,21 +701,78 @@
     </section>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "How do I know if I have hearing loss?", "acceptedAnswer": {"@type": "Answer", "text": "The clearest sign is finding yourself asking people to repeat themselves, especially in restaurants or with soft voices. Other warning signs include the TV volume climbing, ringing in the ears, feeling like everyone is mumbling, and pulling back from social settings. If that sounds familiar, book a hearing evaluation at ACI Hearing Center in Lafayette, LA. It is painless and takes about an hour."}},
-        {"@type": "Question", "name": "What causes hearing loss?", "acceptedAnswer": {"@type": "Answer", "text": "The most common cause is aging combined with cumulative noise exposure. Other causes include genetics, chronic ear infections, otosclerosis, certain medications, head injury, diabetes, and heart disease. About one in three adults over 65 has some hearing loss. In Louisiana, occupational noise from oilfield, refinery, and construction work is a frequent cause. Work-related hearing loss may qualify for a Louisiana workers compensation claim."}},
-        {"@type": "Question", "name": "Is hearing loss permanent?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the cause. Sensorineural hearing loss is usually permanent but highly treatable with hearing aids or cochlear implants. Conductive hearing loss is often fully or partially fixable with medical care or surgery. Mixed hearing loss combines both. A diagnostic evaluation identifies the type and what can be done."}},
-        {"@type": "Question", "name": "How much do hearing aids cost at ACI Hearing Center?", "acceptedAnswer": {"@type": "Answer", "text": "Treatment plans at ACI Hearing Center range from $4,500 to $7,500 and include binaural hearing aids (both ears), a real-ear measurement fitting, follow-up adjustments, cleanings, and our care commitment for the life of your devices. Financing is available through CareCredit and PowerPay with 0 percent plans for qualified applicants. Lyric extended-wear is billed separately as a subscription."}},
-        {"@type": "Question", "name": "Will my insurance cover hearing aids?", "acceptedAnswer": {"@type": "Answer", "text": "Some plans cover hearing aids partially or fully. Louisiana Medicaid covers hearing aids for children, and many private employer and union plans include a hearing aid benefit. Medicare Advantage plans often include coverage even though Original Medicare does not. ACI verifies benefits before fitting and provides out-of-pocket cost in writing before commitment."}},
-        {"@type": "Question", "name": "How long does it take to get used to hearing aids?", "acceptedAnswer": {"@type": "Answer", "text": "Most patients feel comfortable with new hearing aids within two to four weeks of daily wear. The first week is the biggest adjustment. Consistent wear plus tuning appointments in the first month gets most people to a place where the hearing aids feel invisible."}},
-        {"@type": "Question", "name": "Do I need a hearing test if I use hearing aids from Costco or Amazon?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Big-box and over-the-counter hearing aids can help mild hearing loss but cannot diagnose the cause. A diagnostic evaluation checks for treatable conditions like otosclerosis, wax blockage, sudden hearing loss, and acoustic neuroma. Missing those is the risk of skipping the audiologist."}},
-        {"@type": "Question", "name": "What is the difference between an audiologist and a hearing aid specialist?", "acceptedAnswer": {"@type": "Answer", "text": "An audiologist holds a Doctor of Audiology degree (Au.D.) and is licensed to diagnose hearing and balance disorders, fit hearing aids, verify them with real-ear measurement, provide pediatric care, and coordinate cochlear implants. A hearing aid specialist is licensed only to test hearing for the purpose of fitting hearing aids. All four providers at ACI Hearing Center are Doctors of Audiology: Kimberly L. Allred, Elizabeth LeMaire, Sarah Lalande-Davies, and Courtney Barbier."}}
-      ]
+      "@type": "Question",
+      "name": "How do I know if I have hearing loss?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The clearest sign is finding yourself asking people to repeat themselves, especially in restaurants or with soft voices. Other warning signs include the TV volume climbing, ringing in the ears, feeling like everyone is mumbling, and pulling back from social settings. If that sounds familiar, book a hearing evaluation at ACI Hearing Center in Lafayette, LA. It is painless and takes about an hour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes hearing loss?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common cause is aging combined with cumulative noise exposure. Other causes include genetics, chronic ear infections, otosclerosis, certain medications, head injury, diabetes, and heart disease. About one in three adults over 65 has some hearing loss. In Louisiana, occupational noise from oilfield, refinery, and construction work is a frequent cause. Work-related hearing loss may qualify for a Louisiana workers compensation claim."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is hearing loss permanent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the cause. Sensorineural hearing loss is usually permanent but highly treatable with hearing aids or cochlear implants. Conductive hearing loss is often fully or partially fixable with medical care or surgery. Mixed hearing loss combines both. A diagnostic evaluation identifies the type and what can be done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do hearing aids cost at ACI Hearing Center?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatment plans at ACI Hearing Center range from $4,500 to $7,500 and include binaural hearing aids (both ears), a real-ear measurement fitting, follow-up adjustments, cleanings, and our care commitment for the life of your devices. Financing is available through CareCredit and PowerPay with 0 percent plans for qualified applicants. Lyric extended-wear is billed separately as a subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my insurance cover hearing aids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some plans cover hearing aids partially or fully. Louisiana Medicaid covers hearing aids for children, and many private employer and union plans include a hearing aid benefit. Medicare Advantage plans often include coverage even though Original Medicare does not. ACI verifies benefits before fitting and provides out-of-pocket cost in writing before commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to get used to hearing aids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most patients feel comfortable with new hearing aids within two to four weeks of daily wear. The first week is the biggest adjustment. Consistent wear plus tuning appointments in the first month gets most people to a place where the hearing aids feel invisible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a hearing test if I use hearing aids from Costco or Amazon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Big-box and over-the-counter hearing aids can help mild hearing loss but cannot diagnose the cause. A diagnostic evaluation checks for treatable conditions like otosclerosis, wax blockage, sudden hearing loss, and acoustic neuroma. Missing those is the risk of skipping the audiologist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between an audiologist and a hearing aid specialist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An audiologist holds a Doctor of Audiology degree (Au.D.) and is licensed to diagnose hearing and balance disorders, fit hearing aids, verify them with real-ear measurement, provide pediatric care, and coordinate cochlear implants. A hearing aid specialist is licensed only to test hearing for the purpose of fitting hearing aids. All four providers at ACI Hearing Center are Doctors of Audiology: Kimberly L. Allred, Elizabeth LeMaire, Sarah Lalande-Davies, and Courtney Barbier."
+      }
     }
-    </script>
+  ],
+  "@id": "https://acihearing.com/hearing-loss.html#faq"
+}
+</script>
 
     <section id="in-depth-articles" class="section" style="background:#f7fafc;padding:60px 20px;">
       <div class="container" style="max-width:1100px;margin:0 auto;">
