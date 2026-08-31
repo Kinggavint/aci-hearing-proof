@@ -177,6 +177,32 @@
   ]
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Brand",
+      "@id": "https://acihearing.com/hearing-aids.html#brand-oticon",
+      "name": "Oticon",
+      "sameAs": ["https://en.wikipedia.org/wiki/Oticon","https://www.demant.com"]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://acihearing.com/#organization",
+      "name": "ACI Hearing Center"
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://acihearing.com/dr-kimberly-allred.html#physician",
+      "name": "Kimberly Allred, Au.D.",
+      "affiliation": {"@id": "https://acihearing.com/#organization"},
+      "worksFor": {"@id": "https://acihearing.com/#organization"}
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="header" role="banner">
