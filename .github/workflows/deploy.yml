@@ -54,10 +54,13 @@ jobs:
       - name: Fix content types for common web files
         # aws s3 sync occasionally guesses wrong on HTML/CSS/JS. Force-correct.
         run: |
+          # R122-1: exclude redirect-metadata keys so REPLACE does not strip WebsiteRedirectLocation.
+          # Managed via redirect-manifest.txt in repo root. Add entries below when new 301 redirects ship.
           aws s3 cp s3://$S3_BUCKET/ s3://$S3_BUCKET/ \
             --recursive \
             --exclude "*" \
             --include "*.html" \
+            --exclude "category/tinnitus-articles/hearing-tests.html" \
             --metadata-directive REPLACE \
             --content-type "text/html; charset=utf-8" \
             --cache-control "public, max-age=300"

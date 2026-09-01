@@ -1,0 +1,8 @@
+# ACI redirect-manifest.txt
+# Purpose: keys in this file are LEGACY URLs on S3 that hold WebsiteRedirectLocation
+# metadata for 301 redirects. The deploy.yml "Fix content types" step MUST skip these
+# via --exclude so REPLACE metadata does not strip the redirect header.
+#
+# Format: one relative key per line. Add to deploy.yml exclude list.
+# Managed by ACI SEO agent per R122-1 rule (2026-09-01).
+category/tinnitus-articles/hearing-tests.html

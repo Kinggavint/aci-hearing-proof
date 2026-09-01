@@ -73,6 +73,7 @@
   "@context": "https://schema.org",
   "@type": "MedicalCondition",
   "@id": "https://acihearing.com/tinnitus.html#tinnitus",
+      "relevantSpecialty": {"@id": "https://acihearing.com/dr-kimberly-allred.html#physician"},
   "name": "Tinnitus",
   "alternateName": ["Ringing in the ears", "Buzzing in the ears", "Roaring in the ears", "Ear noise"],
   "code": {
@@ -192,6 +193,45 @@
   "recognizingAuthority": {
     "@id": "https://acihearing.com/#organization"
   }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Brand",
+      "@id": "https://acihearing.com/tinnitus.html#brand-lenire",
+      "name": "Lenire",
+      "sameAs": ["https://en.wikipedia.org/wiki/Lenire","https://www.lenire.com"]
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://acihearing.com/tinnitus.html#brand-neuromod",
+      "name": "Neuromod Devices",
+      "sameAs": ["https://en.wikipedia.org/wiki/Neuromod_Devices","https://www.neuromoddevices.com"]
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://acihearing.com/tinnitus.html#brand-signia-notch",
+      "name": "Signia Notch Therapy",
+      "sameAs": ["https://en.wikipedia.org/wiki/Signia","https://www.signia.net"]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://acihearing.com/#organization",
+      "name": "ACI Hearing Center"
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://acihearing.com/dr-kimberly-allred.html#physician",
+      "name": "Kimberly Allred, Au.D.",
+      "affiliation": {"@id": "https://acihearing.com/#organization"},
+      "worksFor": {"@id": "https://acihearing.com/#organization"},
+      "medicalSpecialty": ["Audiology","Tinnitus","Hyperacusis"]
+    }
+  ]
 }
 </script>
 </head>
