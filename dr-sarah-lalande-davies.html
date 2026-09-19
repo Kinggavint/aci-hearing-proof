@@ -4,7 +4,7 @@
   Filed as IDEA-081 (Run 39 overnight, 2026-07-14 08:00 UTC).
   verified_source:
     - team.html:2026-07-11 (roster block added Run 35 overnight after 3 phantom names corrected)
-    - kimberly-email:2026-07-13 (Gmail thread 19f4c59c588f7f6d — Kimberly explicitly confirmed the 4 audiologists)
+    - kimberly-email:2026-07-13 (Gmail thread 19f4c59c588f7f6d . Kimberly explicitly confirmed the 4 audiologists)
   All bio prose is copied from team.html verbatim (or lightly reformatted). No hallucinated dates, degrees, or life details.
   Contact: any correction needed, email aci@acihearing.com and support@apexailabs.ai (CC mike@doctordemographics.com).
 -->
@@ -26,11 +26,32 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://acihearing.com/" },
-    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://acihearing.com/about.html" },
-    { "@type": "ListItem", "position": 3, "name": "Meet Our Team", "item": "https://acihearing.com/team.html" },
-    { "@type": "ListItem", "position": 4, "name": "Dr. Sarah Lalande-Davies", "item": "https://acihearing.com/dr-sarah-lalande-davies.html" }
-  ]
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acihearing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://acihearing.com/about.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Meet Our Team",
+      "item": "https://acihearing.com/team.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Dr. Sarah Lalande-Davies",
+      "item": "https://acihearing.com/dr-sarah-lalande-davies.html"
+    }
+  ],
+  "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#breadcrumb"
 }
 </script>
 
@@ -170,6 +191,7 @@
         }
       ],
       "sameAs": [
+        "https://acihearing.com/team.html#dr-lalande-davies",
         "https://www.healthgrades.com/audiology-directory/la-louisiana/lafayette"
       ],
       "knowsAbout": [
@@ -193,7 +215,10 @@
           "@type": "MedicalProcedure",
           "name": "Custom Hearing Protection Fitting"
         }
-      ]
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#medicalwebpage"
+      }
     }
   ]
 }
@@ -203,10 +228,10 @@
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "url": "https://acihearing.com/dr-sarah-lalande-davies.html",
-  "name": "Dr. Sarah Lalande-Davies, Au.D. \u2013 Doctor of Audiology, Lafayette LA",
+  "name": "Dr. Sarah Lalande-Davies, Au.D. – Doctor of Audiology, Lafayette LA",
   "description": "Dr. Sarah Lalande-Davies, Au.D. is a Doctor of Audiology at ACI Hearing Center in Lafayette, LA. This medical bio page details her LSU and LSU Health New Orleans training and her clinical focus.",
   "datePublished": "2026-07-14",
-  "dateModified": "2026-08-11",
+  "dateModified": "2026-09-19",
   "inLanguage": "en-US",
   "primaryImageOfPage": {
     "@type": "ImageObject",
@@ -230,11 +255,27 @@
     "name": "Dr. Sarah Lalande-Davies, Au.D.",
     "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#physician"
   },
-  "lastReviewed": "2026-07-17",
+  "lastReviewed": "2026-09-19",
   "audience": {
     "@type": "MedicalAudience",
     "audienceType": "Patient"
-  }
+  },
+  "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#medicalwebpage",
+  "relatedLink": [
+    "https://acihearing.com/dr-kimberly-allred.html",
+    "https://acihearing.com/dr-elizabeth-lemaire.html",
+    "https://acihearing.com/dr-courtney-barbier.html",
+    "https://acihearing.com/team.html",
+    "https://acihearing.com/audiologist-lafayette-la.html",
+    "https://acihearing.com/about.html"
+  ],
+  "significantLink": [
+    "https://acihearing.com/hearing-aids.html",
+    "https://acihearing.com/tinnitus.html",
+    "https://acihearing.com/hearing-tests.html",
+    "https://acihearing.com/cochlear-implants.html",
+    "https://acihearing.com/services.html"
+  ]
 }
 </script>
 
@@ -243,13 +284,59 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "When did Dr. Sarah Lalande-Davies join ACI Hearing Center?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lalande-Davies joined ACI Hearing Center in November 2020, after completing her Doctor of Audiology degree at LSU Health Sciences Center in New Orleans and her fourth-year externship at the Southeast Louisiana Veterans Health Care System." } },
-    { "@type": "Question", "name": "What are Dr. Lalande-Davies's specialties?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lalande-Davies provides comprehensive diagnostic hearing evaluations, hearing aid fitting, tinnitus management, and cochlear implant care for patients across the lifespan. She has strong clinical experience from her VA externship serving veterans with complex hearing needs." } },
-    { "@type": "Question", "name": "Where did Dr. Lalande-Davies go to school?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Lalande-Davies earned her Bachelor of Science in Communication Sciences and Disorders from Louisiana State University, then her Doctor of Audiology from LSU Health Sciences Center in New Orleans. Her fourth-year externship was at the Southeast Louisiana Veterans Health Care System." } },
-    { "@type": "Question", "name": "Does Dr. Lalande-Davies see pediatric patients?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Dr. Lalande-Davies sees patients of all ages. She provides diagnostic testing and hearing aid care for children, adults, and seniors." } },
-    { "@type": "Question", "name": "How do I book an appointment with Dr. Lalande-Davies?", "acceptedAnswer": { "@type": "Answer", "text": "Call ACI Hearing Center at 337-223-9448 and let our team know you would like to see Dr. Lalande-Davies. We will schedule you at a time that works for both of you." } },
-    { "@type": "Question", "name": "Is Dr. Lalande-Davies licensed in Louisiana?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Dr. Lalande-Davies is licensed by the Louisiana Board of Examiners for Speech-Language Pathology and Audiology and holds her Certificate of Clinical Competence in Audiology (CCC-A) through the American Speech-Language-Hearing Association." } }
-  ]
+    {
+      "@type": "Question",
+      "name": "When did Dr. Sarah Lalande-Davies join ACI Hearing Center?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dr. Lalande-Davies joined ACI Hearing Center in November 2020, after completing her Doctor of Audiology degree at LSU Health Sciences Center in New Orleans and her fourth-year externship at the Southeast Louisiana Veterans Health Care System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Dr. Lalande-Davies's specialties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dr. Lalande-Davies provides comprehensive diagnostic hearing evaluations, hearing aid fitting, tinnitus management, and cochlear implant care for patients across the lifespan. She has strong clinical experience from her VA externship serving veterans with complex hearing needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where did Dr. Lalande-Davies go to school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dr. Lalande-Davies earned her Bachelor of Science in Communication Sciences and Disorders from Louisiana State University, then her Doctor of Audiology from LSU Health Sciences Center in New Orleans. Her fourth-year externship was at the Southeast Louisiana Veterans Health Care System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Dr. Lalande-Davies see pediatric patients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dr. Lalande-Davies sees patients of all ages. She provides diagnostic testing and hearing aid care for children, adults, and seniors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book an appointment with Dr. Lalande-Davies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call ACI Hearing Center at 337-223-9448 and let our team know you would like to see Dr. Lalande-Davies. We will schedule you at a time that works for both of you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Dr. Lalande-Davies licensed in Louisiana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dr. Lalande-Davies is licensed by the Louisiana Board of Examiners for Speech-Language Pathology and Audiology and holds her Certificate of Clinical Competence in Audiology (CCC-A) through the American Speech-Language-Hearing Association."
+      }
+    }
+  ],
+  "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#faq",
+  "about": {
+    "@id": "https://acihearing.com/dr-sarah-lalande-davies.html#medicalwebpage"
+  }
 }
 </script>
 
