@@ -598,6 +598,7 @@ ul, ol { list-style: none; }
 .hero--inner {
   min-height: 300px;
 }
+.hero--inner .hero__subtitle { color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.7); }
 .hero--inner .hero__title {
   font-size: clamp(1.875rem, 1.3rem + 2vw, 3rem);
 }
