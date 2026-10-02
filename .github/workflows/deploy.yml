@@ -61,6 +61,7 @@ jobs:
             --exclude "*" \
             --include "*.html" \
             --exclude "category/tinnitus-articles/hearing-tests.html" \
+            --exclude "balance.html" \
             --metadata-directive REPLACE \
             --content-type "text/html; charset=utf-8" \
             --cache-control "public, max-age=300"
