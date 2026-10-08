@@ -6,3 +6,8 @@
 # Format: one relative key per line. Add to deploy.yml exclude list.
 # Managed by ACI SEO agent per R122-1 rule (2026-09-01).
 category/tinnitus-articles/hearing-tests.html
+# 2026-09-24 (task 86bbty49u): balance.html removed from repo 2026-07-02 but stayed live on S3
+# (additive-only deploy). Repo now ships a meta-refresh stub at balance.html -> hearing-tests.html.
+# To make it a true 301 at deploy time, set the redirect on the S3 key (run as the Apex deployer):
+#   aws s3 cp balance.html s3://aci-hearing/balance.html --website-redirect /hearing-tests.html --content-type "text/html; charset=utf-8" --cache-control "public, max-age=300"
+balance.html
