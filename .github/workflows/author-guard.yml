@@ -1,0 +1,31 @@
+# Drop into any Apex client proof repo as .github/workflows/author-guard.yml
+# Fails the check when any pushed commit is authored/committed by a non-Apex
+# address. Allowlist only — no personal address is ever written here.
+# A deploy-key push to main cannot be blocked by Actions; this makes it loud
+# (red X + email to the repo owner) within a minute instead of weeks later.
+name: author-guard
+on: [push, pull_request]
+jobs:
+  author-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Only Apex addresses may author commits
+        shell: bash
+        run: |
+          set -euo pipefail
+          allow='(@apexailabs\.ai$|@users\.noreply\.github\.com$|^noreply@github\.com$)'
+          before="${{ github.event.before }}"
+          if [ -z "$before" ] || [ "$before" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$before" 2>/dev/null; then
+            range="${{ github.sha }}~20..${{ github.sha }}"; git rev-parse -q --verify "${{ github.sha }}~20" >/dev/null 2>&1 || range="${{ github.sha }}"
+          else
+            range="$before..${{ github.sha }}"
+          fi
+          bad=0
+          while IFS='|' read -r ae ce sha; do
+            for who in "$ae" "$ce"; do
+              [[ "$who" =~ $allow ]] || { echo "::error::$sha authored/committed by a non-Apex address"; bad=1; }
+            done
+          done < <(git rev-list --format='%ae|%ce|%h' --no-commit-header "$range")
+          exit $bad
