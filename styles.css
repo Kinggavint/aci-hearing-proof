@@ -640,10 +640,16 @@ ul, ol { list-style: none; }
   gap: var(--space-2xl);
   flex-wrap: wrap;
 }
+.award-banner__badges {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
 .award-banner__badge {
   flex-shrink: 0;
   width: 120px;
   height: auto;
+  border-radius: 8px;
 }
 .award-banner__text {
   text-align: left;
