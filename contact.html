@@ -167,6 +167,7 @@
           <div class="reveal">
             <h2 class="heading-md" style="margin-bottom: var(--space-lg);">Request an Appointment</h2>
             <form id="contact-form" novalidate>
+              <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;opacity:0;pointer-events:none;">
               <div class="form-row">
                 <div class="form-group">
                   <label for="first-name" class="form-label">First Name *</label>
@@ -205,12 +206,13 @@
                 <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us a little about what brings you in..."></textarea>
               </div>
               <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Submit Appointment Request</button>
+              <div id="contact-form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
               <div class="form-note">
                 <strong>What happens next?</strong> After you submit this form, our Patient Care Coordinator will call you within one business day to confirm your appointment and answer any questions.
               </div>
             </form>
-            <div class="form-success">
-              <h3 class="heading-sm">Thank You!</h3>
+            <div class="form-success" role="status" tabindex="-1">
+              <h3 class="heading-sm">Thank you</h3>
               <p>Your appointment request has been submitted. Our team will contact you within one business day to confirm your appointment. If you need immediate assistance, please call us at <a href="tel:3372239448"><strong>337-223-9448</strong></a>.</p>
             </div>
           </div>
