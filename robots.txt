@@ -1,12 +1,8 @@
 User-agent: *
 Allow: /
 
-# Disallow CMS-style fallback URLs that return duplicate homepage content
-# (S3 falls back to index.html for unmatched paths — these create soft-404s)
-Disallow: /services/
-Disallow: /locations/
-Disallow: /location-contact/
-Disallow: /location/
+# Q-0028 (2026-11-02): legacy /services/, /locations/, /location-contact/, /location/
+# Disallows removed so Google can recrawl the 301s/410s set in cloudfront/aci-legacy-410.js.
 
 # Sitemap
 Sitemap: https://acihearing.com/sitemap.xml

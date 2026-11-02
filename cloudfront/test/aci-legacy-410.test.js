@@ -134,10 +134,40 @@ check("regression: WordPress ?p= permalink fallback -> 301 to /", () => {
     assert.strictEqual(res.headers["x-legacy-redirect"].value, "wp-permalink-fallback");
 });
 
-check("regression: legacy /services/tinnitus path -> 410 Gone", () => {
-    const res = handler(makeEvent("acihearing.com", "/services/tinnitus", {}));
+check("regression: other legacy /services/hearing-aids path -> 410 Gone", () => {
+    const res = handler(makeEvent("acihearing.com", "/services/hearing-aids", {}));
     assert.strictEqual(res.statusCode, 410);
     assert.strictEqual(res.headers["x-legacy-410"].value, "aci-legacy-cleanup");
+});
+
+// ---- Q-0028: legacy URLs that still rank -> 301 to closest live page, one hop ----
+[
+    ["/locations/lafayette-la/", "/audiologist-lafayette-la.html"],
+    ["/locations/lafayette-la", "/audiologist-lafayette-la.html"],
+    ["/services/tinnitus/", "/tinnitus.html"],
+    ["/services/tinnitus", "/tinnitus.html"],
+    ["/SERVICES/TINNITUS/", "/tinnitus.html"],
+    ["/location-contact/", "/contact.html"],
+    ["/location-contact", "/contact.html"]
+].forEach(([from, to]) => {
+    ["acihearing.com", "www.acihearing.com"].forEach((host) => {
+        check(`Q-0028: ${host}${from} -> 301 https://acihearing.com${to} (one hop)`, () => {
+            const res = handler(makeEvent(host, from, { utm_source: { value: "x" } }));
+            assert.strictEqual(res.statusCode, 301);
+            assert.strictEqual(res.headers.location.value, "https://acihearing.com" + to);
+            assert.strictEqual(res.headers["x-legacy-redirect"].value, "q0028-legacy-301");
+        });
+    });
+});
+
+check("Q-0028: /services/tinnitus/ is no longer a 410", () => {
+    const res = handler(makeEvent("acihearing.com", "/services/tinnitus/", {}));
+    assert.notStrictEqual(res.statusCode, 410);
+});
+
+check("Q-0028: other /locations/ paths are not redirected by the map", () => {
+    const res = handler(makeEvent("acihearing.com", "/locations/broussard-la/", {}));
+    assert.strictEqual(res.statusCode, undefined);
 });
 
 check("regression: legacy directory subpath /hearing-aids/foo/ -> 410 Gone", () => {
@@ -152,9 +182,9 @@ check("regression: flat canonical page /hearing-aids.html is NOT caught by direc
 });
 
 check("www + legacy 410 path: host redirect wins first (client re-requests on apex, then 410s there)", () => {
-    const res = handler(makeEvent("www.acihearing.com", "/services/tinnitus", {}));
+    const res = handler(makeEvent("www.acihearing.com", "/services/hearing-aids", {}));
     assert.strictEqual(res.statusCode, 301);
-    assert.strictEqual(res.headers.location.value, "https://acihearing.com/services/tinnitus");
+    assert.strictEqual(res.headers.location.value, "https://acihearing.com/services/hearing-aids");
 });
 
 console.log(`\n${passed} passed`);
