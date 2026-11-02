@@ -163,55 +163,16 @@
     <section class="section">
       <div class="container">
         <div class="grid grid--2" style="gap: var(--space-3xl);">
-          <!-- Contact Form -->
+          <!-- Call and email buttons (form removed until a real submit path is approved) -->
           <div class="reveal">
             <h2 class="heading-md" style="margin-bottom: var(--space-lg);">Request an Appointment</h2>
-            <form id="contact-form" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="first-name" class="form-label">First Name *</label>
-                  <input type="text" id="first-name" name="first-name" class="form-input" required autocomplete="given-name">
-                </div>
-                <div class="form-group">
-                  <label for="last-name" class="form-label">Last Name *</label>
-                  <input type="text" id="last-name" name="last-name" class="form-input" required autocomplete="family-name">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email" class="form-label">Email *</label>
-                  <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
-                </div>
-                <div class="form-group">
-                  <label for="phone" class="form-label">Phone *</label>
-                  <input type="tel" id="phone" name="phone" class="form-input" required autocomplete="tel">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="reason" class="form-label">Reason for Visit</label>
-                <select id="reason" name="reason" class="form-select">
-                  <option value="">Select a reason...</option>
-                  <option value="hearing-test">Hearing Test / Evaluation</option>
-                  <option value="hearing-aids">Hearing Aid Consultation</option>
-                  <option value="hearing-aid-repair">Hearing Aid Repair</option>
-                  <option value="tinnitus">Tinnitus / Ringing in Ears</option>
-                  <option value="cochlear">Cochlear Implant Evaluation</option>
-                  <option value="follow-up">Follow-Up Appointment</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us a little about what brings you in..."></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Submit Appointment Request</button>
-              <div class="form-note">
-                <strong>What happens next?</strong> After you submit this form, our Patient Care Coordinator will call you within one business day to confirm your appointment and answer any questions.
-              </div>
-            </form>
-            <div class="form-success">
-              <h3 class="heading-sm">Thank You!</h3>
-              <p>Your appointment request has been submitted. Our team will contact you within one business day to confirm your appointment. If you need immediate assistance, please call us at <a href="tel:3372239448"><strong>337-223-9448</strong></a>.</p>
+            <p style="margin-bottom: var(--space-lg);">The fastest way to book is to call us. You can also email us, and our Patient Care Coordinator will reply within one business day.</p>
+            <div class="contact-actions" style="display:flex;flex-direction:column;gap:var(--space-md);">
+              <a href="tel:3372239448" class="btn btn--primary btn--lg" style="width:100%;" aria-label="Call ACI Hearing Center at 337-223-9448">Call 337-223-9448</a>
+              <a href="mailto:aci@acihearing.com?subject=Appointment%20request" class="btn btn--outline btn--lg" style="width:100%;" aria-label="Email ACI Hearing Center at aci@acihearing.com">Email aci@acihearing.com</a>
+            </div>
+            <div class="form-note">
+              <strong>What to include in your email:</strong> your name, phone number, the reason for your visit, and the best time to reach you. Please do not send private health details by email.
             </div>
           </div>
 
