@@ -40,6 +40,30 @@ all four pre-existing behaviors (et_core strip, WP permalink fallback,
 legacy `/services/*` 410s, legacy directory-subpath 410s, and the flat-page
 guard that must NOT 410).
 
+## Q-0028 add-on (2026-11-02): legacy 301s + robots unblock
+
+A new **Step -1** runs before the www step, so both hosts reach the final URL in one hop:
+
+| Old URL (optional trailing slash, any case) | 301 to |
+|---|---|
+| `/locations/lafayette-la/` | `https://acihearing.com/audiologist-lafayette-la.html` |
+| `/services/tinnitus/` (was 410) | `https://acihearing.com/tinnitus.html` |
+| `/location-contact/` | `https://acihearing.com/contact.html` |
+
+Query strings get dropped. Header: `x-legacy-redirect: q0028-legacy-301`. Every other `/services/*` path still 410s.
+`robots.txt` no longer disallows `/services/`, `/locations/`, `/location-contact/` or `/location/`, so Google can
+recrawl them and see the 301s and 410s. Both pieces ship together: the robots change does nothing useful until
+the function is published.
+
+Verify after publish (expect 301 with a single Location hop):
+```
+for u in /locations/lafayette-la/ /services/tinnitus/ /location-contact/; do
+  curl -sI "https://acihearing.com$u" | grep -iE '^(HTTP|location)'
+  curl -sI "https://www.acihearing.com$u" | grep -iE '^(HTTP|location)'
+done
+```
+Rollback: republish the previous LIVE function version (or PR #2's version), revert robots.txt, and invalidate `/robots.txt` plus the three paths.
+
 ## NEEDS GAVIN — publishing this
 
 I (this agent) am AWS **read-only** and cannot publish a CloudFront

@@ -3,6 +3,29 @@ function handler(event) {
     var uri = request.uri;
     var qs = request.querystring || {};
 
+    // ---- STEP -1 (Q-0028): retired URLs that still rank -> 301 to the closest live page ----
+    // Runs BEFORE the www step so both hosts reach the final URL in ONE hop.
+    // /services/tinnitus/ used to 410 (STEP 3); it now 301s to /tinnitus.html.
+    // Query strings are dropped on purpose (old CMS params).
+    var legacyRedirects = [
+        { re: /^\/locations\/lafayette-la\/?$/i, to: "/audiologist-lafayette-la.html" },
+        { re: /^\/services\/tinnitus\/?$/i, to: "/tinnitus.html" },
+        { re: /^\/location-contact\/?$/i, to: "/contact.html" }
+    ];
+    for (var r = 0; r < legacyRedirects.length; r++) {
+        if (legacyRedirects[r].re.test(uri)) {
+            return {
+                statusCode: 301,
+                statusDescription: "Moved Permanently",
+                headers: {
+                    "location": { value: "https://acihearing.com" + legacyRedirects[r].to },
+                    "cache-control": { value: "public, max-age=604800" },
+                    "x-legacy-redirect": { value: "q0028-legacy-301" }
+                }
+            };
+        }
+    }
+
     // ---- STEP 0 (NEW): www host -> apex host, 301, preserve path + query ----
     // ACI's homepage (and other pages) were ranking as two separate URLs in Search
     // Console: https://www.acihearing.com/ and https://acihearing.com/ — same page,
@@ -63,7 +86,7 @@ function handler(event) {
 
     // ---- STEP 3: Legacy Divi/WordPress paths → 410 Gone (v1 patterns) ----
     var legacyPatterns = [
-        /^\/services\/tinnitus\/?$/i,
+        // /services/tinnitus/ removed: now a 301 to /tinnitus.html (STEP -1, Q-0028)
         /^\/services\/hearing-aids\/?$/i,
         /^\/services\/hearing-tests?\/?$/i,
         /^\/services\/cochlear-implants?\/?$/i,
