@@ -1,0 +1,15 @@
+{
+  "_comment": "Single source of truth for ACI Hearing Center phone. Third-party agency numbers (OWC, EarlySteps, Healthy Louisiana, etc.) may appear in body copy but not as ACI's tel:/schema phone. +1-318-473-0010 is the Alexandria VA Medical Center (schema on the VA benefits page), allowed as a third-party entity phone.",
+  "name": "ACI Hearing Center",
+  "phones": [
+    {
+      "label": "Main",
+      "display": "(337) 223-9448",
+      "e164": "+13372239448"
+    }
+  ],
+  "other_allowed_tel": [
+    "+13184730010"
+  ],
+  "banned_numbers": []
+}
