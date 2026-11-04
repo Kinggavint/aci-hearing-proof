@@ -624,20 +624,5 @@
 
   <script src="../main.js" defer></script>
 
-  <script>
-
-(function() {
-  var toggle = document.querySelector('.nav-toggle');
-  var nav = document.querySelector('.nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', function() {
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', !expanded);
-      nav.classList.toggle('nav--open', !expanded);
-    });
-  }
-})();
-
-  </script>
 </body>
 </html>
