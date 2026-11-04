@@ -1,0 +1,541 @@
+old_url,target,match_type,reason
+/2017/05/10/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2017/05/15/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2019/05/16/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2019/05/20/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2019/05/27/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/03/25/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/04/15/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/04/22/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/05/27/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/06/03/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/06/17/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/06/23/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/06/30/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/07/14/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/07/14/about.html,/about.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/cochlear-implants.html,/cochlear-implants.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/contact.html,/contact.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/custom-molds.html,/custom-molds.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/diagnostic-testing.html,/diagnostic-testing.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/hearing-aids.html,/hearing-aids.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/hearing-protection.html,/hearing-protection.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/hearing-repair.html,/hearing-repair.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/hearing-tests.html,/hearing-tests.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/index.html,/,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/learn-more.html,/learn-more.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/reviews.html,/reviews.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/services.html,/services.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/team.html,/team.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/07/14/tinnitus.html,/tinnitus.html,exact-page,Relative-link artifact of a live page; same page at root
+/2020/08/03/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/08/10/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/09/01/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/09/08/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/10/20/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/10/26/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/11/03/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/11/17/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/12/08/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2020/12/23/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/01/05/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/01/26/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/02/03/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/03/08/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/05/12/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/05/26/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/07/19/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/08/18/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/08/24/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/09/09/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/09/23/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/10/06/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/10/20/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/11/10/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/11/15/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/12/02/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/12/08/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2021/12/30/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/02/16/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/03/24/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/03/31/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/04/06/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/04/13/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/04/21/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/04/27/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/05/05/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/05/12/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/08/09/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/09/28/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/12/01/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2022/12/14/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2023/01/04/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2023/01/26/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2023/02/01/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2023/02/08/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2023/04/04/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/04/27/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/05/02/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/05/26/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/06/01/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/07/27/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/08/02/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/08/07/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/08/17/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/08/22/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/08/31/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2025/12/10/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2026/01/19/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2026/01/29/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2026/02/02/,/learn-more.html,section,Blog archive/listing page; articles hub
+/2026/02/08/,/learn-more.html,section,Blog archive/listing page; articles hub
+/29056,/hearing-tests.html,section,"Old ""Online Hearing test"" page; hearing tests page"
+/about-us/,/about.html,exact-page,Old About page
+/about-us/meet-our-team/,/team.html,exact-page,Old team page
+/about-us/no-surprises-act/,/insurance.html,section,Old No Surprises Act notice; insurance and payment page
+/about-us/why-choose-us/,/about.html,section,"Old ""10 Reasons to Choose ACI""; about page"
+/about.asp,/about.html,exact-page,Old About page (.asp)
+/are-you-at-risk-for-age-related-hearing-loss/,/hearing-loss.html,section,Hearing-loss risk post with no matching article; hearing loss page
+/are-you-at-risk-for-diabetes-related-hearing-loss/,/hearing-loss.html,section,Hearing-loss risk post with no matching article; hearing loss page
+/are-you-at-risk-for-hearing-loss/,/articles/am-i-at-risk-for-hearing-loss.html,exact-article,"Old ""Are You At Risk For Hearing Loss?"" covers hearing-loss risk factors, same topic as the risk-factors article"
+/are-you-at-risk-for-hearing-loss-related-dementia/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/are-you-at-risk-for-hearing-loss-related-falls/,/hearing-loss.html,section,Hearing-loss risk post with no matching article; hearing loss page
+/as-you-focus-on-20-20-vision/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/audiologist-lafayette-la,/audiologist-lafayette-la.html,exact-page,Same URL now served as .html (old version was a staff bio)
+/audiology-lafayette-louisiana,/services.html,section,"Old ""Services"" landing page"
+/author/thewebdoctor/,/learn-more.html,section,Blog archive/listing page; articles hub
+/author/thewebdoctor/page/2/,/learn-more.html,section,Blog archive/listing page; articles hub
+/balance-dizziness-lafayette-la,/contact.html,section,Old page showed contact info; no balance page now
+/category/articles/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-aids-news/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-aids-news/page/2/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-aids-news/page/3/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-aids-news/page/4/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-aids-news/page/5/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-loss-articles/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-loss-articles/page/2/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-loss-articles/page/3/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-loss-articles/page/4/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-test-info/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-test-info/page/2/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/hearing-test-info/page/3/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/news/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/tinnitus-articles/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/tinnitus-articles/page/2/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/tinnitus-articles/page/3/,/learn-more.html,section,Blog archive/listing page; articles hub
+/category/uncategorized/,/learn-more.html,section,Blog archive/listing page; articles hub
+/cochlear-implants-cochlear-advanced-bionics/,/cochlear-implants.html,section,Cochlear implants; cochlear implant page
+/cochlear-implants-faq/,/cochlear-implants.html,section,Cochlear implants; cochlear implant page
+/contact-thank-you/,/contact.html,section,Form thank-you page; contact page
+/contact.asp,/contact.html,exact-page,Old contact page (.asp)
+/could-hearing-loss-increase-your-risk-of-cognitive-decline/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/default.asp,/,exact-page,Old home page (.asp)
+/discount-hearing-aids-lafayette,/hearing-aids.html,section,"Old ""How Hearing Aids Work"" landing page"
+/hearing-aid-lafayette-louisiana,/contact.html,section,"Old ""Location"" landing page; contact page"
+/hearing-aid-research-news/,/learn-more.html,section,Old news/research listing; articles hub
+/hearing-aid-resources,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-aids/,/hearing-aids.html,exact-page,Old hearing aids index
+/hearing-aids-news/10-surprising-things-related-to-your-hearing/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/3-ways-hearing-aids-can-malfunction/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/hearing-aids-news/4-exciting-breakthroughs-in-hearing-aids/,/articles/whats-new-in-2025-for-hearing-aid-technology.html,exact-article,"Old ""Modern Hearing Aids Are Very Sophisticated"" = hearing aid technology advances"
+/hearing-aids-news/5-hearing-aid-care-tips/,/articles/essential-guide-to-prolonging-the-life-of-your-hearing-aid.html,exact-article,"Old ""5 Hearing Aid Care Tips"" = care tips to extend device life"
+/hearing-aids-news/9-mistakes-every-new-hearing-aid-owner-makes/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/are-hearing-aids-uncomfortable/,/articles/how-to-adjust-comfortably-to-your-new-hearing-aids.html,exact-article,"Old ""Make My Hearing Aids More Comfortable?"" = comfort when starting aids"
+/hearing-aids-news/better-to-see-a-hearing-specialist-for-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/blue-tooth-hearing-aids/,/articles/blue-tooth-hearing-aids.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/bond-between-pets-and-people-with-hearing-loss/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/breaking-it-to-a-loved-one-that-they-need-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/can-a-hearing-aid-stop-tinnitus/,/tinnitus.html,section,Tinnitus topic; tinnitus service page
+/hearing-aids-news/can-you-wear-hearing-aids-during-an-ear-infection/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/cold-weather-affect-hearing-aids/,/articles/keep-your-ears-safe-in-cold-weather-winter-hearing-protection-tips.html,exact-article,"Old ""Is a Hearing Aid Affected by Cold Weather?"" = winter ear/hearing aid care"
+/hearing-aids-news/could-hearing-loss-affect-your-lifespan/,/articles/the-connection-between-hearing-loss-and-reduced-lifespan.html,exact-article,"Old ""Can Your Lifespan be Affected by Hearing Loss?"" = same topic"
+/hearing-aids-news/danger-of-falls-hearing-aids-can-help/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/dont-turn-hearing-aid-off-want-happy/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk/,/articles/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/essential-guide-to-prolonging-the-life-of-your-hearing-aid/,/articles/essential-guide-to-prolonging-the-life-of-your-hearing-aid.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/exploring-hearing-aid-types/,/articles/exploring-hearing-aid-types.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/forget-312-batteries-check-out-these-options-for-hearing-aids/,/hearing-aid-battery-troubleshooting.html,section,Hearing aid batteries; battery troubleshooting page
+/hearing-aids-news/get-big-meals-cause-big-noise/,/articles/how-to-hear-better-at-summer-bbqs-and-family-events.html,exact-article,"Old ""How to Hear Better at Holiday Meals"" = hearing at noisy family gatherings"
+/hearing-aids-news/get-more-life-out-of-your-hearing-aid-batteries-with-these-6-tips/,/hearing-aid-battery-troubleshooting.html,section,Hearing aid batteries; battery troubleshooting page
+/hearing-aids-news/get-most-out-of-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/getting-used-to-new-aids/,/articles/how-to-adjust-comfortably-to-your-new-hearing-aids.html,exact-article,"Old ""Adjusting to Your New Hearing Aids"" = adjusting to new aids"
+/hearing-aids-news/guide-to-maintaining-and-cleaning-your-hearing-aids/,/articles/how-often-should-you-get-your-hearing-aids-professionally-cleaned.html,exact-article,"Old ""Maintain and Clean Your Hearing Aids"" = hearing aid cleaning"
+/hearing-aids-news/hearing-aid-batteries-drain-quickly-because-of-this/,/hearing-aid-battery-troubleshooting.html,section,Hearing aid batteries; battery troubleshooting page
+/hearing-aids-news/hearing-aid-batteries-draining-too-fast/,/hearing-aid-battery-troubleshooting.html,section,Hearing aid batteries; battery troubleshooting page
+/hearing-aids-news/hearing-aid-domes-pros-cons/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aid-not-working-here-are-a-few-things-to-try/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/hearing-aids-news/hearing-aid-professional-repair/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/hearing-aids-news/hearing-aid-research-news/,/learn-more.html,section,Old news/research listing; articles hub
+/hearing-aids-news/hearing-aid-upgrade/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aid-users-what-really-think/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aids-a-peek-behind-the-curtain/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aids-aint-what-they-used-to-be-theyre-better/,/articles/whats-new-in-2025-for-hearing-aid-technology.html,exact-article,Old post on how modern hearing aid tech improved = tech advances
+/hearing-aids-news/hearing-aids-and-ai/,/articles/whats-new-in-2025-for-hearing-aid-technology.html,exact-article,"Old ""AI and Hearing Aids"" = new hearing aid tech (2025 article covers AI/machine learning)"
+/hearing-aids-news/hearing-aids-and-your-love-life/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aids-are-cheaper-than-a-visit-to-the-er/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aids-can-cause-headaches/,/articles/why-hearing-aids-can-cause-headaches-and-how-to-fix-it.html,exact-article,"Old ""Can Headaches be Triggered by Hearing Aids?"" = same topic"
+/hearing-aids-news/hearing-aids-cant-one-size-fits/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/hearing-aids-help-combat-isolation/,/articles/how-addressing-hearing-loss-can-combat-isolation.html,exact-article,"Old ""Adult Isolation And Its Hidden Causes"" = hearing loss and isolation"
+/hearing-aids-news/hearing-aids-not-working-like-they-used-to-try-this/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/hearing-aids-news/hearing-loss-at-work-the-hidden-costs-of-not-seeking-help/,/articles/hearing-loss-and-job-performance.html,exact-article,Slug: hearing loss at work; job performance article
+/hearing-aids-news/hearing-loss-sensitivity-loud-sounds/,/hyperacusis-treatment-lafayette.html,section,Sound sensitivity/hyperacusis; hyperacusis page
+/hearing-aids-news/hearing-tips-to-make-your-feel-young-or-at-least-youthful/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/heres-what-you-should-understand-about-over-the-counter-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/history-of-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/house-tomorrow-hearing-loss/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/how-bluetooth-hearing-aids-can-simplify-and-enrich-your-daily-life/,/articles/how-bluetooth-hearing-aids-can-simplify-and-enrich-your-daily-life.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/how-can-using-earbuds-and-headphones-be-a-health-concern/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/,/articles/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/about.html,/about.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/cochlear-implants.html,/cochlear-implants.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/contact.html,/contact.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/custom-molds.html,/custom-molds.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/diagnostic-testing.html,/diagnostic-testing.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/hearing-aids.html,/hearing-aids.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/hearing-protection.html,/hearing-protection.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/hearing-repair.html,/hearing-repair.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/hearing-tests.html,/hearing-tests.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/index.html,/,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/learn-more.html,/learn-more.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/reviews.html,/reviews.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/services.html,/services.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/team.html,/team.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/tinnitus.html,/tinnitus.html,exact-page,Relative-link artifact of a live page; same page at root
+/hearing-aids-news/how-is-tinnitus-treated/,/tinnitus.html,section,Tinnitus topic; tinnitus service page
+/hearing-aids-news/how-listening-to-audiobooks-enhances-hearing-aid-adaptation/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/how-long-can-you-expect-your-hearing-aids-to-last/,/articles/essential-guide-to-prolonging-the-life-of-your-hearing-aid.html,exact-article,"Old ""Expected Lifespan of a Modern Hearing Aid"" = hearing aid lifespan"
+/hearing-aids-news/how-long-hearing-aids-last/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/how-often-should-you-get-your-hearing-aids-professionally-cleaned/,/articles/how-often-should-you-get-your-hearing-aids-professionally-cleaned.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/how-to-adjust-comfortably-to-your-new-hearing-aids/,/articles/how-to-adjust-comfortably-to-your-new-hearing-aids.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/how-to-care-for-your-hearing-aids/,/articles/essential-guide-to-prolonging-the-life-of-your-hearing-aid.html,exact-article,"Old ""Care For Your Hearing Aids"" = care tips to extend device life"
+/hearing-aids-news/how-to-discern-between-affordable-and-cheap-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/how-to-protect-hearing-and-hearing-aids-in-cold-weather/,/articles/keep-your-ears-safe-in-cold-weather-winter-hearing-protection-tips.html,exact-article,"Old ""Cold Weather Can Impact Hearing Aids - Protection Tips"" = winter ear care"
+/hearing-aids-news/how-to-protect-your-hearing-aids-this-summer/,/articles/how-to-protect-your-hearing-aids-this-summer.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/how-to-tell-him-he-needs-a-hearing-aid/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/i-need-a-hearing-aid-but-cant-afford-it/,/hearing-aid-financing-lafayette.html,section,Paying for hearing aids; financing page
+/hearing-aids-news/itchy-ears-driving-me-nuts/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-aids-news/just-when-you-think-hearing-aids-cant-get-any-cooler/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/musicians-wear-hearing-protection/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-aids-news/over-the-counter-hearing-aids-spark-concerns/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/over-the-counter-hearing-aids-taking-a-chance/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/research-reveals-shocking-link-to-premature-death/,/articles/the-connection-between-hearing-loss-and-reduced-lifespan.html,exact-article,"Old ""Neglected Hearing Loss Connected to Premature Death"" = lifespan topic"
+/hearing-aids-news/resolve-to-preserve-your-mental-acuity-and-keep-alzheimers-at-bay/,/articles/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk.html,exact-article,"Old ""How to Keep Alzheimer's in Check"" = treating hearing loss to protect cognition"
+/hearing-aids-news/say-what-what-happens-when-you-dont-wear-your-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/skiing-with-hearing-aids/,/articles/skiing-with-hearing-aids.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/stay-happy-and-youthful-with-this-simple-trick/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/stigma-around-wearing-hearing-aids-waning/,/articles/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids.html,exact-article,"Old ""Stigma Around Wearing Hearing Aids Waning"" = hearing aid stigma"
+/hearing-aids-news/summertime-is-hearing-aid-time/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/the-career-breaker-you-dont-want-to-talk-about/,/articles/hearing-loss-and-job-performance.html,exact-article,Slug/teaser: hearing loss hurting careers; job performance article
+/hearing-aids-news/the-hidden-costs-of-bargain-hearing-aids-why-quality-matters/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/the-truth-about-cheap-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/this-is-why-using-hearing-aids-can-sharpen-your-memory/,/articles/can-hearing-loss-lead-to-memory-problems.html,exact-article,Slug: hearing aids and memory (archive shows no old body); memory/hearing article is the match
+/hearing-aids-news/this-one-little-thing-can-ward-off-depression/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/tips-using-phone-with-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/top-ten-benefits-wearing-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/traveling-with-hearing-loss-guide-safe-enjoyable-trip/,/articles/holiday-travel-tips-for-people-with-hearing-aids.html,exact-article,"Old ""Safe And Fun Vacation Even if You Have Hearing Loss"" = travel with hearing loss"
+/hearing-aids-news/treating-this-common-complaint-significantly-improves-depression/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/unexpected-health-benefits-of-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/water-proof-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/wear-glasses-hearing-aids-at-the-same-time/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/wear-hearing-aid-for-20000-a-year/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/wearing-hearing-aids-while-exercising-and-sweating/,/articles/wearing-hearing-aids-while-exercising-and-sweating.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/wearing-your-hearing-aid-during-summer-activities/,/articles/how-to-protect-your-hearing-aids-this-summer.html,exact-article,"Old ""Enjoying Summer Activities With Hearing Aids"" = keeping aids safe in summer"
+/hearing-aids-news/what-are-the-main-benefits-of-wearing-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/whats-new-in-2025-for-hearing-aid-technology/,/articles/whats-new-in-2025-for-hearing-aid-technology.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids-news/whats-the-difference-between-a-hearing-aid-and-a-hearing-amplifier/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/when-do-i-need-a-hearing-aid/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/when-is-it-time-to-update-your-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
+/hearing-aids-news/when-the-music-stops-how-these-famous-musicians-overcame-hearing-loss/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-aids-news/when-your-hearing-aid-needs-professional-repair/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/hearing-aids-news/why-are-motorcyclists-at-an-increased-risk-for-hearing-loss/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-aids-news/why-does-my-hearing-aid-sound-muffled/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/hearing-aids-news/why-hearing-aids-can-cause-headaches-and-how-to-fix-it/,/articles/why-hearing-aids-can-cause-headaches-and-how-to-fix-it.html,exact-article,Same slug; archived title matches the repo article
+/hearing-aids.asp,/hearing-aids.html,exact-page,Old hearing aids page (.asp)
+/hearing-aids/affordable-hearing-aids/,/hearing-aid-financing-lafayette.html,section,Paying for hearing aids; financing page
+/hearing-aids/batteries-and-accessories/,/hearing-aid-battery-troubleshooting.html,section,Hearing aid batteries; battery troubleshooting page
+/hearing-aids/cochlear-implants/,/cochlear-implants.html,section,Cochlear implants; cochlear implant page
+/hearing-aids/cochlear-nucleus-implant-system/,/cochlear-implants.html,section,Cochlear implants; cochlear implant page
+/hearing-aids/hearing-aid-brands/,/best-hearing-aids-lafayette-flagship-comparison.html,section,Hearing aid brands; brand comparison page
+/hearing-aids/hearing-aid-tips-faq/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-aids/hearing-aids-online/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-aids/lyric-hearing/,/lyric-extended-wear-hearing-aids-lafayette.html,section,Lyric invisible hearing aid; Lyric page
+/hearing-aids/over-the-counter-hearing-aids/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-aids/special-offers/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-aids/types-of-hearing-aids/,/articles/exploring-hearing-aid-types.html,exact-article,"Old ""Which Type Of Hearing Aids Work For You?"" = hearing aid styles"
+/hearing-faqs-library,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-health,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-health.asp,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss/,/hearing-loss.html,exact-page,Old hearing loss index
+/hearing-loss-articles/3-surprising-things-proven-to-slow-dementia-mental-decline/,/articles/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk.html,exact-article,"Old ""Hearing Loss Solutions Help Decrease Dementia"" = same topic"
+/hearing-loss-articles/3-things-that-can-mess-with-your-hearing-protection/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/4-health-problems-that-are-linked-to-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/6-behaviors-suffering-hearing-loss/,/articles/early-signs-of-hearing-loss.html,exact-article,"Old ""6 Behaviors Indicate You're Suffering From Hearing Loss"" = signs"
+/hearing-loss-articles/6-reasons-to-have-regular-hearing-tests/,/articles/6-reasons-to-have-regular-hearing-tests.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/8-signs-hearing-failing/,/articles/early-signs-of-hearing-loss.html,exact-article,"Old ""8 Subtle Signs Your Hearing is Failing"" = early signs"
+/hearing-loss-articles/8-tips-for-national-protect-your-hearing-month/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/age-related-hearing-loss-clues/,/articles/early-signs-of-hearing-loss.html,exact-article,"Old ""Age Related Hearing Loss - the First Signs"" = early signs"
+/hearing-loss-articles/airpods-as-hearing-aids-what-to-know-before-relying-on-them/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-loss-articles/am-i-at-risk-for-hearing-loss/,/articles/am-i-at-risk-for-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/are-men-and-women-affected-differently-by-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/are-there-treatments-for-hyperacusis/,/hyperacusis-treatment-lafayette.html,section,Sound sensitivity/hyperacusis; hyperacusis page
+/hearing-loss-articles/are-you-at-risk-for-age-related-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/are-you-at-risk-for-diabetes-related-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/are-you-at-risk-for-hearing-loss/,/articles/am-i-at-risk-for-hearing-loss.html,exact-article,"Old ""Are You At Risk For Hearing Loss?"" covers hearing-loss risk factors, same topic as the risk-factors article"
+/hearing-loss-articles/are-you-at-risk-for-hearing-loss-related-dementia/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/are-you-at-risk-for-hearing-loss-related-falls/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/as-you-focus-on-20-20-vision/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/hearing-loss-articles/audiobooks-important-part-auditory-training/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/avoid-homeopathy-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/brain-games-arent-as-reliable-as-this-for-mental-agility/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/breaking-the-silence-on-hearing-loss-in-music-careers/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/buy-a-hearing-aid-or-not-what-to-do-when-suffering-mild-hearing-loss/,/articles/hearing-loss-myths.html,exact-article,"Old ""Hearing Loss Isn't a Big Deal and Other Myths"" = myths article"
+/hearing-loss-articles/can-brain-atrophy-be-caused-by-hearing-loss/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/can-hearing-loss-be-cured/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/can-hearing-loss-lead-to-memory-problems/,/articles/can-hearing-loss-lead-to-memory-problems.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/can-hearing-loss-make-you-feel-tired/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/can-noise-induced-hearing-loss-reversed/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/can-you-recover-from-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/cant-hear-well-at-work/,/articles/hearing-loss-and-job-performance.html,exact-article,"Old ""Can't Hear Very Well While You're Working?"" = hearing loss at work"
+/hearing-loss-articles/cochlear-implants-faq/,/cochlear-implants.html,section,Cochlear implants; cochlear implant page
+/hearing-loss-articles/common-cold-hearing-issues/,/articles/seasonal-hearing-loss.html,exact-article,Old post on colds affecting hearing; seasonal article covers colds/congestion
+/hearing-loss-articles/could-hearing-loss-increase-your-risk-of-cognitive-decline/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/dangers-of-earwax-candling/,/articles/earwax-purpose-and-when-to-remove-it.html,exact-article,"Old ""What You Should Know About Ear Candling"" = safe earwax removal"
+/hearing-loss-articles/delaying-hearing-loss-treatment-is-a-mistake/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/depression-has-a-connection-to-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/diplacusis-hear-things-in-stereo/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/does-hearing-loss-affect-memory/,/articles/can-hearing-loss-lead-to-memory-problems.html,exact-article,"Old ""How Hearing Loss Impacts Your Memory"" = memory/hearing-loss link"
+/hearing-loss-articles/does-hearing-loss-get-worse-as-you-age/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/does-hearing-loss-lead-to-brain-atrophy/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/does-insomnia-affect-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/dont-let-hearing-loss-stop-you-from-wheel/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/dynamics-of-selective-hearing/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/ear-wax-accumulation-what-you-need-to-be-aware-of/,/articles/earwax-buildup-vs-hearing-loss-how-to-identify-the-cause.html,exact-article,"Old ""Ear Wax Buildup"" = earwax buildup and hearing"
+/hearing-loss-articles/earbuds-damaging-your-hearing/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/early-signs-of-hearing-loss/,/articles/early-signs-of-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/earwax-buildup-vs-hearing-loss-how-to-identify-the-cause/,/articles/earwax-buildup-vs-hearing-loss-how-to-identify-the-cause.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/earwax-purpose-and-when-to-remove-it/,/articles/earwax-purpose-and-when-to-remove-it.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/enjoy-holiday-despite-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/enjoy-the-sounds-of-autumn-how-to-protect-your-hearing-this-fall/,/articles/enjoy-the-sounds-of-autumn-how-to-protect-your-hearing-this-fall.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/environmental-allergies-can-lead-to-poor-hearing/,/articles/seasonal-hearing-loss.html,exact-article,Slug: allergies and hearing; seasonal article covers allergies
+/hearing-loss-articles/feeling-anxious-hearing-loss-could-be-the-culprit/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/forgot-something-memory-loss-is-connected-to-hearing-loss/,/articles/can-hearing-loss-lead-to-memory-problems.html,exact-article,"Old ""Forgetting Important Information?"" = memory loss linked to hearing loss"
+/hearing-loss-articles/grow-relationship-spring-tackling-hearing-loss-issues/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/hard-to-hear/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/hearing-aids-vs-cochlear-implants-for-infants/,/articles/hearing-aids-vs-cochlear-implants-for-infants.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/hearing-loss-affects-driving-habits/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/hearing-loss-and-job-performance/,/articles/hearing-loss-and-job-performance.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/hearing-loss-and-the-zinc-link/,/articles/how-lifestyle-choices-impact-your-hearing-health.html,exact-article,"Old ""Hearing Damage and Zinc Consumption""; lifestyle article covers diet and zinc"
+/hearing-loss-articles/hearing-loss-articles/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/hearing-loss-be-making-you-forgetful/,/articles/can-hearing-loss-lead-to-memory-problems.html,exact-article,"Old ""Could Hearing Loss be Making You Forgetful?"" = memory/hearing-loss link"
+/hearing-loss-articles/hearing-loss-dementia-the-connection/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/hearing-loss-health-problems/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/hearing-loss-myths/,/articles/hearing-loss-myths.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/hearing-loss-negative-impact-relationships/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/hearing-loss-treatments-slow-dementia-up-to-75/,/articles/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk.html,exact-article,"Old ""Is Dementia Slowed by Using Hearing Aids?"" = same finding"
+/hearing-loss-articles/hearing-loss-while-youre-pregnant/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/holiday-travel-tips-for-people-with-hearing-aids/,/articles/holiday-travel-tips-for-people-with-hearing-aids.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-addressing-hearing-loss-can-combat-isolation/,/articles/how-addressing-hearing-loss-can-combat-isolation.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-anxiety-impacts-hearing-loss-and-ways-to-overcome-it/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/how-auditory-processing-disorder-differs-from-hearing-loss/,/articles/how-auditory-processing-disorder-differs-from-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-diabetes-increases-your-risk-of-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/how-do-i-know-if-i-have-bad-hearing/,/articles/early-signs-of-hearing-loss.html,exact-article,"Old ""Do You Need a Hearing Test?"" = recognising hearing loss"
+/hearing-loss-articles/how-do-i-know-if-i-have-bad-hearing-2/,/articles/early-signs-of-hearing-loss.html,exact-article,"Old ""How do I Know if I'm Suffering From Hearing Loss?"" = signs"
+/hearing-loss-articles/how-driving-with-the-windows-open-affects-your-hearing-health/,/articles/how-driving-with-the-windows-open-affects-your-hearing-health.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-hearing-aids-bring-tears-of-joy/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-loss-articles/how-high-blood-pressure-can-damage-your-hearing/,/articles/how-high-blood-pressure-can-damage-your-hearing.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-long-does-a-blocked-ear-last/,/articles/earwax-buildup-vs-hearing-loss-how-to-identify-the-cause.html,exact-article,"Old ""What is That Clogging my Ears?"" = blocked ear vs hearing loss"
+/hearing-loss-articles/how-the-pandemic-exposes-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/how-to-address-hearing-loss-with-loved-ones-this-thanksgiving/,/articles/should-you-bring-up-hearing-loss-at-thanksgiving.html,exact-article,"Old ""Discuss Hearing Loss With Loved Ones This Thanksgiving"" = same topic"
+/hearing-loss-articles/how-to-choose-the-right-level-of-hearing-protection/,/articles/how-to-choose-the-right-level-of-hearing-protection.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-to-hear-better-at-summer-bbqs-and-family-events/,/articles/how-to-hear-better-at-summer-bbqs-and-family-events.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/how-to-make-summer-social-events-easier-with-hearing-loss/,/articles/how-to-hear-better-at-summer-bbqs-and-family-events.html,exact-article,"Old ""Summer Social Activities Easier With Hearing Loss"" = hearing at summer gatherings"
+/hearing-loss-articles/how-to-prevent-hearing-loss-from-headphones/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/how-to-stay-connected-during-the-holidays-with-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/how-untreated-hearing-loss-affects-mobility/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/how-weight-loss-promotes-better-hearing/,/articles/how-lifestyle-choices-impact-your-hearing-health.html,exact-article,"Old ""How Your Weight Affects Your Hearing""; lifestyle article covers weight and diet"
+/hearing-loss-articles/how-you-hear/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss-articles/hypertension-and-hearing-loss/,/articles/how-high-blood-pressure-can-damage-your-hearing.html,exact-article,"Old ""Hearing Loss and Hypertension"" = high blood pressure and hearing"
+/hearing-loss-articles/ignoring-this-one-thing-can-raise-your-healthcare-expenses-more-than-40/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/improve-cognitive-function/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/hearing-loss-articles/is-hearing-loss-reversable/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/keep-your-ears-safe-in-cold-weather-winter-hearing-protection-tips/,/articles/keep-your-ears-safe-in-cold-weather-winter-hearing-protection-tips.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/listening-and-communication-enhancement-program/,/services.html,section,Retired service with no dedicated page; services page
+/hearing-loss-articles/love-hearing-loss-communication-strategies-for-couples/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/medications-associated-with-hearing-loss/,/articles/ototoxic-medications-and-hearing-loss.html,exact-article,"Old ""Loss Can be Caused by These Prevalent Medications"" = ototoxic drugs"
+/hearing-loss-articles/men-higher-risk-hearing-loss-taking-pain-meds/,/articles/ototoxic-medications-and-hearing-loss.html,exact-article,Old post on aspirin/ibuprofen and hearing; ototoxic article covers aspirin and NSAIDs
+/hearing-loss-articles/mit-research-reveals-how-we-single-out-voices/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/more-veterans-have-this-injury-than-anything-else/,/va-hearing-aid-benefits-lafayette.html,section,Veterans hearing injury; VA benefits page
+/hearing-loss-articles/music-improves-speech-recognition-for-hearing-impaired/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/noise-exposure-over-time/,/articles/noise-exposure-over-time.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/normal-hearing-yet-struggling-to-follow-conversations/,/articles/understanding-hidden-hearing-loss.html,exact-article,"Old ""Still Battling to Follow Even With Normal Hearing"" = hidden hearing loss"
+/hearing-loss-articles/ototoxic-medications-and-hearing-loss/,/articles/ototoxic-medications-and-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/possible-causes-of-hearing-loss-in-one-ear/,/single-sided-deafness-lafayette.html,section,Hearing loss in one ear; single-sided deafness page
+/hearing-loss-articles/prevent-noise-induced-hearing-loss/,/articles/noise-exposure-over-time.html,exact-article,"Old ""Strategies to Avoid Noise-Related Hearing Loss"" = noise-induced hearing loss"
+/hearing-loss-articles/protect-your-hearing-during-loud-summer-activities/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/protect-your-hearing-this-summer/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/protect-your-hearing-with-this/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,"Old ""Protect Your Hearing With These 5 Tips"" = prevention tips"
+/hearing-loss-articles/protecting-your-hearing-a-preventable-challenge/,/articles/noise-exposure-over-time.html,exact-article,"Old ""Hearing Loss is Largely Preventable"" = cumulative noise damage over time"
+/hearing-loss-articles/recognizing-and-addressing-hearing-loss-in-aging-parents/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/relief-and-prevention-tips-for-itchy-ears/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss-articles/risk-kidney/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss-articles/safe-practices-for-using-earplugs-at-night/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/safe-volume-music-headphones/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/safeguarding-your-sense-4-practices-to-protect-your-ears/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,"Old ""Protect Your Hearing With These 4 Practices"" = hearing protection tips"
+/hearing-loss-articles/safety-tips-those-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/seasonal-hearing-loss/,/articles/seasonal-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/seniors-can-lower-their-risk-of-health-issues-by-doing-this/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/sensorineural-hearing-loss-post-covid-19/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/should-you-bring-up-hearing-loss-at-thanksgiving/,/articles/should-you-bring-up-hearing-loss-at-thanksgiving.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/six-secrets-to-preventing-hearing-loss/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,"Old ""Tips to Preventing Hearing Loss"" = prevention tips"
+/hearing-loss-articles/smell-and-taste-arent-the-only-senses-affected-by-covid-19/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/sounds-can-have-a-bigger-impact-on-your-health-than-you-know/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/sudden-hearing-loss-act-fast-to-save-your-hearing/,/articles/sudden-hearing-loss.html,exact-article,"Old ""If You Have Sudden Hearing Loss, Act Fast"" = sudden hearing loss"
+/hearing-loss-articles/sudden-hearing-loss-get-checked-for-this/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss-articles/surprise-this-is-the-most-prevalent-workplace-injury/,/workers-compensation-hearing-loss-lafayette.html,section,Workplace noise injury; workers comp hearing page
+/hearing-loss-articles/technology-managing-hearing-loss/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-loss-articles/the-connection-between-hearing-loss-and-life-expectancy/,/articles/the-connection-between-hearing-loss-and-reduced-lifespan.html,exact-article,Old post cites the same Duke-NUS lifespan study
+/hearing-loss-articles/the-current-rise-in-hearing-loss-is-a-public-health-issue/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/the-holidays-are-the-holidays-wont-be-the-same-without-this-did-you-schedule-your-appointment-yet-coming-dont-get-shut-out/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/hearing-loss-articles/the-impact-of-hearing-loss-on-first-responders/,/articles/the-impact-of-hearing-loss-on-first-responders.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/these-diseases-have-been-connected-to-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/this-is-why-you-should-get-your-hearing-checked/,/articles/should-i-get-a-hearing-test-2.html,exact-article,"Old ""Have Your Hearing Examined For These 6 Reasons"" = reasons to get tested"
+/hearing-loss-articles/this-may-be-causing-hearing-loss-even-in-the-young/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/three-simple-steps-to-limit-hearing-loss/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,"Old ""Three Easy Steps to Limit Hearing Loss"" = prevention tips"
+/hearing-loss-articles/tinnitus-symptoms-you-should-never-ignore-2/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss-articles/top-3-reasons-your-hearing-protection-might-not-be-working/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/try-these-three-simple-steps-to-limit-hearing-loss/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,"Old ""Try These Three Simple Steps to Limit Hearing Loss"" = prevention tips"
+/hearing-loss-articles/types-of-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/understanding-hidden-hearing-loss/,/articles/understanding-hidden-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/understanding-the-link-between-heart-health-and-hearing/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/understanding-the-link-between-nutrition-and-hearing-health/,/articles/how-lifestyle-choices-impact-your-hearing-health.html,exact-article,"Old ""Hearing Health and Nutrition""; lifestyle article covers diet"
+/hearing-loss-articles/want-to-fight-aging-try-this-first/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/watch-for-these-signs-if-you-are-a-caretaker-for-a-senior/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/ways-keep-hearing-sharp/,/articles/8-tips-for-national-protect-your-hearing-month.html,exact-article,"Old ""3 Simple Ways to Keep Your Hearing Sharp"" = prevention tips"
+/hearing-loss-articles/what-anxiety-does-to-your-body/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/what-are-the-dangers-of-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/what-does-hearing-loss-sound-like/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/what-is-auditory-fatigue/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/what-is-auditory-neuropathy/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/what-is-menieres-disease-and-how-is-it-treated/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/what-level-of-hearing-protection-do-i-need/,/articles/how-to-choose-the-right-level-of-hearing-protection.html,exact-article,"Old ""What Type of Hearing Protection to Use?"" = choosing protection level"
+/hearing-loss-articles/what-sound-level-is-safe-for-listening/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-loss-articles/when-my-ear-infection-clears-will-my-hearing-come-back/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/when-youre-hospitalized-hearing-loss-can-cause-complications/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/who-is-a-good-candidate-for-cochlear-implants/,/articles/who-is-a-good-candidate-for-cochlear-implants.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/why-is-hearing-loss-a-public-health-concern/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/why-is-it-harder-to-hear-womens-and-childrens-voices/,/articles/why-is-it-harder-to-hear-womens-and-childrens-voices.html,exact-article,Same slug; archived title matches the repo article
+/hearing-loss-articles/why-monitoring-her-hearing-matters/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-articles/why-you-can-hear-a-pin-drop-but-not-the-conversation/,/articles/understanding-hidden-hearing-loss.html,exact-article,Slug: hear quiet sounds but not speech = hidden hearing loss
+/hearing-loss-articles/you-may-be-missing-important-medical-advice-due-to-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
+/hearing-loss-lafayette-louisiana,/about.html,section,"Old ""About"" landing page"
+/hearing-loss-news,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss-news/fit-for-the-frontline-new-study-identifies-the-hearing-requirements-of-british-soldiers,/learn-more.html,section,Old news item with no matching article; articles hub
+/hearing-loss-news/inner-ear-stem-cells-hold-promise-for-restoring-hearing,/learn-more.html,section,Old news item with no matching article; articles hub
+/hearing-loss-news/rayovac-s-portage-plant-celebrates-its-50th-anniversary,/learn-more.html,section,Old news item with no matching article; articles hub
+/hearing-loss-tips/,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss-tips/page/2/,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss-tips/page/3/,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss-tips/page/4/,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss-tips/page/5/,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss/9-hearing-loss-myths/,/articles/hearing-loss-myths.html,exact-article,"Old ""9 Hearing Loss Myths"" = hearing-loss myths article"
+/hearing-loss/additional-concerns/,/tinnitus.html,section,Tinnitus topic; tinnitus service page
+/hearing-loss/hearing-health-blog/,/learn-more.html,section,Blog archive/listing page; articles hub
+/hearing-loss/help-a-loved-one/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss/improve-your-hearing/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-loss/prevent-hearing-loss/,/hearing-protection.html,section,Noise/hearing-protection topic; protection page
+/hearing-test-info/4-reasons-to-have-your-hearing-tested-regularly/,/articles/6-reasons-to-have-regular-hearing-tests.html,exact-article,"Old ""4 Reasons to Get Your Hearing Evaluated Regularly"" = regular testing"
+/hearing-test-info/are-you-grumpy-maybe-its-hearing-loss/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-test-info/cannabis-use-hearing-health/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-test-info/chemotherapy-make-you-lose-hearing/,/articles/ototoxic-medications-and-hearing-loss.html,exact-article,Old post on chemo-related hearing loss; ototoxic article covers chemotherapy drugs
+/hearing-test-info/exposed-to-these-chemicals-you-may-increase-your-risk-of-hearing-loss/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-test-info/getting-hearing-tested-improve-your-mood/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/hearing-loss-symptoms-red-flags/,/articles/early-signs-of-hearing-loss.html,exact-article,"Old ""Which Hearing Loss Symptoms Are Red Flags?"" = warning signs"
+/hearing-test-info/hearing-test-reduce-risk-dementia/,/articles/early-hearing-aid-use-linked-to-significantly-lower-dementia-risk.html,exact-article,"Old ""Dementia Risk Could be Decreased by Regular Hearing Exams"" = treating hearing loss lowers dementia risk"
+/hearing-test-info/hearing-tests-types-details-results/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/how-getting-your-ears-checked-could-cheer-you-up/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/how-to-prepare-for-a-hearing-test/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/how-to-read-your-hearing-test/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/last-time-hearing-tested/,/articles/6-reasons-to-have-regular-hearing-tests.html,exact-article,"Old ""Have You Had a Hearing Test Recently?"" = case for routine testing"
+/hearing-test-info/muffled-hearing-causes-and-solutions/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-test-info/prepare-for-your-hearing-test/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/regular-hearing-tests-important/,/articles/6-reasons-to-have-regular-hearing-tests.html,exact-article,"Old ""Getting Routine Hearing Tests"" shares the same opening text as the 6-reasons article"
+/hearing-test-info/should-i-get-a-hearing-test/,/articles/should-i-get-a-hearing-test-2.html,exact-article,"Old ""Should I Get a Hearing Assessment?"" is an earlier version of the same post (same TV-volume opening)"
+/hearing-test-info/should-i-get-a-hearing-test-2/,/articles/should-i-get-a-hearing-test-2.html,exact-article,Same slug; archived title matches the repo article
+/hearing-test-info/signs-loved-one-needs-hearing-aids/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/signs-you-should-get-a-hearing-test/,/articles/should-i-get-a-hearing-test-2.html,exact-article,"Old ""Signs You Should Have Your Hearing Evaluated"" = when to get a hearing test"
+/hearing-test-info/sound-new-beginning/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/surviving-office-holiday-parties-hearing-loss/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/hearing-test-info/this-is-why-you-should-get-your-hearing-checked-today/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/hearing-test-info/what-causes-earwax-accumulation/,/articles/earwax-purpose-and-when-to-remove-it.html,exact-article,"Old ""Why Does Earwax Accumulate?"" = what earwax is and when to remove it"
+/hearing-test-info/what-will-a-hearing-test-show/,/hearing-tests.html,section,Hearing-test blog post with no matching article; hearing tests page
+/hearing-test-info/why-regular-checkups-are-crucial-after-getting-hearing-aids/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/hearing-test-info/why-regular-hearing-tests-are-important-after-age-50/,/articles/why-regular-hearing-tests-are-important-after-age-50.html,exact-article,Same slug; archived title matches the repo article
+/hearing-test-info/your-autumn-hearing-health-guide/,/articles/enjoy-the-sounds-of-autumn-how-to-protect-your-hearing-this-fall.html,exact-article,"Old ""Hearing Health Guidelines For the Fall Season"" = fall hearing care"
+/hipaa-statement,/privacy.html,section,Old HIPAA statement; privacy page
+/how-you-hear/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/library.asp,/learn-more.html,section,Blog archive/listing page; articles hub
+/links.asp,/learn-more.html,section,Blog archive/listing page; articles hub
+/listening-and-communication-enhancement-program/,/services.html,section,Retired service with no dedicated page; services page
+/location-contact/patient-forms/,/patient-portal.html,section,Old patient forms; patient portal page
+/location.asp,/contact.html,exact-page,Old location page (.asp); contact page has address/map
+/news.asp,/learn-more.html,section,Blog archive/listing page; articles hub
+/news/how-to-prevent-tinnitus-from-worsening-while-flying/,/articles/how-to-prevent-tinnitus-from-worsening-while-flying.html,exact-article,Same slug; archived title matches the repo article
+/news/sudden-hearing-loss/,/articles/sudden-hearing-loss.html,exact-article,Same slug; archived title matches the repo article
+/news/the-connection-between-hearing-loss-and-reduced-lifespan/,/articles/the-connection-between-hearing-loss-and-reduced-lifespan.html,exact-article,Same slug; archived title matches the repo article
+/news/what-are-bone-conduction-hearing-devices/,/articles/what-are-bone-conduction-hearing-devices.html,exact-article,Same slug; archived title matches the repo article
+/no-surprises-act/,/insurance.html,section,Old No Surprises Act notice; insurance and payment page
+/online-hearing-test/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/privacy-policy/,/privacy.html,exact-page,Old privacy policy
+/project/,/,section,Empty Divi projects archive; home
+/risk-kidney/,/hearing-loss.html,section,General hearing-loss topic; hearing loss page
+/services/,/services.html,exact-page,Old services index
+/services.asp,/services.html,exact-page,Old services page (.asp)
+/services/balance-testing/,/services.html,section,Retired service with no dedicated page; services page
+/services/cochlear-implants/,/cochlear-implants.html,section,Cochlear implants; cochlear implant page
+/services/cognivue-cognitive-testing-in-lafayette-la/,/brain-health.html,section,Cognition/dementia topic; brain health page
+/services/ear-wax-management/,/services.html,section,Retired service with no dedicated page; services page
+/services/hearing-aid-fitting/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/services/hearing-aid-fittings/,/hearing-aids.html,section,Hearing aid topic; hearing aids page
+/services/hearing-aid-repair/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
+/services/hearing-protection/,/hearing-protection.html,section,Hearing protection service; protection page
+/services/hearing-testing/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/services/hearing-tests/,/hearing-tests.html,section,Hearing test topic; hearing tests page
+/services/neurotone-lace-ai-pro/,/services.html,section,Retired service with no dedicated page; services page
+/services/tinnitus-therapy/,/tinnitus.html,section,Tinnitus topic; tinnitus service page
+/sitemap/,/,section,Old HTML sitemap; home
+/staff.asp,/team.html,exact-page,Old staff page (.asp)
+/team/courtney-barbier/,/dr-courtney-barbier.html,exact-page,Same audiologist bio
+/team/elizabeth-lemaire-au-d/,/dr-elizabeth-lemaire.html,exact-page,Same audiologist bio
+/team/keri-stevens/,/team.html,section,Staff bio with no own page; team page lists staff
+/team/kimberly-allred/,/dr-kimberly-allred.html,exact-page,Same audiologist bio
+/team/sarah-lalande-au-d/,/dr-sarah-lalande-davies.html,exact-page,Same audiologist bio
+/team/sarah-lalande-davies-au-d/,/dr-sarah-lalande-davies.html,exact-page,Same audiologist bio
+/team/tina-ray-pcc/,/team.html,section,Staff bio with no own page; team page lists staff
+/tinnitus-articles/anxiety-cause-tinnitus-sleep-issues/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/are-your-ears-ringing-new-treatment-offers-hope/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/beware-these-common-medicines-are-linked-to-tinnitus/,/articles/ototoxic-medications-and-hearing-loss.html,exact-article,Old post on medicines that cause ringing; ototoxic article covers drug-induced tinnitus
+/tinnitus-articles/can-a-hearing-aid-cure-tinnitus/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/can-the-ringing-in-my-ears-be-cured/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/can-tinnitus-subside-by-itself/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/can-you-inherit-that-ringing-in-your-ears-from-mom-and-dad/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/concussions-tinnitus-what-connection/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/daily-tips-for-living-with-tinnitus/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/hearing-aids-relieve-tinnitus-symptoms/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/how-do-hearing-aids-help-tinnitus/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/is-tinnitus-always-part-of-aging/,/articles/is-tinnitus-always-part-of-aging.html,exact-article,Same slug; archived title matches the repo article
+/tinnitus-articles/late-night-bar-trips-tinnitus/,/tinnitus-after-noise-exposure.html,section,Noise-triggered tinnitus; tinnitus-after-noise page
+/tinnitus-articles/new-research-connects-tinnitus-to-diet/,/tinnitus.html,section,Tinnitus topic; tinnitus service page
+/tinnitus-articles/new-ways-to-manage-tinnitus/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/the-link-between-cannabinoids-and-tinnitus/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/tinnitus-more-than-just-a-ringing-in-the-ears/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/tinnitus-stemming-from-environment/,/tinnitus-after-noise-exposure.html,section,Noise-triggered tinnitus; tinnitus-after-noise page
+/tinnitus-articles/tinnitus-suicide-this-group-is-at-risk/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/tinnitus-symptoms-you-should-never-ignore/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/tinnitus-the-invisible-condition-with-a-big-impact/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/what-does-tinnitus-sound-like/,/types-of-tinnitus.html,section,What tinnitus sounds like; types-of-tinnitus page
+/tinnitus-articles/what-is-causing-that-annoying-ringing-in-my-ears/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/why-are-my-ears-ringing/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/why-do-i-hear-crackling-in-my-ear/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/why-do-i-hear-crackling-in-my-ear-2/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/tinnitus-articles/why-is-the-buzzing-in-my-ears-worse-at-night/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
+/wow-invisible-hearing,/lyric-extended-wear-hearing-aids-lafayette.html,section,Lyric invisible hearing aid; Lyric page

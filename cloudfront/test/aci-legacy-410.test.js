@@ -170,8 +170,15 @@ check("Q-0028: other /locations/ paths are not redirected by the map", () => {
     assert.strictEqual(res.statusCode, undefined);
 });
 
-check("regression: legacy directory subpath /hearing-aids/foo/ -> 410 Gone", () => {
-    const res = handler(makeEvent("acihearing.com", "/hearing-aids/affordable-hearing-aids/", {}));
+// 2026-11-04: /hearing-aids/affordable-hearing-aids/ now 301s (see the CSV block below),
+// so the directory-subpath 410 regression uses prefixes that have no redirect default.
+check("regression: legacy directory subpath /tinnitus/foo/ -> 410 Gone", () => {
+    const res = handler(makeEvent("acihearing.com", "/tinnitus/foo/", {}));
+    assert.strictEqual(res.statusCode, 410);
+});
+
+check("regression: legacy directory subpath /pediatric-audiology/foo/ -> 410 Gone", () => {
+    const res = handler(makeEvent("acihearing.com", "/pediatric-audiology/foo/", {}));
     assert.strictEqual(res.statusCode, 410);
 });
 
@@ -185,6 +192,119 @@ check("www + legacy 410 path: host redirect wins first (client re-requests on ap
     const res = handler(makeEvent("www.acihearing.com", "/services/hearing-aids", {}));
     assert.strictEqual(res.statusCode, 301);
     assert.strictEqual(res.headers.location.value, "https://acihearing.com/services/hearing-aids");
+});
+
+// ---- 2026-11-04: every row of redirects/legacy-redirects-*.csv -> one-hop 301 ----
+const REPO = path.join(__dirname, "..", "..");
+function parseCsv(text) {
+    const rows = [];
+    let row = [], cur = "", q = false;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (q) {
+            if (ch === '"' && text[i + 1] === '"') { cur += '"'; i++; }
+            else if (ch === '"') q = false;
+            else cur += ch;
+        } else if (ch === '"') q = true;
+        else if (ch === ",") { row.push(cur); cur = ""; }
+        else if (ch === "\n") { row.push(cur); rows.push(row); row = []; cur = ""; }
+        else if (ch !== "\r") cur += ch;
+    }
+    if (cur || row.length) { row.push(cur); rows.push(row); }
+    const head = rows.shift();
+    return rows.map((r) => Object.fromEntries(head.map((h, i) => [h, r[i]])));
+}
+const csvDir = path.join(REPO, "redirects");
+const csvRows = fs.readdirSync(csvDir)
+    .filter((f) => /^legacy-redirects-.*\.csv$/.test(f))
+    .flatMap((f) => parseCsv(fs.readFileSync(path.join(csvDir, f), "utf8")));
+assert.ok(csvRows.length > 500, "CSV rows loaded: " + csvRows.length);
+
+function targetFile(to) {
+    return path.join(REPO, to === "/" ? "index.html" : to.slice(1));
+}
+
+let csvFailures = 0;
+check(`CSV: all ${csvRows.length} rows 301 to their target on apex + www, with and without trailing slash`, () => {
+    const bad = [];
+    csvRows.forEach((r) => {
+        const variants = [r.old_url];
+        if (r.old_url.endsWith("/")) variants.push(r.old_url.slice(0, -1));
+        variants.forEach((from) => {
+            ["acihearing.com", "www.acihearing.com"].forEach((host) => {
+                const res = handler(makeEvent(host, from, { utm_source: { value: "x" } }));
+                const loc = res.headers && res.headers.location && res.headers.location.value;
+                if (res.statusCode !== 301 || loc !== "https://acihearing.com" + r.target ||
+                    res.headers["x-legacy-redirect"].value !== "q0028-legacy-301") {
+                    bad.push(`${host}${from} -> ${res.statusCode} ${loc} (want ${r.target})`);
+                }
+            });
+        });
+    });
+    csvFailures = bad.length;
+    assert.strictEqual(bad.length, 0, bad.slice(0, 20).join("\n  "));
+});
+
+check("CSV: match_type is exact-article / exact-page / section and every row has a reason", () => {
+    csvRows.forEach((r) => {
+        assert.ok(["exact-article", "exact-page", "section"].includes(r.match_type), r.old_url + " " + r.match_type);
+        assert.ok(r.reason && r.reason.length > 5, "reason missing: " + r.old_url);
+        if (r.match_type === "exact-article") assert.ok(r.target.startsWith("/articles/"), r.old_url);
+    });
+});
+
+check("CSV: every target is a file in the repo and is served as-is (no chain, no loop)", () => {
+    const targets = [...new Set(csvRows.map((r) => r.target))];
+    targets.forEach((to) => {
+        assert.ok(fs.existsSync(targetFile(to)), "missing file for " + to);
+        const res = handler(makeEvent("acihearing.com", to, {}));
+        assert.strictEqual(res.statusCode, undefined, to + " should pass through, got " + res.statusCode);
+        assert.strictEqual(res.uri, to);
+    });
+});
+
+check("no old URL is also a target (loop guard)", () => {
+    const olds = new Set(csvRows.map((r) => r.old_url.toLowerCase().replace(/\/$/, "")));
+    csvRows.forEach((r) => assert.ok(!olds.has(r.target.toLowerCase().replace(/\/$/, "")) || r.target === "/", r.target));
+});
+
+check("every live HTML page in the repo passes through untouched", () => {
+    const pages = [];
+    (function walk(dir, rel) {
+        fs.readdirSync(dir, { withFileTypes: true }).forEach((e) => {
+            if (e.name.startsWith(".") || e.name === "node_modules") return;
+            if (e.isDirectory()) walk(path.join(dir, e.name), rel + "/" + e.name);
+            else if (e.name.endsWith(".html")) pages.push(rel + "/" + e.name);
+        });
+    })(REPO, "");
+    assert.ok(pages.length > 100, "pages found: " + pages.length);
+    pages.concat(["/", "/sitemap.xml", "/robots.txt", "/assets/logo.png"]).forEach((p) => {
+        const res = handler(makeEvent("acihearing.com", p, {}));
+        assert.strictEqual(res.statusCode, undefined, p + " -> " + res.statusCode);
+    });
+});
+
+check("/wp-content/, /wp-includes/, /wp-admin/, /wp-json/ still 410", () => {
+    ["/wp-content/uploads/2020/01/x.jpg", "/wp-includes/js/a.js", "/wp-admin/", "/wp-json/wp/v2/posts"].forEach((p) => {
+        assert.strictEqual(handler(makeEvent("acihearing.com", p, {})).statusCode, 410, p);
+    });
+});
+
+check("unlisted old blog posts fall back to their section (one hop)", () => {
+    [["/hearing-loss-articles/some-retired-post/", "/hearing-loss.html"],
+     ["/hearing-aids-news/some-retired-post/", "/hearing-aids.html"],
+     ["/hearing-test-info/some-retired-post/", "/hearing-tests.html"],
+     ["/tinnitus-articles/some-retired-post/", "/tinnitus.html"],
+     ["/category/anything/page/9/", "/learn-more.html"],
+     ["/2018/03/04/", "/learn-more.html"]].forEach(([from, to]) => {
+        const res = handler(makeEvent("acihearing.com", from, {}));
+        assert.strictEqual(res.statusCode, 301, from);
+        assert.strictEqual(res.headers.location.value, "https://acihearing.com" + to, from);
+    });
+});
+
+check("function source is under the 10 KB CloudFront Functions limit", () => {
+    assert.ok(Buffer.byteLength(source) <= 10240, "size " + Buffer.byteLength(source));
 });
 
 console.log(`\n${passed} passed`);
