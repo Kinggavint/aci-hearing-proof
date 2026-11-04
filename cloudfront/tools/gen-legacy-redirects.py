@@ -14,9 +14,9 @@ CODES = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&\'()
 EXTRA = [('/locations/lafayette-la/', '/audiologist-lafayette-la.html'),
          ('/services/tinnitus/', '/tinnitus.html'),
          ('/location-contact/', '/contact.html')]
-# REL and DEFAULTS must match the JS (same order).
+# REL, KNOWN and DEFAULTS must match the JS (same order).
 DEFAULTS = [
-    (r'^/(20\d\d/\d\d/|category/|author/|news/|hearing-loss-news|hearing-loss-tips/)', '/learn-more.html'),
+    (r'^/(20\d\d/\d\d/|category/|author/|news/|hearing-loss-news/|hearing-loss-tips/)', '/learn-more.html'),
     (r'^/hearing-loss(-articles)?/[^/]+$', '/hearing-loss.html'),
     (r'^/hearing-aids(-news)?/[^/]+$', '/hearing-aids.html'),
     (r'^/hearing-test-info/[^/]+$', '/hearing-tests.html'),
@@ -45,8 +45,10 @@ def _enc(t):
     assert m, t
     return m.group(1)
 REL = r'^/(?:2020/07/14|hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids)/([a-z0-9-]+)\.html$'
+KNOWN = r'^(about|contact|custom-molds|diagnostic-testing|index|learn-more|reviews|services|team|tinnitus|cochlear-implants|hearing-(aids|protection|repair|tests))$'
 def default(p):
     m = re.match(REL, p)
+    if m and not re.match(KNOWN, m.group(1)): return None  # unknown slug: normal 404
     if m: return '/' if m.group(1) == 'index' else '/%s.html' % m.group(1)
     for rx, t in DEFAULTS:
         if re.search(rx, p): return t

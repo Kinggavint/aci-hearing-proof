@@ -290,6 +290,48 @@ check("/wp-content/, /wp-includes/, /wp-admin/, /wp-json/ still 410", () => {
     });
 });
 
+check("/wp-login.php, /xmlrpc.php, /wp-admin, /wp-content -> 410 (bare and with slash)", () => {
+    ["/wp-login.php", "/wp-login.php/", "/xmlrpc.php", "/xmlrpc.php/", "/wp-admin", "/wp-admin/", "/wp-content", "/wp-content/", "/WP-LOGIN.PHP"].forEach((p) => {
+        ["acihearing.com", "www.acihearing.com"].forEach((host) => {
+            const res = handler(makeEvent(host, p, {}));
+            assert.ok(res.statusCode === 410 || (host !== "acihearing.com" && res.statusCode === 301), host + p + " -> " + res.statusCode);
+        });
+        assert.strictEqual(handler(makeEvent("acihearing.com", p, {})).statusCode, 410, p);
+    });
+    ["/wp-adminx", "/wp-contentx/", "/wp-login.phpx", "/xmlrpc.php.html"].forEach((p) => {
+        assert.notStrictEqual(handler(makeEvent("acihearing.com", p, {})).statusCode, 410, p);
+    });
+});
+
+check("relative-link artifacts: only the 15 known slugs redirect; unknown slugs fall through to the normal 404", () => {
+    ["/2020/07/14/foo.html", "/2020/07/14/hearing-aidsx.html", "/2020/07/14/brain-health.html",
+     "/hearing-aids-news/how-current-hearing-aid-tools-overcome-stigma-about-hearing-loss-aids/foo.html"].forEach((p) => {
+        assert.strictEqual(handler(makeEvent("acihearing.com", p, {})).statusCode, undefined, p);
+    });
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/2020/07/14/team.html", {})).headers.location.value, "https://acihearing.com/team.html");
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/2020/07/14/index.html", {})).headers.location.value, "https://acihearing.com/");
+});
+
+check("/category/tinnitus-articles/hearing-tests.html -> /hearing-tests.html (ahead of category/ default)", () => {
+    ["acihearing.com", "www.acihearing.com"].forEach((host) => {
+        const res = handler(makeEvent(host, "/category/tinnitus-articles/hearing-tests.html", {}));
+        assert.strictEqual(res.statusCode, 301);
+        assert.strictEqual(res.headers.location.value, "https://acihearing.com/hearing-tests.html");
+    });
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/category/tinnitus-articles/other.html", {})).headers.location.value, "https://acihearing.com/learn-more.html");
+});
+
+check("hearing-loss-news default needs the slash: /hearing-loss-newsletter is not caught", () => {
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/hearing-loss-newsletter", {})).statusCode, undefined);
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/hearing-loss-news/some-retired-item", {})).headers.location.value, "https://acihearing.com/learn-more.html");
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/hearing-loss-news", {})).headers.location.value, "https://acihearing.com/learn-more.html");
+});
+
+check("QA retargets: pin-drop and hidden-costs", () => {
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/hearing-loss-articles/why-you-can-hear-a-pin-drop-but-not-the-conversation/", {})).headers.location.value, "https://acihearing.com/articles/why-is-it-harder-to-hear-womens-and-childrens-voices.html");
+    assert.strictEqual(handler(makeEvent("acihearing.com", "/hearing-aids-news/hearing-loss-at-work-the-hidden-costs-of-not-seeking-help/", {})).headers.location.value, "https://acihearing.com/how-to-pay-for-hearing-aids-lafayette.html");
+});
+
 check("unlisted old blog posts fall back to their section (one hop)", () => {
     [["/hearing-loss-articles/some-retired-post/", "/hearing-loss.html"],
      ["/hearing-aids-news/some-retired-post/", "/hearing-aids.html"],

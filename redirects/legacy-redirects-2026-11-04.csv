@@ -177,7 +177,7 @@ old_url,target,match_type,reason
 /hearing-aids-news/hearing-aids-cant-one-size-fits/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
 /hearing-aids-news/hearing-aids-help-combat-isolation/,/articles/how-addressing-hearing-loss-can-combat-isolation.html,exact-article,"Old ""Adult Isolation And Its Hidden Causes"" = hearing loss and isolation"
 /hearing-aids-news/hearing-aids-not-working-like-they-used-to-try-this/,/hearing-aid-repair-lafayette.html,section,Hearing aid faults/repair; repair page
-/hearing-aids-news/hearing-loss-at-work-the-hidden-costs-of-not-seeking-help/,/articles/hearing-loss-and-job-performance.html,exact-article,Slug: hearing loss at work; job performance article
+/hearing-aids-news/hearing-loss-at-work-the-hidden-costs-of-not-seeking-help/,/how-to-pay-for-hearing-aids-lafayette.html,section,QA review: hidden costs of untreated hearing loss; hearing aid cost and payment guide
 /hearing-aids-news/hearing-loss-sensitivity-loud-sounds/,/hyperacusis-treatment-lafayette.html,section,Sound sensitivity/hyperacusis; hyperacusis page
 /hearing-aids-news/hearing-tips-to-make-your-feel-young-or-at-least-youthful/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
 /hearing-aids-news/heres-what-you-should-understand-about-over-the-counter-hearing-aids/,/hearing-aids.html,section,Hearing-aid blog post with no matching article; hearing aids page
@@ -425,7 +425,7 @@ old_url,target,match_type,reason
 /hearing-loss-articles/why-is-hearing-loss-a-public-health-concern/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
 /hearing-loss-articles/why-is-it-harder-to-hear-womens-and-childrens-voices/,/articles/why-is-it-harder-to-hear-womens-and-childrens-voices.html,exact-article,Same slug; archived title matches the repo article
 /hearing-loss-articles/why-monitoring-her-hearing-matters/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
-/hearing-loss-articles/why-you-can-hear-a-pin-drop-but-not-the-conversation/,/articles/understanding-hidden-hearing-loss.html,exact-article,Slug: hear quiet sounds but not speech = hidden hearing loss
+/hearing-loss-articles/why-you-can-hear-a-pin-drop-but-not-the-conversation/,/articles/why-is-it-harder-to-hear-womens-and-childrens-voices.html,exact-article,QA review: hears quiet sounds but misses speech = high-frequency loss; voices article
 /hearing-loss-articles/you-may-be-missing-important-medical-advice-due-to-hearing-loss/,/hearing-loss.html,section,Hearing-loss blog post with no matching article; hearing loss page
 /hearing-loss-lafayette-louisiana,/about.html,section,"Old ""About"" landing page"
 /hearing-loss-news,/learn-more.html,section,Blog archive/listing page; articles hub
@@ -539,3 +539,4 @@ old_url,target,match_type,reason
 /tinnitus-articles/why-do-i-hear-crackling-in-my-ear-2/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
 /tinnitus-articles/why-is-the-buzzing-in-my-ears-worse-at-night/,/tinnitus.html,section,Tinnitus blog post with no matching article; tinnitus page
 /wow-invisible-hearing,/lyric-extended-wear-hearing-aids-lafayette.html,section,Lyric invisible hearing aid; Lyric page
+/category/tinnitus-articles/hearing-tests.html,/hearing-tests.html,exact-page,Relative-link artifact of the live hearing tests page

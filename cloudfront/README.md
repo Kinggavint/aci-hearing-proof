@@ -121,7 +121,9 @@ for this client).
 
 The broken-link audit found 541 old WordPress/MyPractice URLs that returned
 404 or 410. 540 of them now 301 straight to a live page (`/index.html` is a
-200 home page and is left alone). The full list, with the target, match type
+200 home page and is left alone). QA added one more row
+(`/category/tinnitus-articles/hearing-tests.html` -> `/hearing-tests.html`), for 541
+rows in total. The full list, with the target, match type
 and a one-line reason for every row, is `redirects/legacy-redirects-2026-11-04.csv`.
 
 - `exact-article`: the old post covers the same topic as a live article in
@@ -133,16 +135,22 @@ and a one-line reason for every row, is `redirects/legacy-redirects-2026-11-04.c
 ### How the function stores them (10 KB limit)
 
 CloudFront Functions code is capped at 10,240 bytes, so the map is not stored
-as 540 regexes. STEP -1 (`legacyTarget()`) works on the path lower-cased with
+as 541 regexes. STEP -1 (`legacyTarget()`) works on the path lower-cased with
 the trailing slash removed, and checks in this order:
 
 1. `/2020/07/14/<page>.html` and `/hearing-aids-news/how-current-…-aids/<page>.html`
-   (relative-link artifacts of live pages) -> `/<page>.html` (`index.html` -> `/`).
+   (relative-link artifacts of live pages) -> `/<page>.html` (`index.html` -> `/`), only
+   for the 15 known pages (about, cochlear-implants, contact, custom-molds,
+   diagnostic-testing, hearing-aids, hearing-protection, hearing-repair, hearing-tests,
+   index, learn-more, reviews, services, team, tinnitus). Any other page under those
+   two folders returns `null` and falls through to the normal 404, so it never 301s
+   to a missing page.
 2. `H`: 32-bit hash (`h = h*31 + char mod 2^32`, base 36) of the path, grouped by
    target code; `T` is the space-separated target list (`*slug` = `/articles/slug.html`,
    `~` = `hearing`, `=` = the article with the same slug as the old URL, empty = `/`).
 3. `D`: prefix defaults for anything not hashed: date/category/author/news archives
-   -> `/learn-more.html`; `/hearing-loss(-articles)/x` -> `/hearing-loss.html`;
+   (`/20xx/xx/`, `/category/`, `/author/`, `/news/`, `/hearing-loss-news/`,
+   `/hearing-loss-tips/`) -> `/learn-more.html`; `/hearing-loss(-articles)/x` -> `/hearing-loss.html`;
    `/hearing-aids(-news)/x` -> `/hearing-aids.html`; `/hearing-test-info/x` ->
    `/hearing-tests.html`; `/tinnitus-articles/x` -> `/tinnitus.html`.
 
@@ -167,6 +175,8 @@ The generator fails on a hash collision or a conflicting duplicate row.
   their CSV target (or the prefix default). The old test that expected
   `/hearing-aids/affordable-hearing-aids/` to 410 now checks `/tinnitus/foo/` and
   `/pediatric-audiology/foo/` instead.
+- `/wp-login.php`, `/xmlrpc.php`, `/wp-admin` and `/wp-content` 410 with or without
+  the trailing slash.
 - `/wp-content/`, `/wp-includes/`, `/wp-admin/`, `/wp-json/` and the other
   STEP 3/4 patterns still 410. The 410 body is unchanged.
 - The STEP 3/4 regex lists were merged into one `GONE` list with the same
