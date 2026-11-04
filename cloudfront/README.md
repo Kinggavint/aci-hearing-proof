@@ -116,3 +116,76 @@ After it's live, also confirm the GSC property set covers `acihearing.com`
 (the task noted "confirm the GSC property covers the chosen host" — that's
 a Search Console check, not an AWS one, and needs whoever holds GSC access
 for this client).
+
+## 2026-11-04: legacy 404/410 URLs -> one-hop 301s
+
+The broken-link audit found 541 old WordPress/MyPractice URLs that returned
+404 or 410. 540 of them now 301 straight to a live page (`/index.html` is a
+200 home page and is left alone). QA added one more row
+(`/category/tinnitus-articles/hearing-tests.html` -> `/hearing-tests.html`), for 541
+rows in total. The full list, with the target, match type
+and a one-line reason for every row, is `redirects/legacy-redirects-2026-11-04.csv`.
+
+- `exact-article`: the old post covers the same topic as a live article in
+  `/articles/` (checked against the archived title/body, not the slug).
+- `exact-page`: the same page under a new URL (e.g. `/about.asp` -> `/about.html`,
+  `/2020/07/14/custom-molds.html` -> `/custom-molds.html`).
+- `section`: no matching article, so it goes to the closest section page.
+
+### How the function stores them (10 KB limit)
+
+CloudFront Functions code is capped at 10,240 bytes, so the map is not stored
+as 541 regexes. STEP -1 (`legacyTarget()`) works on the path lower-cased with
+the trailing slash removed, and checks in this order:
+
+1. `/2020/07/14/<page>.html` and `/hearing-aids-news/how-current-…-aids/<page>.html`
+   (relative-link artifacts of live pages) -> `/<page>.html` (`index.html` -> `/`), only
+   for the 15 known pages (about, cochlear-implants, contact, custom-molds,
+   diagnostic-testing, hearing-aids, hearing-protection, hearing-repair, hearing-tests,
+   index, learn-more, reviews, services, team, tinnitus). Any other page under those
+   two folders returns `null` and falls through to the normal 404, so it never 301s
+   to a missing page.
+2. `H`: 32-bit hash (`h = h*31 + char mod 2^32`, base 36) of the path, grouped by
+   target code; `T` is the space-separated target list (`*slug` = `/articles/slug.html`,
+   `~` = `hearing`, `=` = the article with the same slug as the old URL, empty = `/`).
+3. `D`: prefix defaults for anything not hashed: date/category/author/news archives
+   (`/20xx/xx/`, `/category/`, `/author/`, `/news/`, `/hearing-loss-news/`,
+   `/hearing-loss-tips/`) -> `/learn-more.html`; `/hearing-loss(-articles)/x` -> `/hearing-loss.html`;
+   `/hearing-aids(-news)/x` -> `/hearing-aids.html`; `/hearing-test-info/x` ->
+   `/hearing-tests.html`; `/tinnitus-articles/x` -> `/tinnitus.html`.
+
+STEP -1 runs before the www step, so `www.` and apex both reach the final URL
+in one hop. Query strings are dropped. The three Q-0028 redirects are folded
+into the same table.
+
+Do not hand-edit `T` or `H`. Edit the CSV, then run:
+
+```
+python3 cloudfront/tools/gen-legacy-redirects.py   # rewrites T/H, fails if over 10 KB
+node cloudfront/test/aci-legacy-410.test.js
+```
+
+The generator fails on a hash collision or a conflicting duplicate row.
+
+### Behavior changes
+
+- `/services/`, `/services/hearing-tests/`, `/services/cochlear-implants/`,
+  `/services/hearing-protection/`, `/hearing-aids/`, `/hearing-loss/` and the
+  `/hearing-aids/*` and `/hearing-loss/*` subpaths used to 410. They now 301 to
+  their CSV target (or the prefix default). The old test that expected
+  `/hearing-aids/affordable-hearing-aids/` to 410 now checks `/tinnitus/foo/` and
+  `/pediatric-audiology/foo/` instead.
+- `/wp-login.php`, `/xmlrpc.php`, `/wp-admin` and `/wp-content` 410 with or without
+  the trailing slash.
+- `/wp-content/`, `/wp-includes/`, `/wp-admin/`, `/wp-json/` and the other
+  STEP 3/4 patterns still 410. The 410 body is unchanged.
+- The STEP 3/4 regex lists were merged into one `GONE` list with the same
+  matches. Long comments were moved here to make room.
+
+### Tests added
+
+Every CSV row is checked on apex and www, with and without the trailing slash
+(301, exact `Location`, header). Every target must exist in the repo and pass
+through untouched, so there are no chains or loops. Every live `.html` page in
+the repo must pass through. `/wp-*` must still 410, unlisted old posts must
+fall back to their section, and the file must stay under 10,240 bytes.
